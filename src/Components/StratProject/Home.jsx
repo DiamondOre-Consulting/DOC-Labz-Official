@@ -28,6 +28,18 @@ const Home = () => {
             typewriter.stop();
         };
     }, []);
+
+
+
+    const handleCall = () => {
+        const confirmCall = window.confirm('Do you want to call us?');
+      
+        if (confirmCall) {
+         
+          window.location.href = 'tel:8506908693';
+        }
+      };
+    
     return (
         <>
             <div className='grid grid-cols-2 md:grid-cols-6 px-10 justify-center justify-items-center content-center'>
@@ -44,7 +56,7 @@ const Home = () => {
                         <a class="group inline-flex items-center justify-center rounded-full py-2 px-8 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
                             href="#">
 
-                            <span class="ml-3">HIRE NOW</span>
+                            <span class="ml-3" onClick={handleCall}>HIRE NOW</span>
                         </a>
 
                     </div>

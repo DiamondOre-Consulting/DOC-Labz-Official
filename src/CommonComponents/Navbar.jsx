@@ -54,7 +54,7 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden bg-white">
                     <div className="px-2 items-center flex flex-col justify-cneter pt-2 pb-3 space-y-1 sm:px-3">
-                        <a href="#" className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+                        <a href="/" className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
                             Home
                         </a>
                         <a href="#about" className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
@@ -66,10 +66,10 @@ const Navbar = () => {
                         <a href="#contactus" className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
                             Contact
                         </a>
-                        <a href="#" className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group bg-gradient-to-r from-emerald-200 to-lime-300">
+                        <Link to={'/start/project'} className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group bg-gradient-to-r from-emerald-200 to-lime-300">
                             Start Your Project
                             {/* <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span> */}
-                        </a>
+                        </Link>
                     </div>
                 </div>
             )}
