@@ -31,10 +31,10 @@ const ContactUs = () => {
         setShowLoader(true);
         // Replace placeholders with form data
         const templateParams = {
-            Name: formData.name,
-            Email: formData.email,
-            Phone: formData.phone,
-            Message: formData.message
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            message: formData.message
         };
 
         // Send email using EmailJS
@@ -78,43 +78,45 @@ const ContactUs = () => {
                         <div class="flex flex-wrap">
                             <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
                                 <form onSubmit={handleSubmit}>
-                                    <div class="relative mb-6" data-te-input-wrapper-init>
+                                    <div className={`relative mb-6 ${formData.name ? 'active' : ''}`} data-te-input-wrapper-init>
                                         <input type="text"
-                                            class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                                            className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
                                             value={formData.name} onChange={handleChange}
                                             id="name" />
                                         <label
-                                            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-                                            for="exampleInput90">Name
+                                            className={`absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.name ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
+                                            htmlFor="name">Name
                                         </label>
                                     </div>
-                                    <div class="relative mb-6" data-te-input-wrapper-init>
+                                    <div className={`relative mb-6 ${formData.email ? 'active' : ''}`} data-te-input-wrapper-init>
                                         <input type="email"
                                             class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                             value={formData.email} onChange={handleChange}
                                             id="email" />
                                         <label
-                                            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                                             className={`absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.email ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
                                             for="exampleInput91">Email address
                                         </label>
                                     </div>
 
-                                    <div class="relative mb-6" data-te-input-wrapper-init>
+                                    <div className={`relative mb-6 ${formData.phone ? 'active' : ''}`}  data-te-input-wrapper-init>
                                         <input type="text"
                                             class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                             required value={formData.phone} onChange={handleChange}
                                             id="phone" />
                                         <label
-                                            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                                            className={`absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.phone ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
                                             for="exampleInput91">Phone
                                         </label>
                                     </div>
-                                    <div class="relative mb-6" data-te-input-wrapper-init>
+                                    <div className={`relative mb-6 ${formData.message ? 'active' : ''}`}  data-te-input-wrapper-init>
                                         <textarea
                                             class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                             id="message" rows="3" value={formData.message} onChange={handleChange} ></textarea>
-                                        <label for="exampleFormControlTextarea1"
-                                            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none ">Message</label>
+                                         <label
+                                            className={`absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.message ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
+                                            for="exampleInput91">Message
+                                        </label>
                                     </div>
 
                                     <button type="submit"

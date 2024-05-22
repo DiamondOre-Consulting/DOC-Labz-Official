@@ -15,9 +15,9 @@ const Services = () => {
         <h1 className='text-4xl font-semibold mb-10 px-10'>What We Do?</h1>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6 px-6 mb-10'>
 
-          <div class={`relative flex-col justify-center overflow-hidden  ${inView ? 'animate__animated animate__backInLeft' : ''}`} ref={ref}>
+          <div class={`relative flex-col justify-center overflow-hidden shadow-md md:shadow-sm ${inView ? 'animate__animated animate__backInLeft' : ''}`} ref={ref}>
             <div
-              class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+              class="group relative cursor-pointer overflow-hidden shadow-xl bg-white px-6 pt-10 pb-8  ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
               <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-gradient-to-r from-emerald-200 to-lime-300 transition-all duration-300 group-hover:scale-[10]"></span>
               <div class="relative z-10 mx-auto max-w-md">
                 <span class="grid h-20 w-20 place-items-center rounded-full bg-green-400 transition-all duration-300 group-hover:bg-green-500">
@@ -42,9 +42,9 @@ const Services = () => {
           </div>
 
 
-          <div class={`relative flex-col justify-center overflow-hidden  ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
+          <div class={`relative flex-col justify-center overflow-hidden  shadow-md md:shadow-sm ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
             <div
-              class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+              class="group relative cursor-pointer overflow-hidden bg-white shadow-xl  px-6 pt-10 pb-8  ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1  sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
               <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-gradient-to-r from-emerald-200 to-lime-300 transition-all duration-300 group-hover:scale-[10]"></span>
               <div class="relative z-10 mx-auto max-w-md">
                 <span class="grid h-20 w-20 place-items-center rounded-full bg-green-400 transition-all duration-300 group-hover:bg-green-500">
@@ -71,9 +71,9 @@ const Services = () => {
           </div>
 
 
-          <div class={`relative flex-col justify-center overflow-hidden  ${inView ? 'animate__animated animate__backInRight' : ''}`} ref={ref}>
+          <div class={`relative flex-col justify-center overflow-hidden shadow-md md:shadow-sm ${inView ? 'animate__animated animate__backInRight' : ''}`} ref={ref}>
             <div
-              class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+              class="group relative cursor-pointer shadow-xl  overflow-hidden bg-white px-6 pt-10 pb-8  ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
               <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-gradient-to-r from-emerald-200 to-lime-300 transition-all duration-300 group-hover:scale-[10]"></span>
               <div class="relative z-10 mx-auto max-w-md">
                 <span class="grid h-20 w-20 place-items-center rounded-full bg-green-400 transition-all duration-300 group-hover:bg-green-500">

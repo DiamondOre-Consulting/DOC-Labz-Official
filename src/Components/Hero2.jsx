@@ -1,10 +1,17 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Typewriter from 'typewriter-effect/dist/core';
 import hero from '..//assets/hero.svg'
+import PopUpForm from './PopUpForm';
 
 
 const Hero2 = () => {
     const typeRef = useRef(null);
+    const [showModal, setShowModal] = useState(true);
+
+    
+    const closeModal = () => {
+        setShowModal(false);
+      };
 
     useEffect(() => {
         const typewriter = new Typewriter(typeRef.current, {
@@ -31,13 +38,14 @@ const Hero2 = () => {
 
     return (
         <>
-            <div className='grid md:grid-cols-2 gap-4 px-10 md:px-20 justify-items-center mt-10 md:mt-20 items-center'>
+          {showModal && <PopUpForm closeModal={closeModal} setShowModal={setShowModal} />} 
+            <div className='grid md:grid-cols-2 gap-4 px-6 md:px-10 md:px-20 justify-items-center mt-10 md:mt-20 items-center'>
                 <div>
-                    <h1 className='text-4xl text-gray-800 text-wrap '>Start And Grow With <span className='text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-green-400'>DOC-LABZ</span>
+                    <h1 className='text-3xl md:text-4xl text-gray-800 text-wrap '>Start And Grow With <span className='text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-green-400'>DOC-LABZ</span>
                     </h1>
-                    <p className=' mb-4 text-xl' ref={typeRef}></p>
+                    <p className='mt-2 mb-6 md:mb-4 text-xl' ref={typeRef}></p>
                     {/* <p className='-mt-1 mb-4'><span className='text-yellow-500  '>B</span>it <span className='text-yellow-500'>B</span>y <span className='text-yellow-500'>B</span>it, <span className='text-yellow-500'>B</span>uilding Tommorow</p> */}
-                    <span className=' font-semibold mb-4 text-xl'>WEB DEVELOPMENT | UX/UI | DIGITAL MARKETING</span>
+                    <span className=' font-semibold mb-4 text-xl'>WEB DEVELOPMENT | UI/UX | DIGITAL MARKETING</span>
                     <p className='mb-8 mt-4 text-xl'> Doc-Labz, a dynamic IT consulting firm where innovation
                         and excellence converge. Our newly curated company boasts a
                         dedicated team of experts committed to delivering unparalleled
@@ -47,7 +55,7 @@ const Hero2 = () => {
                         class="animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium mt-3 px-4 py-2 rounded-lg bg-gradient-to-r hover:from-lime-300 tracking-wide text-white">
                         <span class="ml-2">Explore More</span>
                     </a> */}
-                    <span className='px-6 py-4 bg-gradient-to-r from-emerald-200 to-lime-300 rounded-full cursor-pointer hover:px-20 bg-gradient-to-r hover:from-lime-300 hover:to-emerald-200 transition-all duration-300'>Explore More</span>
+                    <span className='px-20 py-4 bg-gradient-to-r from-emerald-200 to-lime-300 rounded-md cursor-pointer bg-gradient-to-r hover:from-lime-300 hover:to-emerald-200 transition-all duration-300'>Explore More</span>
 
 
                 </div>
