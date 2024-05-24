@@ -56,8 +56,8 @@ const Services = () => {
                 </span>
                 <div
                   class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                  <h1 className='font-bold text-2xl'>UX/UI </h1>
-                  <p>Doc-Labz Captivating UX/UI design service. We craft immersive interfaces that captivate audiences and elevate user engagement</p>
+                  <h1 className='font-bold text-2xl'>UI/UX </h1>
+                  <p>Doc-Labz Captivating UI/UX design service. We craft immersive interfaces that captivate audiences and elevate user engagement</p>
                 </div>
                 <div class="pt-5 text-base font-semibold leading-7">
                   <p>

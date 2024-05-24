@@ -9,7 +9,7 @@ const WhoWeAre = () => {
             </Fade>
             <div className='px-0 md:px-20 mt-10'>
                 <p>
-                    DocLabz is a premier IT consulting firm dedicated to providing exceptional services in web development, UX/UI design, and digital marketing.
+                    DocLabz is a premier IT consulting firm dedicated to providing exceptional services in web development, UI/UX design, and digital marketing.
                 </p>
                 <p>
                     We specialize in crafting unique and innovative solutions tailored to meet the specific needs of our clients. Our team of experts is committed to delivering excellence in every project, ensuring client satisfaction and success.
