@@ -71,9 +71,9 @@ const Services = () => {
           </div>
 
 
-          <div class={`relative flex-col justify-center overflow-hidden shadow-md md:shadow-sm ${inView ? 'animate__animated animate__backInRight' : ''}`} ref={ref}>
+          <div class={`relative flex-col justify-center overflow-hidden  shadow-md md:shadow-sm ${inView ? 'animate__animated animate__backInRight' : ''}`} ref={ref}>
             <div
-              class="group relative cursor-pointer shadow-xl  overflow-hidden bg-white px-6 pt-10 pb-8  ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+              class="group relative cursor-pointer shadow-xl  overflow-hidden bg-white px-6 pt-10 pb-2  ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
               <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-gradient-to-r from-emerald-200 to-lime-300 transition-all duration-300 group-hover:scale-[10]"></span>
               <div class="relative z-10 mx-auto max-w-md">
                 <span class="grid h-20 w-20 place-items-center rounded-full bg-green-400 transition-all duration-300 group-hover:bg-green-500">
@@ -86,7 +86,7 @@ const Services = () => {
                 <div
                   class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
                   <h1 className='font-bold text-2xl'>Digital Marketing</h1>
-                  <p>Empowers your brand's digital journey with tailored digital marketing strategies. From engaging content creation to strategic campaign management</p>
+                  <p>Empowers your brand's digital journey with digital marketing strategies. From engaging content creation to strategic campaign management</p>
                 </div>
                 <div class="pt-5 text-base font-semibold leading-7">
                   <p>

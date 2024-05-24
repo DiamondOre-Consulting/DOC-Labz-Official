@@ -13,13 +13,13 @@ const Home = () => {
         typewriter
             .typeString('<span class="inline-block font-bold">Let\'s </span>')
             .typeString('<span class="relative whitespace-nowrap text-green-400"><span class="relative"> Work </span></span>')
-            .typeString('<span class="inline-block font-bold"> Together</span>')
+            .typeString('<span class="inline-block font-bold"> Together !!</span>')
             .pauseFor(2000)
-            .deleteChars(8)
-            .typeString('<span class="inline-block font-bold">Seamlessly</span>')
+            .deleteChars(11)
+            .typeString('<span class="inline-block font-bold">Seamlessly !!</span>')
             .pauseFor(2000)
-            .deleteChars(10)
-            .typeString('<span class="inline-block font-bold">Unitedly</span>')
+            .deleteChars(13)
+            .typeString('<span class="inline-block font-bold">Unitedly !!</span>')
             .pauseFor(2000)
             .deleteAll()
             .start();
@@ -56,15 +56,20 @@ const Home = () => {
                         <a class="group inline-flex items-center justify-center rounded-full py-2 px-8 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
                             href="#">
 
-                            <span class="ml-3" onClick={handleCall}>HIRE NOW</span>
+                            <span class="" onClick={handleCall}>Call Us</span>
                         </a>
 
                     </div>
 
-                    <p class="mx-auto mt-6 max-w-3xl text-lg tracking-tight text-slate-700 sm:mt-20">
+                    <p class="mx-auto max-w-3xl text-lg tracking-tight text-slate-700 mt-10">
+                        <span class="inline-block">Or</span> <br></br>
+                        <span class="inline-block  mt-4">tech@doclabz@gmal.com</span>
+                    </p>
+
+                    {/* <p class="mx-auto mt-6 max-w-3xl text-lg tracking-tight text-slate-700 sm:mt-20">
                         <span class="inline-block">Partner with us to leverage cutting-edge technology solutions and drive your business forward.</span>
                         <span class="inline-block"></span>
-                    </p>
+                    </p> */}
 
                 </div>
 
