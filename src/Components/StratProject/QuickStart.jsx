@@ -71,7 +71,7 @@ const QuickStart = () => {
                       Grow With US
                     </h3>
                     <p class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
-                     Doc-Labz will do its best to grow your business and make you stand firm in your respective industry
+                     Doc-Labz will do its best to grow your business and make you stand firm in your respective industry.
                     </p>
                   </div>
 

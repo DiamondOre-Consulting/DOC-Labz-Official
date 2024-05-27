@@ -49,12 +49,13 @@ const Hero2 = () => {
                     <p className='mb-8 mt-4 text-xl'> Doc-Labz, a dynamic IT consulting firm where innovation
                         and excellence converge. Our newly curated company boasts a
                         dedicated team of experts committed to delivering unparalleled
-                        branding solutions
+                        branding solutions.
                     </p>
                     {/* <a href=""
                         class="animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium mt-3 px-4 py-2 rounded-lg bg-gradient-to-r hover:from-lime-300 tracking-wide text-white">
                         <span class="ml-2">Explore More</span>
                     </a> */}
+                    
                     <a href = "#ourwork" className='px-20 py-4 bg-gradient-to-r from-emerald-200 to-lime-300 rounded-md cursor-pointer bg-gradient-to-r hover:from-lime-300 hover:to-emerald-200 transition-all duration-300'>Explore More</a>
 
 

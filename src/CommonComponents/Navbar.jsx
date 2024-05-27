@@ -20,10 +20,10 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="hidden md:flex space-x-4">
-                        <a href="/" className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group">
+                        <Link to={'/'} className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group">
                             Home
                             <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-                        </a>
+                        </Link>
                         <a href="#about" className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group">
                             About
                             <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
@@ -54,9 +54,9 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden bg-white">
                     <div className="px-2 items-center flex flex-col justify-cneter pt-2 pb-3 space-y-1 sm:px-3">
-                        <a href="/" className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+                        <Link to={'/'} className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
                             Home
-                        </a>
+                        </Link>
                         <a href="#about" className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
                             About
                         </a>

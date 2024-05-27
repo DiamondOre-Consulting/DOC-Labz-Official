@@ -95,7 +95,7 @@ const ContactUs = () => {
                                             id="email" />
                                         <label
                                             className={`absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.email ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
-                                            for="exampleInput91">Email address
+                                            for="exampleInput91">Email
                                         </label>
                                     </div>
 

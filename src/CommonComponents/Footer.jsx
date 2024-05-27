@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '..//assets/logo.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -18,7 +19,7 @@ const Footer = () => {
                         </a>
                         <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             <li>
-                                <a href="#" class="hover:underline me-4 md:me-6">Home</a>
+                                <Link to={'/'} class="hover:underline me-4 md:me-6">Home</Link>
                             </li>
                             <li>
                                 <a href="#about" class="hover:underline me-4 md:me-6">About</a>
@@ -32,7 +33,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="" class="hover:underline">Doc-Labz</a>. All Rights Reserved.</span>
+                    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="" class="hover:underline text-green-500 ">Doc-Labz</a>. All Rights Reserved.</span>
                 </div>
             </footer>
 

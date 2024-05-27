@@ -31,11 +31,11 @@ const Teachnologies = () => {
                     </div>
                     <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
                         <img src={node} alt="" className='w-20 h-20' />
-                        <p>Node JS</p>
+                        <p>NODE JS</p>
                     </div>
                     <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
                         <img src={mongo} alt="" className='w-24 h-20' />
-                        <p>Mongo DB</p>
+                        <p>MONGO DB</p>
                     </div>
                     <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
                         <img src={typescript} alt="" className='w-20 h-20' />

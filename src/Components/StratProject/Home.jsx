@@ -137,7 +137,7 @@ const Home = () => {
 
                 <div className='col-span-2 w-full mt-10'>
                     <form class="max-w-md mx-auto  p-6 bg-gradient-to-r from-emerald-200 to-lime-300 border rounded-lg shadow-lg" onSubmit={handleSubmit}>
-                        <h2 class="text-2xl font-bold mb-6">Contact Form</h2>
+                        <h2 class="text-2xl  mb-6">Contact us</h2>
                         <div class="mb-4">
 
                             <input class="shadow appearance-none bg-gray-50 border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter your name" value={formData.name} onChange={handleChange} />
@@ -153,7 +153,7 @@ const Home = () => {
 
                             <textarea class="shadow appearance-none border  bg-gray-50 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Enter your message" value={formData.message} onChange={handleChange} ></textarea>
                         </div>
-                        <button class="bg-gray-50 rounded-md font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                        <button class="bg-gray-50 rounded-md  py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                             {showLoader ? (
                                 <svg aria-hidden="true" class="inline w-4 h-4 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />
