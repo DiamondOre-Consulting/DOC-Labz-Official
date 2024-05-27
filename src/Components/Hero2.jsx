@@ -66,7 +66,17 @@ const Hero2 = () => {
             <div className='absolute top-0 right-0'>
                 <div className=' bg-green-300 md:w-60 md:h-96 mt-0 float-right rounded-bl-full rounded-tl-2xl opacity-70 z-100'></div>
             </div>
+
+
+            {/* <div className={`fixed bottom-20 md:bottom-56 z-10 right-8 `}>
+                <h1 className='w-20 h20 '>abc</h1>
+            <img id="certificateImage" src={certificate} alt="" className='h-28 w-38' />
+
+            </div> */}
         </>
+
+
+
     )
 }
 

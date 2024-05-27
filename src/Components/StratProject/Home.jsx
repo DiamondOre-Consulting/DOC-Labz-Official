@@ -38,7 +38,7 @@ const Home = () => {
 
         if (confirmCall) {
 
-            window.location.href = 'tel:8506908693';
+            window.location.href = 'tel:9773693017';
         }
     };
 
