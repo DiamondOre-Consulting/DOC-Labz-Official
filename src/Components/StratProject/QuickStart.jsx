@@ -23,54 +23,54 @@ const QuickStart = () => {
                   class="relative grid grid-cols-1 text-center gap-y-8 sm:gap-y-10 md:gap-y-12 md:grid-cols-4 gap-x-12">
                   <div>
                     <div
-                      class="flex items-center justify-center w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                      <span class="text-xl font-semibold text-gray-100 dark:text-gray-200 ">1</span>
+                      class="flex items-center justify-center w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300  border-2 border-gray-200  rounded-full shadow">
+                      <span class="text-xl font-semibold text-gray-100  ">1</span>
                     </div>
                     <h3
-                      class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
+                      class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900  md:mt-10">
                       Contact Us
                     </h3>
-                    <p class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
+                    <p class="mt-3 sm:mt-4 text-base text-gray-600 ">
                       Fill the contact form & brief of your requirements so we can align the best executive for discussion according to your requirements.
                     </p>
                   </div>
                   <div>
                     <div
-                      class="flex items-center relative top-1 md:top-4 justify-center w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                      <span class="text-xl font-semibold text-gray-100 dark:text-gray-200">2</span>
+                      class="flex items-center relative top-1 md:top-4 justify-center w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300  border-2 border-gray-200  rounded-full shadow">
+                      <span class="text-xl font-semibold text-gray-100 ">2</span>
                     </div>
                     <h3
-                      class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
+                      class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900  md:mt-10">
                       Expert Discussion
                     </h3>
-                    <p class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
+                    <p class="mt-3 sm:mt-4 text-base text-gray-600 ">
                     Our team will connect with you to discuss your project requirements in detail to offer best available solutions.
                     </p>
                   </div>
                   <div>
                     <div
-                      class="flex items-center justify-center relative bottom-0 md:bottom-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                      <span class="text-xl font-semibold text-gray-100 dark:text-gray-200">3</span>
+                      class="flex items-center justify-center relative bottom-0 md:bottom-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300  border-2 border-gray-200  rounded-full shadow">
+                      <span class="text-xl font-semibold text-gray-100 ">3</span>
                     </div>
                     <h3
-                      class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
+                      class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900  md:mt-10">
                       Start Your Work
                     </h3>
-                    <p class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
+                    <p class="mt-3 sm:mt-4 text-base text-gray-600 ">
                       We will start the work as per your requirements & provide you regular updates & reports.
                     </p>
                   </div>
 
                      <div>
                     <div
-                      class="flex items-center justify-center relative top-2  md:top-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                      <span class="text-xl font-semibold text-gray-100 dark:text-gray-200">4</span>
+                      class="flex items-center justify-center relative top-2  md:top-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300  border-2 border-gray-200  rounded-full shadow">
+                      <span class="text-xl font-semibold text-gray-100 ">4</span>
                     </div>
                     <h3
-                      class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
+                      class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900  md:mt-10">
                       Grow With US
                     </h3>
-                    <p class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
+                    <p class="mt-3 sm:mt-4 text-base text-gray-600 ">
                      Doc-Labz will do its best to grow your business and make you stand firm in your respective industry.
                     </p>
                   </div>
