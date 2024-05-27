@@ -94,12 +94,12 @@ const ContactUs = () => {
                                             value={formData.email} onChange={handleChange}
                                             id="email" />
                                         <label
-                                             className={`absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.email ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
+                                            className={`absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.email ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
                                             for="exampleInput91">Email address
                                         </label>
                                     </div>
 
-                                    <div className={`relative mb-6 ${formData.phone ? 'active' : ''}`}  data-te-input-wrapper-init>
+                                    <div className={`relative mb-6 ${formData.phone ? 'active' : ''}`} data-te-input-wrapper-init>
                                         <input type="text"
                                             class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                             required value={formData.phone} onChange={handleChange}
@@ -109,11 +109,11 @@ const ContactUs = () => {
                                             for="exampleInput91">Phone
                                         </label>
                                     </div>
-                                    <div className={`relative mb-6 ${formData.message ? 'active' : ''}`}  data-te-input-wrapper-init>
+                                    <div className={`relative mb-6 ${formData.message ? 'active' : ''}`} data-te-input-wrapper-init>
                                         <textarea
                                             class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
                                             id="message" rows="3" value={formData.message} onChange={handleChange} ></textarea>
-                                         <label
+                                        <label
                                             className={`absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out ${formData.message ? '-translate-y-[0.9rem] scale-[0.8] text-primary' : ''}`}
                                             for="exampleInput91">Message
                                         </label>
@@ -167,7 +167,9 @@ const ContactUs = () => {
                                                     Technical support
                                                 </p>
                                                 <p class="text-sm text-neutral-500">
-                                                    tech@doclabz.com
+                                                    <a href="mailto:tech@doclabz.com" className="inline-block cursor-pointer hover:underline">
+                                                        tech@doclabz.com
+                                                    </a>
                                                 </p>
 
                                             </div>

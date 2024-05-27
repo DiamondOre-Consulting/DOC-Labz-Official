@@ -6,7 +6,7 @@ const QuickStart = () => {
 
 
       <div aria-hidden="true" class="pointer-events-none mx-4 md:mx-20 mt-20">
-        <h1 className='text-4xl md:text-7xl font-bold px-10 mb-10'>Quick And Easy Start</h1>
+        <h1 className='text-4xl md:text-7xl font-bold px-10 md:mb-10'>Quick And Easy Start</h1>
         <section class="relative overflow-hidden ">
           <div class="mt-2 md:mt-0 py-12 pb-6 sm:py-16 lg:pb-24 overflow-hidden">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
@@ -36,7 +36,7 @@ const QuickStart = () => {
                   </div>
                   <div>
                     <div
-                      class="flex items-center relative top-4 justify-center w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
+                      class="flex items-center relative top-1 md:top-4 justify-center w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
                       <span class="text-xl font-semibold text-gray-100 dark:text-gray-200">2</span>
                     </div>
                     <h3
@@ -49,7 +49,7 @@ const QuickStart = () => {
                   </div>
                   <div>
                     <div
-                      class="flex items-center justify-center relative bottom-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
+                      class="flex items-center justify-center relative bottom-0 md:bottom-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
                       <span class="text-xl font-semibold text-gray-100 dark:text-gray-200">3</span>
                     </div>
                     <h3
@@ -63,7 +63,7 @@ const QuickStart = () => {
 
                      <div>
                     <div
-                      class="flex items-center justify-center relative top-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
+                      class="flex items-center justify-center relative top-2  md:top-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
                       <span class="text-xl font-semibold text-gray-100 dark:text-gray-200">4</span>
                     </div>
                     <h3
