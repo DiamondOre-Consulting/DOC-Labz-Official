@@ -55,7 +55,7 @@ const Hero2 = () => {
                         class="animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium mt-3 px-4 py-2 rounded-lg bg-gradient-to-r hover:from-lime-300 tracking-wide text-white">
                         <span class="ml-2">Explore More</span>
                     </a> */}
-                    <span className='px-20 py-4 bg-gradient-to-r from-emerald-200 to-lime-300 rounded-md cursor-pointer bg-gradient-to-r hover:from-lime-300 hover:to-emerald-200 transition-all duration-300'>Explore More</span>
+                    <a href = "#ourwork" className='px-20 py-4 bg-gradient-to-r from-emerald-200 to-lime-300 rounded-md cursor-pointer bg-gradient-to-r hover:from-lime-300 hover:to-emerald-200 transition-all duration-300'>Explore More</a>
 
 
                 </div>

@@ -12,7 +12,7 @@ const OurWork = () => {
 });
 
     return (
-        <div className='mt-10 md:mt-20'>
+        <div className='mt-10 md:mt-20' id="ourwork">
             <h1 className='mx-auto text-5xl text-center font-bold mb-10 md:mb-20'>Our Work</h1>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-y-4 gap-y-10 px-10 mb-20 md:mb-48'>

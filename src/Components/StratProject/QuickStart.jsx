@@ -20,11 +20,11 @@ const QuickStart = () => {
                   </svg>
                 </div>
                 <div
-                  class="relative grid grid-cols-1 text-center gap-y-8 sm:gap-y-10 md:gap-y-12 md:grid-cols-3 gap-x-12">
+                  class="relative grid grid-cols-1 text-center gap-y-8 sm:gap-y-10 md:gap-y-12 md:grid-cols-4 gap-x-12">
                   <div>
                     <div
-                      class="flex items-center justify-center w-16 h-16 mx-auto bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                      <span class="text-xl font-semibold text-gray-100 dark:text-gray-200 bg-gradient-to-r from-emerald-200 to-lime-300">1</span>
+                      class="flex items-center justify-center w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
+                      <span class="text-xl font-semibold text-gray-100 dark:text-gray-200 ">1</span>
                     </div>
                     <h3
                       class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
@@ -36,8 +36,8 @@ const QuickStart = () => {
                   </div>
                   <div>
                     <div
-                      class="flex items-center justify-center w-16 h-16 mx-auto bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                      <span class="text-xl font-semibold text-gray-700 dark:text-gray-200">2</span>
+                      class="flex items-center relative top-4 justify-center w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
+                      <span class="text-xl font-semibold text-gray-100 dark:text-gray-200">2</span>
                     </div>
                     <h3
                       class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
@@ -49,15 +49,29 @@ const QuickStart = () => {
                   </div>
                   <div>
                     <div
-                      class="flex items-center justify-center w-16 h-16 mx-auto bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                      <span class="text-xl font-semibold text-gray-700 dark:text-gray-200">3</span>
+                      class="flex items-center justify-center relative bottom-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
+                      <span class="text-xl font-semibold text-gray-100 dark:text-gray-200">3</span>
                     </div>
                     <h3
                       class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
-                      Download
+                      Start Your Work
                     </h3>
                     <p class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
-                      Download zip of all variations
+                      We will start the work as per your requirements & provide you regular updates & reports.
+                    </p>
+                  </div>
+
+                     <div>
+                    <div
+                      class="flex items-center justify-center relative top-4 w-16 h-16 mx-auto bg-gradient-to-r from-emerald-200 to-lime-300 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
+                      <span class="text-xl font-semibold text-gray-100 dark:text-gray-200">4</span>
+                    </div>
+                    <h3
+                      class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
+                      Grow With US
+                    </h3>
+                    <p class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
+                     Doc-Labz will do its best to grow your business and make you stand firm in your respective industry
                     </p>
                   </div>
 
