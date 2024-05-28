@@ -17,7 +17,7 @@ const Footer = () => {
                             <img src={logo} class="h-20" alt="Flowbite Logo" />
                          
                         </a>
-                        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 ">
+                        <ul class="flex flex-wrap justify-center items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 ">
                             <li>
                                 <Link to={'/'} class="hover:underline me-4 md:me-6">Home</Link>
                             </li>
@@ -33,7 +33,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
-                    <span class="block text-sm text-gray-500 sm:text-center ">© 2024 <a href="" class="hover:underline text-green-500 ">Doc-Labz</a>. All Rights Reserved.</span>
+                    <span class="block text-sm text-gray-500 sm:text-center flex justify-center items-center">© 2024 <a href="" class="hover:underline text-green-500 ml-1"> Doc-Labz</a>. All Rights Reserved.</span>
                 </div>
             </footer>
 
