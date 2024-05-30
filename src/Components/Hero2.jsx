@@ -6,7 +6,16 @@ import PopUpForm from './PopUpForm';
 
 const Hero2 = () => {
     const typeRef = useRef(null);
-    const [showModal, setShowModal] = useState(true);
+    const [showModal, setShowModal] = useState(() => {
+        const isPopupShown = sessionStorage.getItem('isPopupShown');
+        return !isPopupShown;
+      });
+    
+      useEffect(() => {
+        if (showModal) {
+          sessionStorage.setItem('isPopupShown', 'true');
+        }
+      }, [showModal]);
 
     
     const closeModal = () => {
