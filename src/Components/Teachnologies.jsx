@@ -1,74 +1,106 @@
-import React from 'react'
-import { useInView } from 'react-intersection-observer';
-import 'animate.css';
-import react from '../assets/react.png'
-import node from '../assets/node.png'
-import mongo from '../assets/mongo.png'
-import typescript from '../assets/typescript.png'
-import nextjs from '../assets/nextjs.jpg'
-import js from '../assets/js.png'
-import html from '../assets/html.png'
-import css from '../assets/css.png'
-import express from '../assets/express.png'
-import aws from '../assets/aws.png'
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import react from '../assets/react.png';
+import node from '../assets/node.png';
+import mongo from '../assets/mongo.png';
+import typescript from '../assets/typescript.png';
+import nextjs from '../assets/nextjs.jpg';
+import js from '../assets/js.png';
+import html from '../assets/html.png';
+import css from '../assets/css.png';
+import express from '../assets/express.png';
+import aws from '../assets/aws.png';
 
+// Register the ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const Teachnologies = () => {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.1,
+  const itemsRef = useRef([]);
+
+  useEffect(() => {
+    // Ensure all images load before initializing animations
+    const handleImageLoad = () => {
+      itemsRef.current.forEach((item, index) => {
+        if (item) {
+          gsap.fromTo(
+            item,
+            { opacity: 0, y: 50 },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 0.8,
+              ease: 'power3.out',
+              scrollTrigger: {
+                trigger: item,
+                start: 'top 80%',
+                toggleActions: 'play reverse play reverse',
+              },
+              delay: index * 0.2,
+            }
+          );
+        }
+      });
+    };
+
+    // Check if all images are loaded
+    const images = document.querySelectorAll('img');
+    let loadedImages = 0;
+
+    images.forEach((image) => {
+      if (image.complete) {
+        loadedImages++;
+      } else {
+        image.addEventListener('load', () => {
+          loadedImages++;
+          if (loadedImages === images.length) {
+            handleImageLoad();
+          }
+        });
+      }
     });
-    return (
-        <>
-            <div>
-                <h1 className='font-semibold text-3xl md:text-5xl text-center mb-20 mt-20'> Technologies We Use</h1>
 
-                <div className='px-6 md:px-10 grid grid-cols-3 md:grid-cols-6 gap-x-2 gap-y-10'>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={react} alt="" className='w-20 h-20 ' />
-                        <p>REACT</p>
-                    </div>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={node} alt="" className='w-20 h-20' />
-                        <p>NODE JS</p>
-                    </div>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={mongo} alt="" className='w-24 h-20' />
-                        <p>MONGO DB</p>
-                    </div>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={typescript} alt="" className='w-20 h-20' />
-                        <p>TYPE SCRIPT</p>
-                    </div>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={nextjs} alt="" className='w-20 h-20 rounded-full' />
-                        <p>NEXT JS</p>
-                    </div>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={js} alt="" className='w-20 h-20 rounded-full' />
-                        <p>JAVA SCRIPT</p>
-                    </div>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={html} alt="" className='w-20 h-20 rounded-full' />
-                        <p>HTML</p>
-                    </div>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={css} alt="" className='w-20 h-20 rounded-full' />
-                        <p>CSS</p>
-                    </div>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={express} alt="" className='w-30 h-20 rounded-full' />
-                        <p>EXPRESS JS</p>
-                    </div>
-                    <div className={`flex flex-col items-center ${inView ? 'animate__animated animate__backInDown' : ''}`} ref={ref}>
-                        <img src={aws} alt="" className='w-20 h-20 rounded-full' />
-                        <p>AWS</p>
-                    </div>
-                </div>
+    if (loadedImages === images.length) {
+      handleImageLoad();
+    }
+  }, []);
+
+  return (
+    <>
+      <div>
+        <h1 className='font-semibold text-3xl md:text-5xl text-center mb-20 mt-20'>
+          Technologies We Use
+        </h1>
+
+        <div className='px-6 md:px-10 grid grid-cols-3 md:grid-cols-5 gap-x-2 gap-y-10'>
+          {[
+            { img: react, label: 'REACT' },
+            { img: node, label: 'NODE JS' },
+            { img: mongo, label: 'MONGO DB' },
+            { img: typescript, label: 'TYPE SCRIPT' },
+            { img: nextjs, label: 'NEXT JS' },
+            { img: js, label: 'JAVA SCRIPT' },
+            { img: html, label: 'HTML' },
+            { img: css, label: 'CSS' },
+            { img: express, label: 'EXPRESS JS' },
+            { img: aws, label: 'AWS' }
+          ].map((tech, index) => (
+            <div
+              key={index}
+              className='flex flex-col items-center'
+              ref={el => (itemsRef.current[index] = el)}
+            >
+              <div className='relative w-20 h-20 flex items-center justify-center'>
+                <img src={tech.img} alt={tech.label} className='object-contain w-full h-full' />
+              </div>
+              <p>{tech.label}</p>
             </div>
-        </>
-    )
-}
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Teachnologies
+export default Teachnologies;
