@@ -65,7 +65,7 @@ const OurWork = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mb-20 md:mb-20 px-10 mt-10'>
                 <div className='col-start-1 md:col-start-2'>
 
-                    <a href='https://www.referbiz.in/' target='_blank' >
+                    <a href='https://www.mentorlanguageinstitute.com/' target='_blank' >
                         <div className='relative overflow-hidden'>
                             <img src="https://laurent.qodeinteractive.com/wp-content/plugins/laurent-core/assets/img/laptop.png" alt="Laptop" className='w-full z-10' style={{ maxWidth: '100%' }} />
                             <div className='absolute top-0 left-0 w-full h-full overflow-hidden z-0'>
