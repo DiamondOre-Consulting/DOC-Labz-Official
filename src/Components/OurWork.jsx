@@ -96,7 +96,7 @@ const OurWork = () => {
                     </div>
                 </a>
 
-                <a href='https://renderboxx-redefine.onrender.com/haridwarparadise' target='_blank' >
+                <a href='https://www.redefinegroup.com/haridwarparadise' target='_blank' >
                     <div className='relative overflow-hidden'>
                         <img src="https://laurent.qodeinteractive.com/wp-content/plugins/laurent-core/assets/img/laptop.png" alt="Laptop" className='w-full z-10' style={{ maxWidth: '100%' }} />
                         <div className='absolute top-0 left-0 w-full h-full overflow-hidden z-0'>
