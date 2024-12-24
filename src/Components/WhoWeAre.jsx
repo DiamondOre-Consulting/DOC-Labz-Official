@@ -59,7 +59,7 @@ const WhoWeAre = () => {
       </Fade>
       <div className='px-0 md:px-20 mt-10 text-justify'>
         {[
-          "Doc-Labz is a premier IT consulting firm dedicated to providing exceptional services in web development, UI/UX design, and digital marketing. We specialize in crafting unique and innovative solutions tailored to meet the specific needs of our clients. Our team of experts is committed to delivering excellence in every project, ensuring client satisfaction and success. At Doc-Labz, we believe in the power of technology to transform businesses and drive growth. Whether you're looking to create a stunning website, optimize user experience, or boost your online presence, we've got you covered. With our comprehensive range of services, we help businesses thrive in the digital landscape, empowering them to reach their full potential and achieve their goals."
+          "Doc-Labz is a premier IT consulting firm dedicated to providing exceptional services in web development. We specialize in crafting unique and innovative solutions tailored to meet the specific needs of our clients. Our team of experts is committed to delivering excellence in every project, ensuring client satisfaction and success. At Doc-Labz, we believe in the power of technology to transform businesses and drive growth. Whether you're looking to create a stunning website or enhance your online presence, we've got you covered. With our comprehensive range of services, we help businesses thrive in the digital landscape, empowering them to reach their full potential and achieve their goals."
         ].map((text, index) => (
           <p key={index} ref={el => (paragraphRefs.current[index] = el)}>
             {text}

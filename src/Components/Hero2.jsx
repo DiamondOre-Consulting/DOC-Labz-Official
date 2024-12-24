@@ -54,7 +54,7 @@ const Hero2 = () => {
                     </h1>
                     <p className='mt-2 mb-6 md:mb-4 text-xl' ref={typeRef}></p>
                     {/* <p className='-mt-1 mb-4'><span className='text-yellow-500  '>B</span>it <span className='text-yellow-500'>B</span>y <span className='text-yellow-500'>B</span>it, <span className='text-yellow-500'>B</span>uilding Tommorow</p> */}
-                    <span className=' font-semibold mb-4 text-xl'>WEB DEVELOPMENT | UI/UX | DIGITAL MARKETING</span>
+                    <span className=' font-semibold mb-4 text-xl'>WEB DEVELOPMENT</span>
                     <p className='mb-8 mt-4 text-xl'> Doc-Labz, a dynamic IT consulting firm where innovation
                         and excellence converge. Our newly curated company boasts a
                         dedicated team of experts committed to delivering unparalleled.
