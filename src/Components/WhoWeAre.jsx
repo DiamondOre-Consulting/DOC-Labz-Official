@@ -54,7 +54,7 @@ const WhoWeAre = () => {
     <div className='px-10' id="about">
       <Fade cascade>
         <h1 className='text-center mx-auto text-5xl font-bold mt-20' ref={headingRef}>
-          Who We Are?
+          Who We Are?  
         </h1>
       </Fade>
       <div className='px-0 md:px-20 mt-10 text-justify'>
