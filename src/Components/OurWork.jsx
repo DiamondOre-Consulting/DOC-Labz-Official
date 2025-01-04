@@ -5,7 +5,7 @@ import referbiz from '../assets/referbiz.png'
 import mentor from '../assets/mentor.png'
 import niyor from '../assets/niyor.jpeg';
 import redefine from '../assets/redefine.jpeg';
-import portfolio from '../assets/portfolio.png';
+import portfolio from '../assets/profilelgenie.png';
 import haridwar from '../assets/haridwarparadise.jpeg';
 import coatrans from '../assets/coa-trans.png';
 import { useInView } from 'react-intersection-observer';
