@@ -144,7 +144,7 @@ const OurWork = () => {
                         </div>
                     </a>
 
-                    <a href='https://www.profilegenie.in/profile/1/ATS690' target='_blank' >
+                    <a href='https://www.profilegenie.in/profile/1/GR17' target='_blank' >
                         <div className='relative overflow-hidden'>
                             <img src="https://laurent.qodeinteractive.com/wp-content/plugins/laurent-core/assets/img/laptop.png" alt="Laptop" className='w-full z-10' style={{ maxWidth: '100%' }} />
                             <div className='absolute top-0 left-0 w-full h-full overflow-hidden z-0'>
