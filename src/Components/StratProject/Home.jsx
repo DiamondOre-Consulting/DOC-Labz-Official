@@ -37,7 +37,7 @@ const Home = () => {
     const confirmCall = window.confirm("Do you want to call us?");
 
     if (confirmCall) {
-      window.location.href = "tel:9773693017";
+      window.location.href = "tel:7838738916";
     }
   };
 
@@ -125,7 +125,7 @@ const Home = () => {
               onMouseLeave={handleMouseLeave}
             >
               <span class="" onClick={handleCall}>
-                {isHovered ? "9773693017" : "Call Us"}
+                {isHovered ? "7838738916" : "Call Us"}
               </span>
             </a>
           </div>

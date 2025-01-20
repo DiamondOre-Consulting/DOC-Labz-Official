@@ -60,7 +60,7 @@ const ContactUs = () => {
 
 
     const handleWhatsAppChat = () => {
-        const phoneNumber = "9773693017";
+        const phoneNumber = "7838738916";
         const url = `https://api.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}`;
         window.open(url, '_blank');
     };
@@ -212,7 +212,7 @@ const ContactUs = () => {
                                             <div class="ml-6 grow">
                                                 <p class="mb-2 font-bold ">Mobile</p>
                                                 <p class="text-sm text-neutral-500 cursor-pointer" onClick={handleWhatsAppChat}>
-                                                    +91 9773693017
+                                                    +91 7838738916
                                                 </p>
                                             </div>
                                         </div>
