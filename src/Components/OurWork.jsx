@@ -9,6 +9,8 @@ import portfolio from '../assets/profilelgenie.png';
 import haridwar from '../assets/haridwarparadise.jpeg';
 import coatrans from '../assets/coa-trans.png';
 import { useInView } from 'react-intersection-observer';
+import honda from '../assets/honda.png';
+import wildnibbles from '../assets/wildnibbles.png'
 import 'animate.css';
 
 const OurWork = () => {
@@ -160,7 +162,35 @@ const OurWork = () => {
 
 
 
+                    <a href='https://honda-frontend.onrender.com/' target='_blank' >
+                        <div className='relative overflow-hidden'>
+                            <img src="https://laurent.qodeinteractive.com/wp-content/plugins/laurent-core/assets/img/laptop.png" alt="Laptop" className='w-full z-10' style={{ maxWidth: '100%' }} />
+                            <div className='absolute top-0 left-0 w-full h-full overflow-hidden z-0'>
+                                <img
+                                    src={honda}
+                                    alt="Portfolio"
+                                    className="absolute top-0 left-0 w-full h-full cursor-pointer object-cover object-top transition-slow ease-in-out hover:object-bottom rounded-md"
+                                    style={{ width: '72%', height: '78%', objectFit: 'cover', top: '10%', left: '13%' }}
+                                />
+                            </div>
+                        </div>
+                    </a>
+
+
                     
+                    <a href='https://the-wild-nibbles-frontend.onrender.com/' target='_blank' >
+                        <div className='relative overflow-hidden'>
+                            <img src="https://laurent.qodeinteractive.com/wp-content/plugins/laurent-core/assets/img/laptop.png" alt="Laptop" className='w-full z-10' style={{ maxWidth: '100%' }} />
+                            <div className='absolute top-0 left-0 w-full h-full overflow-hidden z-0'>
+                                <img
+                                    src={wildnibbles}
+                                    alt="Portfolio"
+                                    className="absolute top-0 left-0 w-full h-full cursor-pointer object-cover object-top transition-slow ease-in-out hover:object-bottom rounded-md"
+                                    style={{ width: '72%', height: '78%', objectFit: 'cover', top: '10%', left: '13%' }}
+                                />
+                            </div>
+                        </div>
+                    </a>
 
             </div>
         </div>
