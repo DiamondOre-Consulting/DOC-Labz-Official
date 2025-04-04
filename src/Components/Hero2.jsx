@@ -57,7 +57,7 @@ const Hero2 = () => {
                     <span className=' font-semibold mb-4 text-xl'>WEB DEVELOPMENT</span>
                     <p className='mb-8 mt-4 text-xl'> Doc-Labz, a dynamic IT consulting firm where innovation
                         and excellence converge. Our newly curated company boasts a
-                        dedicated team of experts committed to delivering unparalleled.
+                        dedicated team of experts committed to delivering unparalleled Customer Satisfaction.
                     
                     </p>
                     {/* <a href=""
