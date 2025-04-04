@@ -56,8 +56,8 @@ const Hero2 = () => {
                     {/* <p className='-mt-1 mb-4'><span className='text-yellow-500  '>B</span>it <span className='text-yellow-500'>B</span>y <span className='text-yellow-500'>B</span>it, <span className='text-yellow-500'>B</span>uilding Tommorow</p> */}
                     <span className=' font-semibold mb-4 text-xl'>WEB DEVELOPMENT</span>
                     <p className='mb-8 mt-4 text-xl'> Doc-Labz, a dynamic IT consulting firm where innovation
-                        and excellence converge. Our newly curated company boasts a
-                        dedicated team of experts committed to delivering unparalleled Customer Satisfaction.
+                        and excellence converge. Our company boasts of a
+                        dedicated team of whiz kids who are committed to delivering unparalleled Customer Satisfaction.
                     
                     </p>
                     {/* <a href=""
