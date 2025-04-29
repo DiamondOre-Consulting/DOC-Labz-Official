@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaUsers } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import ContactUs from '../Components/ContactUs';
@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
 
-    
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	  }, []);
+
+
 const cards = [
 	{
 		icon: FaUsers,

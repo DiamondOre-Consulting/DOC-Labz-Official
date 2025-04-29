@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../Components/Hero'
 
 import Navbar from '../CommonComponents/Navbar'
@@ -16,6 +16,12 @@ import Faq from '../Components/Faq'
 import OurBestWork from '../Components/OurBestWork'
 
 const MainPage = ({language , setLanguage}) => {
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   console.log("console.log(",language)
   return (

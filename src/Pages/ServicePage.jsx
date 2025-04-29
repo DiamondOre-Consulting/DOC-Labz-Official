@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { services } from "../Hooks/services.js";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaCheckDouble } from "react-icons/fa6";
 import ContactUs from '../Components/ContactUs.jsx'
 
@@ -10,14 +10,19 @@ const ServicePage = () => {
 
   if (!service) return <div>Service not found!</div>;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 px-10 py-10 gap-x-8">
         <div className="py-4">
           <h1 className="text-3xl font-bold">{service.sec1.heading}</h1>
-          <p className="mt-4 text-gray-700 text-xl md:text-2xl">{service.sec1.content}</p>
+          <p className="mt-4 text-gray-700 text-xl md:text-2xl mb-8">{service.sec1.content}</p>
+          <Link className="px-20 py-3 bg-color1 text-white rounded-md ">Book Meating</Link>
         </div>
-        <img src={service.sec1.image} className="w-full h-96 object-contain" alt="" />
+        <img src={service?.sec1?.image} className="w-full h-96 object-contain" alt="" />
       </div>
 
       <section className="ezy__service23 light py-14 md:py-24 bg-gray-50 dark:bg-[#0b1727] text-zinc-900 dark:text-white">
@@ -66,15 +71,15 @@ const ServicePage = () => {
         </div>
       </section>
 
-      <div className="flex flex-col py-10 px-2 md:px-10 gap-y-10">
+      <div className="flex flex-col py-10 w-full px-2 md:px-10 gap-y-10">
         {service?.features?.map((ele, index) => (
           <div
-            className={`flex flex-col md:flex-row md:gap-y-0 gap-y-4 ${
-              index%2 === 0 ? "flex-row-reverse justify-center items-center" : "justify-center items-center"
+            className={`flex flex-col md:flex-row w-full md:gap-y-0 gap-y-4 ${
+              index%2 == 0 ? "md:flex-row-reverse justify-center items-center" : "justify-center items-center"
             }  p-4 `}
           >
             <div className={`w-full ${
-              index % 2 === 0 ? "md:min-w-[42rem] " : "md:w-[50rem] "
+              index % 2 == 0 ? "md:w-[50%] " : "md:w-[50%] "
             } `}>
               <h1 className="text-2xl font-semibold mb-4">{ele?.heading}</h1>
               {ele?.points?.map((points) => (
@@ -87,7 +92,7 @@ const ServicePage = () => {
                 </p>
               ))}
             </div>
-            <div>
+            <div className="md:w-[45%] w-full">
               <img src={ele?.image} alt="" className="w-full " />
             </div>
           </div>

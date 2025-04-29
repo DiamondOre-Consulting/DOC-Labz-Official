@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContactUs from "../Components/ContactUs";
 import icon1 from '../assets/icons/icon1.png'
 import icon2 from '../assets/icons/icon2.png'
@@ -18,11 +18,18 @@ import icon16 from '../assets/icons/icon16.png'
 import icon17 from '../assets/icons/icon17.png'
 import icon18 from '../assets/icons/icon18.png'
 import icon19 from '../assets/icons/icon6.2.png'
+import { Link } from "react-router-dom";
 
 
 
 
 const WhomWeServe = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const industry = [
     {
       name: "E-commerce",
@@ -119,7 +126,7 @@ const WhomWeServe = () => {
         <div className="flex flex-col justify-center items-center h-full relative z-20">
           <h1 className="text-5xl text-white font-semibold">Whom We Serve</h1>
           <div className="text-white flex space-x-3 font-semibold mt-4">
-            <p>Home</p>
+            <Link to={'/'}>Home</Link>
             <p> || </p>
             <p>Whom we serve </p>
           </div>

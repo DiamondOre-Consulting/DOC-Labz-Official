@@ -5,6 +5,7 @@ import PopUpForm from "./PopUpForm";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Hero2 = ({ language }) => {
   const typeRef = useRef(null);
@@ -43,7 +44,7 @@ const Hero2 = ({ language }) => {
           <div className="text-3xl md:text-6xl flex flex-col  font-semibold  items-center text-warp justify-center space-y-2 md:space-y-6 ">
             <p className="text-center">Dive Your Business</p>
             <p  className="text-center">Forword With Our Expert</p>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-center">
               <img
                 src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-pera1.png"
                 alt=""
@@ -69,7 +70,7 @@ const Hero2 = ({ language }) => {
             Satisfaction.
           </p>
           <div data-aos="fade-up" data-aos-duration="1500" className="flex flex-col  space-y-4 md:space-y-0 md:flex-row justify-center mt-5 md:mt-10 items-center md:space-x-10  w-full">
-            <button class="group relative font-semibold text-sm md:text-xl inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-color1 border-b-color1 bg-transparent px-4 text-color1">
+            <Link to={'/about-us'} class="group relative font-semibold text-sm md:text-xl inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-color1 border-b-color1 bg-transparent px-4 text-color1">
               <span class="relative inline-flex overflow-hidden">
                 <div class="absolute origin-bottom transition duration-500 [transform:translateX(-150%)_skewX(33deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
                  Explore More
@@ -78,10 +79,11 @@ const Hero2 = ({ language }) => {
                 Explore More
                 </div>
               </span>
-            </button>
+            </Link>
 
 
-            <button class="group relative font-semibold text-sm md:text-xl  inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-neutral-950 border-b-neutral-950 bg-transparent px-4 text-neutral-950">
+            <a   href="https://calendly.com/zoya-rasonline/30min"
+              target="_blank" class="group relative font-semibold text-sm md:text-xl  inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-neutral-950 border-b-neutral-950 bg-transparent px-4 text-neutral-950">
               <span class="relative inline-flex overflow-hidden">
                 <div class="absolute origin-bottom transition duration-500 [transform:translateX(-150%)_skewX(33deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
                 Book Meeting
@@ -90,7 +92,7 @@ const Hero2 = ({ language }) => {
                 Book Meeting
                 </div>
               </span>
-            </button>
+            </a>
           </div>
 
 

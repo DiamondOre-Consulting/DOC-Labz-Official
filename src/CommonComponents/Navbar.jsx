@@ -20,21 +20,28 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
   const [dropdownOpen, setDropdownOpen] = useState({
     webServices: false,
     digitalMarketing: false,
-    customSoftware :  false
+    customSoftware: false,
   });
 
   const webRef = useRef();
   const digitalRef = useRef();
-  const customSoftwareRef = useRef()
+  const customSoftwareRef = useRef();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        webRef.current && !webRef.current.contains(event.target) &&
-        digitalRef.current && !digitalRef.current.contains(event.target)&&
-        customSoftware.current && !customSoftware.current.contains(event.target)
+        webRef.current &&
+        !webRef.current.contains(event.target) &&
+        digitalRef.current &&
+        !digitalRef.current.contains(event.target) &&
+        customSoftware.current &&
+        !customSoftware.current.contains(event.target)
       ) {
-        setDropdownOpen({ webServices: false, digitalMarketing: false  , customSoftware : false});
+        setDropdownOpen({
+          webServices: false,
+          digitalMarketing: false,
+          customSoftware: false,
+        });
       }
     };
 
@@ -44,15 +51,12 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
 
   const handleDropdownToggle = (type) => {
     setDropdownOpen((prev) => ({
-      webServices: type === 'webServices' ? !prev.webServices : false,
-      digitalMarketing: type === 'digitalMarketing' ? !prev.digitalMarketing : false,
-      customSoftware:type === 'customSoftware' ? !prev.customSoftware:false
+      webServices: type === "webServices" ? !prev.webServices : false,
+      digitalMarketing:
+        type === "digitalMarketing" ? !prev.digitalMarketing : false,
+      customSoftware: type === "customSoftware" ? !prev.customSoftware : false,
     }));
   };
-
-  
- 
-
 
   return (
     <ul
@@ -80,7 +84,7 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
           </Link>
         </li>
       ))}
-     <li className="relative" ref={webRef}>
+      <li className="relative" ref={webRef}>
         <button
           className="flex items-center gap-1 px-2 text-black hover:text-color1 lg:hover:text-color1"
           onMouseEnter={() => handleDropdownToggle("webServices")}
@@ -98,25 +102,37 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
           onClick={() => setIsOpen(false)}
           onMouseLeave={() => handleDropdownToggle("")}
         >
-           <li role="menuitem">
-            <Link to="/services/1" className="block px-4 py-3 text-sm hover:bg-gray-200">
-             Web Development
+          <li role="menuitem">
+            <Link
+              to="/services/1"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+              Web Development
             </Link>
           </li>
           <li role="menuitem">
-            <Link to="/services/2" className="block px-4 py-3 text-sm hover:bg-gray-200">
-             Web Design
+            <Link
+              to="/services/2"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+              Web Design
             </Link>
           </li>
-         
+
           <li role="menuitem">
-            <Link to="/services/7" className="block px-4 py-3 text-sm hover:bg-gray-200">
+            <Link
+              to="/services/7"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
               Web Maintennance
             </Link>
           </li>
 
           <li role="menuitem">
-            <Link to="/services/8" className="block px-4 py-3 text-sm hover:bg-gray-200">
+            <Link
+              to="/services/8"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
               Web Redesign
             </Link>
           </li>
@@ -128,7 +144,7 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
           className="flex items-center gap-1 px-2 text-black hover:text-color1 lg:hover:text-color1"
           onMouseEnter={() => handleDropdownToggle("digitalMarketing")}
         >
-          Digital Marketing
+          Social Media Management
           <MdArrowDropDown />
         </button>
         <ul
@@ -142,41 +158,55 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
           onMouseLeave={() => handleDropdownToggle("")}
         >
           <li role="menuitem">
-            <Link to="/services/3" className="block px-4 py-3 text-sm hover:bg-gray-200">
+            <Link
+              to="/services/3"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
               SEO
             </Link>
           </li>
           <li role="menuitem">
-            <Link to="/services/4" className="block px-4 py-3 text-sm hover:bg-gray-200">
+            <Link
+              to="/services/4"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
               Social Media
             </Link>
           </li>
 
           <li role="menuitem">
-            <Link to="/services/5" className="block px-4 py-3 text-sm hover:bg-gray-200">
+            <Link
+              to="/services/5"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
               Product Design
             </Link>
           </li>
           <li role="menuitem">
-            <Link to="/services/9" className="block px-4 py-3 text-sm hover:bg-gray-200">
+            <Link
+              to="/services/9"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
               Blogs writing
             </Link>
           </li>
           <li role="menuitem">
-            <Link to="/services/10" className="block px-4 py-3 text-sm hover:bg-gray-200">
+            <Link
+              to="/services/10"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
               Ads Management
             </Link>
           </li>
         </ul>
       </li>
 
-
       <li className="relative" ref={customSoftwareRef}>
         <button
           className="flex items-center gap-1 px-2 text-black hover:text-color1 lg:hover:text-color1"
           onMouseEnter={() => handleDropdownToggle("customSoftware")}
         >
-         Custom Software
+          Custom Software
           <MdArrowDropDown />
         </button>
         <ul
@@ -190,11 +220,14 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
           onMouseLeave={() => handleDropdownToggle("")}
         >
           <li role="menuitem">
-            <Link to="/services/6" className="block px-4 py-3 text-sm hover:bg-gray-200">
-             ERP & CRM
+            <Link
+              to="/services/6"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+              ERP & CRM
             </Link>
           </li>
-          
+
           {/* <li role="menuitem">
             <Link to="/ads" className="block px-4 py-3 text-sm hover:bg-gray-200">
               Ads Management
@@ -202,9 +235,6 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
           </li> */}
         </ul>
       </li>
-
-
-    
     </ul>
   );
 };
@@ -232,7 +262,6 @@ const Navbar = () => {
     };
   }, []);
 
-
   return (
     <>
       <nav>
@@ -249,27 +278,40 @@ const Navbar = () => {
           </div>
           <div className="space-x-4 flex md:mt-0 mt-4 justify-center items-center">
             <Link className=" hover:underline">Privacy Policy</Link>
-            <Link className=" hover:underline">Whom We Serve</Link>
-            <Link className=" hover:underline">Book Meeting</Link>
+            <Link to={"/whom-we-serve"} className=" hover:underline">
+              Whom We Serve
+            </Link>
+            <a
+              href="https://calendly.com/zoya-rasonline/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Book Meeting
+            </a>
           </div>
         </div>
       </nav>
 
-      <nav className={` top-0 left-0 w-full z-[10000] py-4 bg-white text-zinc-900  ${
-            isSticky ? "fixed top-0 left-0 w-full  z-20" : ""
-          }`}>
+      <nav
+        className={` top-0 left-0 w-full z-[10000] py-4 bg-white text-zinc-900  ${
+          isSticky ? "fixed top-0 left-0 w-full  z-20" : ""
+        }`}
+      >
         <div className="mx-auto bg-mainRed relative z-[100000000]">
           <div className="container relative flex lg:py-1 items-center justify-between mx-auto lg:max-w-[95%]">
             <Link to={"/"} className="absolute text-3xl font-white" href="#!">
               <img src={logo} className="w-[8rem] lg:w-[10rem]" alt="" />
             </Link>
-            
-            <div className="flex flex-row items-center p-2 ml-auto lg:flex-row-reverse">
 
-              <Link to={'/contact-us'} className="hover:text-color1 lg:block hidden" >Contact Us</Link>
-              <div onClick={() => setIsOpen(false)}>
-          
-              </div>
+            <div className="flex flex-row items-center p-2 ml-auto lg:flex-row-reverse">
+              <Link
+                to={"/contact-us"}
+                className="hover:text-color1 lg:block hidden"
+              >
+                Contact Us
+              </Link>
+              <div onClick={() => setIsOpen(false)}></div>
               <button
                 className="z-20 block cursor-pointer size-10 lg:hidden"
                 type="button"
@@ -300,7 +342,6 @@ const Navbar = () => {
                 )}
               </button>
               <NavMenu routes={routes} isOpen={isOpen} setIsOpen={setIsOpen} />
-              
             </div>
           </div>
         </div>

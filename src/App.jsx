@@ -78,6 +78,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs/>}/>
             <Route path="/contact-us" element={<ContactusPage/>}/>
             <Route path="/services/:serviceId" element={<ServicePage/>}/>
+      
           </Route>
         </Routes>
         <Footer/>

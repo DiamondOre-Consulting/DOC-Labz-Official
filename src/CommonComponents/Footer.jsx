@@ -24,8 +24,8 @@ const Footer = () => {
               </p>
 
               <a
-                href="#"
-                title=""
+                 href="https://calendly.com/zoya-rasonline/30min"
+              target="_blank"
                 class="inline-flex items-center  justify-center px-6 py-4 font-semibold text-white transition-all duration-200 bg-color1 rounded-md  mt-7"
               >
                 <svg
