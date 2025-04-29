@@ -105,7 +105,7 @@ const Hero2 = ({ language }) => {
         <img src="https://seoc-html-v2.vercel.app/assets/img/elements/elements10.png" className="absolute top-48 left-0 md:block hidden" alt="" />
         <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img4.png" className="absolute -top-28 animate-bounce -left-20 md:block hidden" alt="" />
             <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img6.png" className="absolute -bottom-20  duration-0.5 -left-20 md:block hidden" alt="" />
-            <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img5.png" className="absolute top-20  duration-0.5 -right-20 md:block hidden" alt="" />
+            {/* <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img5.png" className="absolute top-20  duration-0.5 -right-20 md:block hidden" alt="" /> */}
 
       </div>
 
