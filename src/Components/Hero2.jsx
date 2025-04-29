@@ -1,93 +1,117 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Typewriter from 'typewriter-effect/dist/core';
-import hero from '..//assets/hero.svg'
-import PopUpForm from './PopUpForm';
+import React, { useEffect, useRef, useState } from "react";
+import Typewriter from "typewriter-effect/dist/core";
+import hero from "..//assets/hero.svg";
+import PopUpForm from "./PopUpForm";
+import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const Hero2 = ({ language }) => {
+  const typeRef = useRef(null);
+  const [showModal, setShowModal] = useState(() => {
+    const isPopupShown = sessionStorage.getItem("isPopupShown");
+    return !isPopupShown;
+  });
+
+  useEffect(() => {
+    if (showModal) {
+      sessionStorage.setItem("isPopupShown", "true");
+    }
+  }, [showModal]);
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
+  
 
 
-const Hero2 = () => {
-    const typeRef = useRef(null);
-    const [showModal, setShowModal] = useState(() => {
-        const isPopupShown = sessionStorage.getItem('isPopupShown');
-        return !isPopupShown;
-      });
-    
-      useEffect(() => {
-        if (showModal) {
-          sessionStorage.setItem('isPopupShown', 'true');
-        }
-      }, [showModal]);
+  useEffect(() => {
+    AOS.init({
+      duration: 500, 
+      once: false,    
+    });
+  }, []);
 
-    
-    const closeModal = () => {
-        setShowModal(false);
-      };
+  return (
+    <>
+      <div className="bg-color2 flex flex-col justify-center items-center pt-10 md:pt-20">
+        <div>
+          <div className="bg-color1/10 w-fit mx-auto  font-semibold rounded-md text-[0.9rem] text-color1 p-2 px-4 mb-4">
+            # Bit By Bit, Building Tomorrow
+          </div>
+          <div className="text-3xl md:text-6xl flex flex-col  font-semibold  items-center text-warp justify-center space-y-2 md:space-y-6 ">
+            <p className="text-center">Dive Your Business</p>
+            <p  className="text-center">Forword With Our Expert</p>
+            <div className="flex flex-wrap">
+              <img
+                src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-pera1.png"
+                alt=""
+                className="h-10 md:h-20 md:block hidden"
+              />
+              <div className="flex flex-col">
+                <p className="text-color1">Web Development</p>
+                <img
+                  className="w-full object-cover md:block hidden"
+                  src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
+                  alt=""
+              
+                />
+              </div>
+            </div>
+            <p>Solutions</p>
+          </div>
 
-    useEffect(() => {
-        const typewriter = new Typewriter(typeRef.current, {
-            loop: true,
-            delay: 75,
-        });
-
-        typewriter
-            .typeString('<span class="text-yellow-500">B</span>it ')
-            .pauseFor(500)
-            .typeString('<span class="text-yellow-500">B</span>y ')
-            .pauseFor(500)
-            .typeString('<span class="text-yellow-500">B</span>it, ')
-            .pauseFor(500)
-            .typeString('<span class="text-yellow-500">B</span>uilding Tomorrow')
-            .pauseFor(2000)
-            .deleteAll()
-            .start();
-
-        return () => {
-            typewriter.stop();
-        };
-    }, []);
-
-    return (
-        <>
-          {showModal && <PopUpForm closeModal={closeModal} setShowModal={setShowModal} />} 
-            <div className='grid md:grid-cols-2 gap-4 px-6 md:px-10 md:px-20 justify-items-center mt-10 md:mt-20 items-center'>
-                <div>
-                    <h1 className='text-4xl md:text-4xl text-gray-800 text-wrap '>Start And Grow With <span className='text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-green-400'>DOC-LABZ</span>
-                    </h1>
-                    <p className='mt-2 mb-6 md:mb-4 text-xl' ref={typeRef}></p>
-                    {/* <p className='-mt-1 mb-4'><span className='text-yellow-500  '>B</span>it <span className='text-yellow-500'>B</span>y <span className='text-yellow-500'>B</span>it, <span className='text-yellow-500'>B</span>uilding Tommorow</p> */}
-                    <span className=' font-semibold mb-4 text-xl'>WEB DEVELOPMENT</span>
-                    <p className='mb-8 mt-4 text-xl'> Doc-Labz, a dynamic IT consulting firm where innovation
-                        and excellence converge. Our company boasts of a
-                        dedicated team of whiz kids who are committed to delivering unparalleled Customer Satisfaction.
-                    
-                    </p>
-                    {/* <a href=""
-                        class="animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium mt-3 px-4 py-2 rounded-lg bg-gradient-to-r hover:from-lime-300 tracking-wide text-white">
-                        <span class="ml-2">Explore More</span>
-                    </a> */}
-                    
-                    <a href = "#ourwork" className='px-20 py-4 bg-gradient-to-r from-emerald-200 to-lime-300 rounded-md cursor-pointer bg-gradient-to-r hover:from-lime-300 hover:to-emerald-200 transition-all duration-300'>Explore More</a>
-
-
+          <p data-aos="fade-up" data-aos-duration="1000" className="text-sm px-4 md:px-0 md:max-w-xl text-center mt-10 md:mt-14  mx-auto">
+            Doc-Labz, a dynamic IT consulting firm where innovation and
+            excellence converge. Our company boasts of a dedicated team of whiz
+            kids who are committed to delivering unparalleled Customer
+            Satisfaction.
+          </p>
+          <div data-aos="fade-up" data-aos-duration="1500" className="flex flex-col  space-y-4 md:space-y-0 md:flex-row justify-center mt-5 md:mt-10 items-center md:space-x-10  w-full">
+            <button class="group relative font-semibold text-sm md:text-xl inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-color1 border-b-color1 bg-transparent px-4 text-color1">
+              <span class="relative inline-flex overflow-hidden">
+                <div class="absolute origin-bottom transition duration-500 [transform:translateX(-150%)_skewX(33deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
+                 Explore More
                 </div>
-
-                <img src={hero} alt="image" className='md:w-4/5 md:ml-10 hidden md:block' />
-
-            </div>
-            <div className='absolute top-0 right-0'>
-                <div className=' bg-green-300 md:w-60 md:h-96 mt-0 float-right rounded-bl-full rounded-tl-2xl opacity-70 z-100'></div>
-            </div>
+                <div class="transition duration-500 [transform:translateX(0%)_skewX(0deg)] group-hover:[transform:translateX(150%)_skewX(33deg)]">
+                Explore More
+                </div>
+              </span>
+            </button>
 
 
-            {/* <div className={`fixed bottom-20 md:bottom-56 z-10 right-8 `}>
-                <h1 className='w-20 h20 '>abc</h1>
-            <img id="certificateImage" src={certificate} alt="" className='h-28 w-38' />
+            <button class="group relative font-semibold text-sm md:text-xl  inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-neutral-950 border-b-neutral-950 bg-transparent px-4 text-neutral-950">
+              <span class="relative inline-flex overflow-hidden">
+                <div class="absolute origin-bottom transition duration-500 [transform:translateX(-150%)_skewX(33deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
+                Book Meeting
+                </div>
+                <div class="transition duration-500 [transform:translateX(0%)_skewX(0deg)] group-hover:[transform:translateX(150%)_skewX(33deg)]">
+                Book Meeting
+                </div>
+              </span>
+            </button>
+          </div>
 
-            </div> */}
-        </>
 
+          
+        </div>
 
+      <div className="mt-20 relative">
+      <img className="" src="https://seoc-html-v2.vercel.app/assets/img/bg/header-bg4.png" alt="" />
+      <div  data-aos="zoom-in" data-aos-duration="1200">   <img className="absolute  bottom-0  w-[14rem] md:w-[27rem] left-1/2 -translate-x-1/2" src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img7.png" alt="" /></div>
+        <img src="https://seoc-html-v2.vercel.app/assets/img/icons/sound-icons2.svg" className="absolute bottom-20 right-0 md:block hidden" alt="" />
+        <img src="https://seoc-html-v2.vercel.app/assets/img/elements/elements9.png" className="absolute top-20 left-0 md:block hidden" alt="" />
+        <img src="https://seoc-html-v2.vercel.app/assets/img/elements/elements10.png" className="absolute top-48 left-0 md:block hidden" alt="" />
+        <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img4.png" className="absolute -top-28 animate-bounce -left-20 md:block hidden" alt="" />
+            <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img6.png" className="absolute -bottom-20  duration-0.5 -left-20 md:block hidden" alt="" />
+            <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img5.png" className="absolute top-20  duration-0.5 -right-20 md:block hidden" alt="" />
 
-    )
-}
+      </div>
+
+      </div>
+    </>
+  );
+};
 
 export default Hero2;

@@ -10,19 +10,31 @@ import WorkProcess from '../Components/WorkProcess'
 import ContactUs from '../Components/ContactUs'
 import WhoWeAre from '../Components/WhoWeAre'
 import Footer from '../CommonComponents/Footer'
+import Testimonial from '../Components/Testimonial'
+import WhyChooseUs from '../Components/WhyChooseUs'
+import Faq from '../Components/Faq'
+import OurBestWork from '../Components/OurBestWork'
 
-const MainPage = () => {
+const MainPage = ({language , setLanguage}) => {
+
+  console.log("console.log(",language)
   return (
     <div className=''>
-      <Navbar/>
-       <Hero2/>
-       <Services/>
+      {/* <Navbar language={language} setLanguage={setLanguage}/> */}
+     
+       <Hero2 language={language} setLanguage={setLanguage}/>
        <WhoWeAre/>
+       <Services language={language} setLanguage={setLanguage}/>
+     
+      <WhyChooseUs/>
        <Teachnologies/>
-       <OurWork/>
+       {/* <OurWork/> */}
        <WorkProcess/>
+    <OurBestWork/>
        <ContactUs/>
-       <Footer/>
+       <Testimonial/>
+       <Faq/>
+       {/* <Footer/> */}
         
     </div>
   )

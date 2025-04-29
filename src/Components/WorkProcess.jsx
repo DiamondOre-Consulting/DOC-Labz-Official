@@ -1,80 +1,121 @@
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import React from "react";
 
 const WorkProcess = () => {
-    const processRefs = useRef([]);
-
-    useEffect(() => {
-        processRefs.current.forEach((element, index) => {
-            gsap.fromTo(
-                element,
-                { opacity: 0, y: 50 },
-                {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.8,
-                    ease: 'power3.out',
-                    scrollTrigger: {
-                        trigger: element,
-                        start: 'top 80%',
-                        toggleActions: 'play none none reverse',
-                        // Adjust the start point based on your layout
-                    },
-                    delay: index * 0.2,
-                }
-            );
-        });
-    }, []);
-
-    return (
-        <div className='mt-0 md:mt-68 mb-20 md:mb-40'>
-            <h1 className='mx-auto text-3xl md:text-5xl text-center font-bold mb-10'>Our Work Process</h1>
-            <div className='grid grid-cols-1 md:grid-cols-9 gap-0 px-10 justify-center justify-items-center content-center items-center px-20'>
-                <div
-                    className={`w-48 h-48 rounded-full flex justify-center items-center text-3xl font-bold cursor-pointer`}
-                    ref={el => processRefs.current[0] = el}
-                    style={{ backgroundImage: `url('https://thumbs.dreamstime.com/b/multiethnic-group-people-planning-ideas-41108816.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                >
-                    <span className='text-bold text-shadow-xl text-white z-50' style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>PLAN</span>
-                </div>
-                <div className={`w-1 h-20 md:w-20 md:h-1 bg-black`}></div>
-                <div
-                    className={`w-48 h-48 rounded-full flex justify-center items-center text-3xl font-bold cursor-pointer`}
-                    ref={el => processRefs.current[1] = el}
-                    style={{ backgroundImage: `url('https://media.istockphoto.com/id/1196702694/photo/designers-drawing-website-ux-app-development.jpg?s=612x612&w=0&k=20&c=nMyBxZuA19Lfow_eiUpZ1UAgibB4VJgR6t_7_e-tyMc=')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                >
-                    <span className='text-bold text-shadow-xl text-white z-50' style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>DESIGN</span>
-                </div>
-                <div className={`w-1 h-20 md:w-20 md:h-1 bg-black`}></div>
-                <div
-                    className={`w-48 h-48 rounded-full flex justify-center items-center text-3xl font-bold cursor-pointer`}
-                    ref={el => processRefs.current[2] = el}
-                    style={{ backgroundImage: `url('https://t3.ftcdn.net/jpg/03/86/83/28/360_F_386832865_KzXYSvOLzUhztbeVD5d6pi2MBMqwBGAL.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                >
-                    <span className='text-bold text-shadow-xl text-white z-50' style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>DEVELOP</span>
-                </div>
-                <div className={`w-1 h-20 md:w-20 md:h-1 bg-black`}></div>
-                <div
-                    className={`w-48 h-48 rounded-full flex justify-center items-center text-3xl font-bold cursor-pointer`}
-                    ref={el => processRefs.current[3] = el}
-                    style={{ backgroundImage: `url('https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/10/29145941/types-of-testing-1.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                >
-                    <span className='text-bold text-shadow-xl text-white z-50' style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>TESTING</span>
-                </div>
-                <div className={`w-1 h-20 md:w-20 md:h-1 bg-black`}></div>
-                <div
-                    className={`w-48 h-48 rounded-full flex justify-center items-center text-3xl font-bold cursor-pointer`}
-                    ref={el => processRefs.current[4] = el}
-                    style={{ backgroundImage: `url('https://st3.depositphotos.com/3591429/14207/i/450/depositphotos_142076814-stock-photo-diversity-people-sitting-in-circle.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                >
-                    <span className='text-bold text-shadow-xl text-white z-50' style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>LAUNCH</span>
-                </div>
-            </div>
+  return (
+    <>
+      <div className="pt-20">
+        <div className="max-w-xl space-y-2 flex flex-col justify-center items-center  mx-auto">
+          <h1 className="text-5xl  text-center text-bold">Our Work Process </h1>
+          <p className="text-center lg:px-0 px-4">
+          We follow a structured and collaborative approach, ensuring every step is aligned with your goals — from planning to execution, delivering results with precision and excellence.
+          </p>
         </div>
-    );
-}
+        <div className="relative py-14 ">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center relative">
+              <div className="flex group lg:hover:transition-40 flex-col items-center text-center w-full mt-20 md:w-1/5 z-10 relative">
+                <div className="transition-all flex flex-col  items-center duration-300 lg:group-hover:-mt-10">
+                  <div className="w-24 h-24 lg:group-hover:-mt-6 transition-all duration-300 bg-gradient-to-r from-orange-400 via-color1/90 to-color1 z-40 rounded-full flex items-center justify-center shadow-lg">
+                    <img
+                      src="https://codecrafter.co.in/assets/illustration1-BwZOR1hL.svg"
+                      className="w-10 h-10"
+                    />
+                  </div>
+
+                  <h3 className="text-lg font-bold mt-4 ">Consultation</h3>
+                  <p className="text-sm mt-2 text-gray-600 ">
+                    Understanding your vision and business needs.
+                  </p>
+                </div>
+                <div
+                  className="absolute -top-2 w-60 h-0.5  ml-[15rem] bg-gray-800 z-0 lg:block hidden"
+                  style={{ transform: "rotate(-29deg)" }}
+                ></div>
+              </div>
+
+              <div className="flex flex-col items-center text-center w-full mt-10 lg:-mt-20 group lg:-20 md:w-1/5 z-10 relative">
+                <div className="transition-all flex flex-col  items-center duration-300 lg:group-hover:-mt-10">
+                  <div className="w-24 h-24  z-40 rounded-full bg-gradient-to-r from-blue-400 via-color1/90 to-color1 flex items-center justify-center shadow-lg">
+                    <img
+                      src="https://codecrafter.co.in/assets/illustration1-BwZOR1hL.svg"
+                      className="w-10 h-10"
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold mt-4">STRATEGY</h3>
+                  <p className="text-sm mt-2 text-gray-600">
+                    Creating strategic roadmaps and allocating resources for
+                    impactful designs.
+                  </p>
+                </div>
+                <div
+                  className="absolute top-[5rem] w-64 left-[8rem] h-0.5  bg-gray-800 z-0 lg:block hidden"
+                  style={{ transform: "rotate(23deg)" }}
+                ></div>
+              </div>
+
+              <div className="flex flex-col group items-center text-center w-full mt-10 lg:mt-20 md:w-1/5 z-10 relative">
+                <div className="transition-all flex flex-col  items-center duration-300 lg:group-hover:-mt-10">
+                  <div className="w-24 h-24  z-40 bg-gradient-to-r from-pink-400 via-color1/90 to-color1 rounded-full flex items-center justify-center shadow-lg">
+                    <img
+                      src="https://codecrafter.co.in/assets/illustration1-BwZOR1hL.svg"
+                      alt="DEVELOP"
+                      className="w-10 h-10"
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold mt-4">Planning</h3>
+                  <p className="text-sm mt-2 text-gray-600">
+                    Crafting a tailored strategy and design blueprint.
+                  </p>
+                </div>
+                <div
+                  className="absolute -top-0 w-60 h-0.5 ml-[15rem] bg-gray-800 z-0 lg:block hidden"
+                  style={{ transform: "rotate(-19deg)" }}
+                ></div>
+              </div>
+
+              <div className="flex flex-col group items-center text-center w-full mt-10 lg:mt-0 mb-10 md:w-1/5 z-10 relative">
+                <div className="transition-all flex flex-col  items-center duration-300 lg:group-hover:-mt-10">
+                  <div className="w-24 z-40 h-24 bg-gradient-to-r from-color1 via-color1/90 to-indigo-400 rounded-full flex items-center justify-center shadow-lg">
+                    <img
+                      src="https://codecrafter.co.in/assets/illustration1-BwZOR1hL.svg"
+                      alt="TESTING"
+                      className="w-10 h-10"
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold mt-4">TESTING</h3>
+                  <p className="text-sm mt-2 text-gray-600">
+                    Evaluating systems, integrating tools, and enhancing team
+                    collaboration.
+                  </p>
+                </div>
+                <div
+                  className="absolute top-[5rem] w-64 left-[8rem] h-0.5  bg-gray-800 z-0 lg:block hidden"
+                  style={{ transform: "rotate(20deg)" }}
+                ></div>
+              </div>
+
+              <div className="flex flex-col group items-center text-center w-full mt-10 lg:mt-20 md:w-1/5 z-10 relative">
+                <div className="transition-all flex flex-col  items-center duration-300 lg:group-hover:-mt-10">
+                  <div className="w-24 h-24 bg-gradient-to-r from-color1 via-color1/90 to-yellow-400 rounded-full flex items-center justify-center shadow-lg">
+                    <img
+                      src="https://codecrafter.co.in/assets/illustration1-BwZOR1hL.svg"
+                      alt="DELIVER"
+                      className="w-10 h-10"
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold mt-4">DELIVER</h3>
+                  <p className="text-sm mt-2 text-gray-600">
+                    Fostering community engagement through workshops and team
+                    growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default WorkProcess;

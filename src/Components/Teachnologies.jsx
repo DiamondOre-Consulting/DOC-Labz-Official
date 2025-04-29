@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 import react from '../assets/react.png';
 import node from '../assets/node.png';
@@ -13,58 +12,57 @@ import css from '../assets/css.png';
 import express from '../assets/express.png';
 import aws from '../assets/aws.png';
 
-// Register the ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+
 
 const Teachnologies = () => {
   const itemsRef = useRef([]);
 
-  useEffect(() => {
-    // Ensure all images load before initializing animations
-    const handleImageLoad = () => {
-      itemsRef.current.forEach((item, index) => {
-        if (item) {
-          gsap.fromTo(
-            item,
-            { opacity: 0, y: 50 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 0.8,
-              ease: 'power3.out',
-              scrollTrigger: {
-                trigger: item,
-                start: 'top 80%',
-                toggleActions: 'play reverse play reverse',
-              },
-              delay: index * 0.2,
-            }
-          );
-        }
-      });
-    };
+  // useEffect(() => {
+  //   // Ensure all images load before initializing animations
+  //   const handleImageLoad = () => {
+  //     itemsRef.current.forEach((item, index) => {
+  //       if (item) {
+  //         gsap.fromTo(
+  //           item,
+  //           { opacity: 0, y: 50 },
+  //           {
+  //             opacity: 1,
+  //             y: 0,
+  //             duration: 0.8,
+  //             ease: 'power3.out',
+  //             scrollTrigger: {
+  //               trigger: item,
+  //               start: 'top 80%',
+  //               toggleActions: 'play reverse play reverse',
+  //             },
+  //             delay: index * 0.2,
+  //           }
+  //         );
+  //       }
+  //     });
+  //   };
 
-    // Check if all images are loaded
-    const images = document.querySelectorAll('img');
-    let loadedImages = 0;
+  //   // Check if all images are loaded
+  //   const images = document.querySelectorAll('img');
+  //   let loadedImages = 0;
 
-    images.forEach((image) => {
-      if (image.complete) {
-        loadedImages++;
-      } else {
-        image.addEventListener('load', () => {
-          loadedImages++;
-          if (loadedImages === images.length) {
-            handleImageLoad();
-          }
-        });
-      }
-    });
+  //   images.forEach((image) => {
+  //     if (image.complete) {
+  //       loadedImages++;
+  //     } else {
+  //       image.addEventListener('load', () => {
+  //         loadedImages++;
+  //         if (loadedImages === images.length) {
+  //           handleImageLoad();
+  //         }
+  //       });
+  //     }
+  //   });
 
-    if (loadedImages === images.length) {
-      handleImageLoad();
-    }
-  }, []);
+  //   if (loadedImages === images.length) {
+  //     handleImageLoad();
+  //   }
+  // }, []);
 
   return (
     <>

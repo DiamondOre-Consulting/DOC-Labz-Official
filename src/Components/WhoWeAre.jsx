@@ -1,70 +1,42 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Fade } from 'react-awesome-reveal';
-
-// Register the ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+import React, { useEffect, useRef } from "react";
 
 const WhoWeAre = () => {
-  // Create refs for the heading and paragraph elements
-  const headingRef = useRef(null);
-  const paragraphRefs = useRef([]);
-
-  useEffect(() => {
-    // Create a GSAP animation for the heading
-    gsap.fromTo(
-      headingRef.current,
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: headingRef.current,
-          start: 'top 80%', // Start animation when the top of the heading reaches 80% of the viewport height
-          toggleActions: 'play reverse play reverse',
-        },
-      }
-    );
-
-    // Create GSAP animations for each paragraph
-    paragraphRefs.current.forEach((paragraph, index) => {
-      gsap.fromTo(
-        paragraph,
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          delay: index * 0.2, // Stagger animations
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: paragraph,
-            start: 'top 90%', // Start animation when the top of the paragraph reaches 90% of the viewport height
-            toggleActions: 'play reverse play reverse',
-          },
-        }
-      );
-    });
-  }, []);
+ 
 
   return (
-    <div className='px-10' id="about">
-      <Fade cascade>
-        <h1 className='text-center mx-auto text-5xl font-bold mt-20' ref={headingRef}>
-          Who We Are?  
-        </h1>
-      </Fade>
-      <div className='px-0 md:px-20 mt-10 text-justify'>
-        {[
-          "Doc-Labz is a premier IT consulting firm dedicated to providing exceptional services in web development. We specialize in crafting unique and innovative solutions tailored to meet the specific needs of our clients. Our team of experts is committed to delivering excellence in every project, ensuring client satisfaction and success. At Doc-Labz, we believe in the power of technology to transform businesses and drive growth. Whether you're looking to create a stunning website or enhance your online presence, we've got you covered. With our comprehensive range of services, we help businesses thrive in the digital landscape, empowering them to reach their full potential and achieve their goals."
-        ].map((text, index) => (
-          <p key={index} ref={el => (paragraphRefs.current[index] = el)}>
-            {text}
+    <div className="px-10 py-10  " id="about">
+      <div className="flex items-center flex-col lg:flex-row justify-center gap-x-8">
+        <img className="lg:max-w-[35rem]" src="https://codecrafter.co.in/assets/about-BW18IBHy.jpg" alt="" />
+        <div className="flex flex-col max-w-[35rem] items-center space-y-3">
+          <h2 className="text-3xl font-semibold text-center">
+            Best Website Development Company in Noida
+          </h2>
+          <p className="text-gray-800 text-md  text-center py-4">
+            DocLabz is Noida Premier IT Solutions Provider,
+            Specializing in Software Development, Web Designing , and Digital
+            growth strategies. We Empower businesses with scalable, innovative
+            solutions.
           </p>
-        ))}
+
+          <div className="grid  grid-cols-2 gap-x-4 pt-4">
+            <div className="bg-color1/10 rounded-xl shadow-lg shadow-color1/20 p-4 border border-color1/20">
+              <p className="font-bold text-xl  text-color1 mb-2">Our Mission</p>
+              <p className="text-sm">
+                To empower businesses with smart, scalable tech solutions that
+                drive growth and efficiency in a digital-first world.
+              </p>
+            </div>
+
+            <div className="bg-color1/10 rounded-xl shadow-lg shadow-color1/20 p-4 border border-color1/20">
+
+              <p className="font-bold text-xl  text-color1 mb-2">Our Vision</p>
+              <p className="text-sm">
+                To be a leading IT partner, enabling businesses to thrive and
+                innovate in an ever-evolving tech landscape.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

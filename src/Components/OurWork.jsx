@@ -14,10 +14,10 @@ import wildnibbles from '../assets/wildnibbles.png'
 import 'animate.css';
 
 const OurWork = () => {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.1,
-    });
+    // const [ref, inView] = useInView({
+    //     triggerOnce: true,
+    //     threshold: 0.1,
+    // });
 
     return (
         <div className='mt-10 md:mt-20' id="ourwork">

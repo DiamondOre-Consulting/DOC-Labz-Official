@@ -1,80 +1,312 @@
-import React, { useState } from 'react';
-import logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from "react";
+import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
+import logo2 from "../assets/logo2.png";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+// import React, { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
+import { MdArrowDropDown } from "react-icons/md";
 
-const Navbar = () => {
+const routes = [
+  { name: "Home", href: "/", isActive: true },
+  // { name: "Scooty", href: "/scooty", isActive: false },
+  // { name: "Accessories", href: "/accessories", isActive: false },
+  { name: "About", href: "/about-us", isActive: false },
+  // { name: "Contact", href: "/contact", isActive: false },
+];
 
-    const [isOpen, setIsOpen] = useState(false);
+const NavMenu = ({ routes, isOpen, setIsOpen }) => {
+  const [dropdownOpen, setDropdownOpen] = useState({
+    webServices: false,
+    digitalMarketing: false,
+    customSoftware :  false
+  });
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
+  const webRef = useRef();
+  const digitalRef = useRef();
+  const customSoftwareRef = useRef()
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        webRef.current && !webRef.current.contains(event.target) &&
+        digitalRef.current && !digitalRef.current.contains(event.target)&&
+        customSoftware.current && !customSoftware.current.contains(event.target)
+      ) {
+        setDropdownOpen({ webServices: false, digitalMarketing: false  , customSoftware : false});
+      }
     };
 
-    return (
-        <nav className="shadow-md bg-white fixed w-full z-50 md:px-10 px-6 relative top-0 py-1 md:py-4">
-            <div className="max-w-7xl mx-auto ">
-                <div className="flex justify-between items-center h-16">
-                    <div className="flex items-center">
-                        <div>
-                            <img src={logo} alt="Logo" className="w-32 md:w-40" />
-                        </div>
-                    </div>
-                    <div className="hidden md:flex space-x-4">
-                        <Link to={'/'} className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group">
-                            Home
-                            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-                        </Link>
-                        <a href="#about" className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group">
-                            About
-                            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-                        </a>
-                        <a href="#services" className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group">
-                            Services
-                            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-                        </a>
-                        <a href="#contactus" className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group">
-                            Contact Us
-                            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-                        </a>
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
-                        <Link to={'/start/project'} className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group bg-gradient-to-r from-emerald-200 to-lime-300">
-                            Start Your Project
-                            {/* <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span> */}
-                        </Link>
-                    </div>
-                    <div className="md:hidden">
-                        <button onClick={toggleMenu} className="text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                            <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+  const handleDropdownToggle = (type) => {
+    setDropdownOpen((prev) => ({
+      webServices: type === 'webServices' ? !prev.webServices : false,
+      digitalMarketing: type === 'digitalMarketing' ? !prev.digitalMarketing : false,
+      customSoftware:type === 'customSoftware' ? !prev.customSoftware:false
+    }));
+  };
+
+  
+ 
+
+
+  return (
+    <ul
+      className={`flex flex-col lg:flex-row lg:justify-center px-3 pt-10 lg:pt-0 lg:items-center text-3xl lg:text-base  lg:gap-3 text-[1rem] fixed z-[10000] top-20 right-0 w-[16rem] h-screen lg:static lg:h-auto  lg:w-fit lg:bg-transparent bg-white text-black transition-transform duration-300 ${
+        isOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0"
+      }`}
+      id="navbar"
+    >
+      {routes.map((route, i) => (
+        <li key={i}>
+          <Link
+            onClick={() => {
+              setIsOpen(false);
+              routes.forEach((r) => (r.isActive = false));
+              route.isActive = true;
+            }}
+            className={`px-2 hover:text-color1 lg:hover:text-color1 ${
+              route.isActive
+                ? "opacity-100 font-bold text-color1 lg:text-color1"
+                : "opacity-90 hover:opacity-100"
+            }`}
+            to={route.href}
+          >
+            {route.name}
+          </Link>
+        </li>
+      ))}
+     <li className="relative" ref={webRef}>
+        <button
+          className="flex items-center gap-1 px-2 text-black hover:text-color1 lg:hover:text-color1"
+          onMouseEnter={() => handleDropdownToggle("webServices")}
+        >
+          Web Services
+          <MdArrowDropDown />
+        </button>
+        <ul
+          className={`absolute z-20 lg:left-0 right-0 min-w-[13rem] lg:mt-[0.95rem] duration-500 lg:rounded-t-none lg:bg-mainRed bg-white shadow-xl border border-gray-200 rounded-md  text-black rounded-lg shadow-lg transition-transform ease-in-out ${
+            dropdownOpen.webServices
+              ? "scale-100 opacity-100"
+              : "scale-95 opacity-0 hidden"
+          }`}
+          role="menu"
+          onClick={() => setIsOpen(false)}
+          onMouseLeave={() => handleDropdownToggle("")}
+        >
+           <li role="menuitem">
+            <Link to="/services/1" className="block px-4 py-3 text-sm hover:bg-gray-200">
+             Web Development
+            </Link>
+          </li>
+          <li role="menuitem">
+            <Link to="/services/2" className="block px-4 py-3 text-sm hover:bg-gray-200">
+             Web Design
+            </Link>
+          </li>
+         
+          <li role="menuitem">
+            <Link to="/services/7" className="block px-4 py-3 text-sm hover:bg-gray-200">
+              Web Maintennance
+            </Link>
+          </li>
+
+          <li role="menuitem">
+            <Link to="/services/8" className="block px-4 py-3 text-sm hover:bg-gray-200">
+              Web Redesign
+            </Link>
+          </li>
+        </ul>
+      </li>
+
+      <li className="relative" ref={digitalRef}>
+        <button
+          className="flex items-center gap-1 px-2 text-black hover:text-color1 lg:hover:text-color1"
+          onMouseEnter={() => handleDropdownToggle("digitalMarketing")}
+        >
+          Digital Marketing
+          <MdArrowDropDown />
+        </button>
+        <ul
+          className={`absolute z-20 lg:left-0 right-0 min-w-[10rem] lg:mt-[0.95rem] duration-500 lg:rounded-t-none lg:bg-mainRed bg-white text-black rounded-lg shadow-lg transition-transform ease-in-out ${
+            dropdownOpen.digitalMarketing
+              ? "scale-100 opacity-100"
+              : "scale-95 opacity-0 hidden"
+          }`}
+          role="menu"
+          onClick={() => setIsOpen(false)}
+          onMouseLeave={() => handleDropdownToggle("")}
+        >
+          <li role="menuitem">
+            <Link to="/services/3" className="block px-4 py-3 text-sm hover:bg-gray-200">
+              SEO
+            </Link>
+          </li>
+          <li role="menuitem">
+            <Link to="/services/4" className="block px-4 py-3 text-sm hover:bg-gray-200">
+              Social Media
+            </Link>
+          </li>
+
+          <li role="menuitem">
+            <Link to="/services/5" className="block px-4 py-3 text-sm hover:bg-gray-200">
+              Product Design
+            </Link>
+          </li>
+          <li role="menuitem">
+            <Link to="/services/9" className="block px-4 py-3 text-sm hover:bg-gray-200">
+              Blogs writing
+            </Link>
+          </li>
+          <li role="menuitem">
+            <Link to="/services/10" className="block px-4 py-3 text-sm hover:bg-gray-200">
+              Ads Management
+            </Link>
+          </li>
+        </ul>
+      </li>
+
+
+      <li className="relative" ref={customSoftwareRef}>
+        <button
+          className="flex items-center gap-1 px-2 text-black hover:text-color1 lg:hover:text-color1"
+          onMouseEnter={() => handleDropdownToggle("customSoftware")}
+        >
+         Custom Software
+          <MdArrowDropDown />
+        </button>
+        <ul
+          className={`absolute lg:left-0 right-0 min-w-[10rem] lg:mt-[0.95rem] duration-500 lg:rounded-t-none lg:bg-mainRed bg-white text-black rounded-lg shadow-lg transition-transform ease-in-out ${
+            dropdownOpen.customSoftware
+              ? "scale-100 opacity-100"
+              : "scale-95 opacity-0 hidden"
+          }`}
+          role="menu"
+          onClick={() => setIsOpen(false)}
+          onMouseLeave={() => handleDropdownToggle("")}
+        >
+          <li role="menuitem">
+            <Link to="/services/6" className="block px-4 py-3 text-sm hover:bg-gray-200">
+             ERP & CRM
+            </Link>
+          </li>
+          
+          {/* <li role="menuitem">
+            <Link to="/ads" className="block px-4 py-3 text-sm hover:bg-gray-200">
+              Ads Management
+            </Link>
+          </li> */}
+        </ul>
+      </li>
+
+
+    
+    </ul>
+  );
+};
+
+NavMenu.propTypes = {
+  routes: PropTypes.array.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+};
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+  return (
+    <>
+      <nav>
+        <div className="bg-gradient-to-r from-color1 via-color1/90 to-color1 flex px-4  flex-col  md:flex-row text-xs md:text-sm justify-between md:px-10 text-white  py-2 w-full rounded-b-4 rounded-b-[1rem]">
+          <div className="flex justify-center items-center space-x-4 md:space-x-5">
+            <p className="flex items-center space-x-2">
+              <FaPhoneAlt />
+              <span> +912345678</span>
+            </p>
+            <p className="flex space-x-2 items-center ">
+              <FaEnvelope />
+              <span> abc@gmail.com</span>
+            </p>
+          </div>
+          <div className="space-x-4 flex md:mt-0 mt-4 justify-center items-center">
+            <Link className=" hover:underline">Privacy Policy</Link>
+            <Link className=" hover:underline">Whom We Serve</Link>
+            <Link className=" hover:underline">Book Meeting</Link>
+          </div>
+        </div>
+      </nav>
+
+      <nav className={` top-0 left-0 w-full z-[10000] py-4 bg-white text-zinc-900  ${
+            isSticky ? "fixed top-0 left-0 w-full  z-20" : ""
+          }`}>
+        <div className="mx-auto bg-mainRed relative z-[100000000]">
+          <div className="container relative flex lg:py-1 items-center justify-between mx-auto lg:max-w-[95%]">
+            <Link to={"/"} className="absolute text-3xl font-white" href="#!">
+              <img src={logo} className="w-[8rem] lg:w-[10rem]" alt="" />
+            </Link>
+            
+            <div className="flex flex-row items-center p-2 ml-auto lg:flex-row-reverse">
+
+              <Link to={'/contact-us'} className="hover:text-color1 lg:block hidden" >Contact Us</Link>
+              <div onClick={() => setIsOpen(false)}>
+          
+              </div>
+              <button
+                className="z-20 block cursor-pointer size-10 lg:hidden"
+                type="button"
+                id="hamburger"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                {isOpen ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-color1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                ) : (
+                  <>
+                    <div className="h-0.5 w-7 bg-color1 mb-1" />
+                    <div className="h-0.5 w-7 bg-color1 mb-1" />
+                    <div className="h-0.5 w-7 bg-color1" />
+                  </>
+                )}
+              </button>
+              <NavMenu routes={routes} isOpen={isOpen} setIsOpen={setIsOpen} />
+              
             </div>
-            {isOpen && (
-                <div className="md:hidden bg-white">
-                    <div className="px-2 items-center flex flex-col justify-cneter pt-2 pb-3 space-y-1 sm:px-3">
-                        <Link to={'/'} className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
-                            Home
-                        </Link>
-                        <a href="#about" className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
-                            About
-                        </a>
-                        <a href="#services" className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
-                            Services
-                        </a>
-                        <a href="#contactus" className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
-                            Contact
-                        </a>
-                        <Link to={'/start/project'} className="text-gray-700 px-3 py-2 rounded-md text-sm font-medium relative group bg-gradient-to-r from-emerald-200 to-lime-300">
-                            Start Your Project
-                            {/* <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span> */}
-                        </Link>
-                    </div>
-                </div>
-            )}
-        </nav>
-    );
+          </div>
+        </div>
+      </nav>
+    </>
+  );
 };
 
 export default Navbar;
