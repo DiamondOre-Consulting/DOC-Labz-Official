@@ -22,11 +22,13 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
     webServices: false,
     digitalMarketing: false,
     customSoftware: false,
+    ourProducts: false,
   });
 
   const webRef = useRef();
   const digitalRef = useRef();
   const customSoftwareRef = useRef();
+  const ourProductsRef = useRef();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -35,13 +37,16 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
         !webRef.current.contains(event.target) &&
         digitalRef.current &&
         !digitalRef.current.contains(event.target) &&
-        customSoftware.current &&
-        !customSoftware.current.contains(event.target)
+        customSoftwareRef.current &&
+        !customSoftwareRef.current.contains(event.target) &&
+        ourProductsRef.current &&
+        !ourProductsRef.current.contains(event.target)
       ) {
         setDropdownOpen({
           webServices: false,
           digitalMarketing: false,
           customSoftware: false,
+          ourProducts: false,
         });
       }
     };
@@ -56,6 +61,7 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
       digitalMarketing:
         type === "digitalMarketing" ? !prev.digitalMarketing : false,
       customSoftware: type === "customSoftware" ? !prev.customSoftware : false,
+      ourProducts: type === "ourProducts" ? !prev.ourProducts : false,
     }));
   };
 
@@ -237,7 +243,101 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
         </ul>
       </li>
 
-      <Link to={'/contact-us'} className="px-2 md:hidden cursor-pointer hover:text-color1 lg:hover:text-color1">Contact Us</Link>
+      {/* <li className="relative" ref={ourProductsRef}>
+        <button
+          className="flex items-center gap-1 px-2 text-black hover:text-color1 lg:hover:text-color1"
+          onMouseEnter={() => handleDropdownToggle("ourProducts")}
+        >
+          Our Products
+          <MdArrowDropDown />
+        </button>
+        <ul
+          className={`absolute lg:left-0 right-0 min-w-[14rem] lg:mt-[0.95rem] duration-500 lg:rounded-t-none lg:bg-mainRed bg-white text-black rounded-lg shadow-lg transition-transform ease-in-out ${
+            dropdownOpen.ourProducts
+              ? "scale-100 opacity-100"
+              : "scale-95 opacity-0 hidden"
+          }`}
+          role="menu"
+          onClick={() => setIsOpen(false)}
+          onMouseLeave={() => handleDropdownToggle("")}
+        >
+          <li role="menuitem">
+            <Link
+              to="/services/6"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+              Save Contact Keychain
+            </Link>
+          </li>
+          <li role="menuitem">
+            <Link
+              to="/services/6"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+              NFC Business Card
+            </Link>
+          </li>
+
+          <li role="menuitem">
+            <Link
+              to="/services/6"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+              NFC Smart Ring
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/services/6"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+              Premium Metal NFC Business Card
+            </Link>
+          </li>
+
+
+          <li>
+            <Link
+              to="/services/6"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+            QR POp-Up Sticker
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/services/6"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+             Landing Page
+            </Link>
+          </li>
+
+
+          <li>
+            <Link
+              to="/services/6"
+              className="block px-4 py-3 text-sm hover:bg-gray-200"
+            >
+             Dynamic catalogue
+            </Link>
+          </li>
+
+
+
+
+
+        </ul>
+      </li> */}
+
+      <Link
+        to={"/contact-us"}
+        className="px-2 md:hidden cursor-pointer hover:text-color1 lg:hover:text-color1"
+      >
+        Contact Us
+      </Link>
     </ul>
   );
 };
@@ -285,11 +385,11 @@ const Navbar = () => {
               Whom We Serve
             </Link>
             <Link
-           to={'/book-meeting'}
+              to={"/book-meeting"}
               rel="noopener noreferrer"
               className="hover:underline cursor-pointer"
             >
-           Book Meeting
+              Book Meeting
             </Link>
           </div>
         </div>

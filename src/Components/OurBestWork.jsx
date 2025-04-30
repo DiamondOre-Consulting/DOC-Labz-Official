@@ -36,7 +36,7 @@ const OurBestWork = () => {
   ];
 
   return (
-    <div className="w-full  mx-auto bg-gray-100 my-10 pb-10">
+    <div className="w-full flex flex-col items-center justify-center mx-auto bg-gray-100 my-10 pb-10">
 
 
       <div className="py-10 w-full lg:max-w-xl mx-auto font-semibold space-y-4">
@@ -92,7 +92,10 @@ const OurBestWork = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+    
       </div> 
+      <Link className="px-20 py-4 mx-auto mt-10 text-center rounded-md text-white  bg-color1/80">Explore More</Link>
     </div>
   );
 };
