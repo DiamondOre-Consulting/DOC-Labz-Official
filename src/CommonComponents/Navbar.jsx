@@ -472,7 +472,7 @@ const Navbar = ({ language, setLanguage }) => {
         
           <select
                onChange={handleLanguageChange}
-            className="px-2 py-1  w-20 mr-4 text-gray-900 rounded-md lg:block hidden"
+            className="px-2 py-1  w-24 mr-4 text-gray-900 rounded-md lg:block hidden"
           >
             <option value="en">English</option>
             <option value="hi">Hindi</option>
