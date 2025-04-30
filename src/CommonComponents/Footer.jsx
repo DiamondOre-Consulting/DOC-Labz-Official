@@ -23,9 +23,8 @@ const Footer = () => {
                 Satisfaction.
               </p>
 
-              <a
-                 href="https://calendly.com/zoya-rasonline/30min"
-              target="_blank"
+              <Link to={'/book-meeting'}
+               
                 class="inline-flex items-center  justify-center px-6 py-4 font-semibold text-white transition-all duration-200 bg-color1 rounded-md  mt-7"
               >
                 <svg
@@ -43,44 +42,42 @@ const Footer = () => {
                   />
                 </svg>
                 Book Meeting
-              </a>
+              </Link>
             </div>
 
             <div class="lg:col-span-2">
               <p class="text-base font-semibold text-gray-900">Support</p>
 
               <ul class="mt-6 space-y-5">
-                <li>
+                <Link to={'/'}>
                   <a
-                    href="#"
+                  
                     title=""
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
                     Home
                   </a>
-                </li>
+                </Link>
 
                 <li>
-                  <a
-                    href="#"
-                    title=""
+                  <Link
+                    to={'/about-us'}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    title=""
+                  <Link
+                   to={'/contact-us'}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <a
                     href="#"
                     title=""
@@ -88,17 +85,17 @@ const Footer = () => {
                   >
                     Privacy Policy
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
             <div class="lg:col-span-2">
               <p class="text-base font-semibold text-gray-900">
-                Whom We Server
+                Whom We Serve
               </p>
 
               <ul class="mt-6 space-y-4">
-                <li>
+                <Link to={'/whom-we-serve'}>
                   <a
                     href="#"
                     title=""
@@ -106,30 +103,26 @@ const Footer = () => {
                   >
                     Health Care
                   </a>
-                </li>
+                </Link>
 
                 <li>
-                  <a
-                    href="#"
-                    title=""
+                <Link to={'/whom-we-serve'}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
                     Insurance
-                  </a>
+                  </Link>
                 </li>
 
-                <li>
-                  <a
-                    href="#"
-                    title=""
+                {/* <li>
+                <Link to={'/whom-we-serve'}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
                     {" "}
                     Terms & Conditions{" "}
-                  </a>
-                </li>
+                  </Link>
+                </li> */}
 
-                <li>
+                {/* <li>
                   <a
                     href="#"
                     title=""
@@ -138,7 +131,7 @@ const Footer = () => {
                     {" "}
                     Privacy Policy{" "}
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -147,46 +140,62 @@ const Footer = () => {
 
               <ul class="mt-6 space-y-5">
                 <li>
-                  <a
-                    href="#"
-                    title=""
+                <Link to={'/services/2'}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
                     WebSite Design
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    title=""
+                <Link to={'/services/12'}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
                      Social Media Management
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    title=""
+                <Link to={'/services/11'}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
-                    {" "}
-                    How to - Blog{" "}
-                  </a>
+                    E-Commerce Solutions
+                  </Link>
+                </li>
+              
+                <li>
+                <Link to={'/services/13'}
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                  >
+                    WordPress Development
+                  </Link>
+                </li>
+               
+
+                <li>
+                <Link to={'/services/14'}
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                  >
+                    Shopify Development
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    title=""
+                <Link to={'/services/3'}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
-                    {" "}
-                    YouTube Playlist{" "}
-                  </a>
+                    SEO
+                  </Link>
                 </li>
+
+                <li>
+                <Link to={'/services/16'}
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                  >
+                    Web/Vps Hosting
+                  </Link>
+                </li>
+
               </ul>
             </div>
 

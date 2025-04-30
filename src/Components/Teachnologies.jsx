@@ -67,9 +67,16 @@ const Teachnologies = () => {
   return (
     <>
       <div>
-        <h1 className='font-semibold text-3xl md:text-5xl text-center mb-20 mt-20'>
-          Technologies We Use
-        </h1>
+      <div className="flex py-4 flex-col justify-center items-center">
+            <h1 className = "text-center text-5xl font-semibold text-color1 mb-2 ">  Technologies We Use</h1>
+                <img
+                  className="w-fit object-cover md:block hidden mb-8"
+                  src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
+                  alt=""
+              
+                />
+            </div>
+       
 
         <div className='px-6 md:px-10 grid grid-cols-3 md:grid-cols-5 gap-x-2 gap-y-10'>
           {[

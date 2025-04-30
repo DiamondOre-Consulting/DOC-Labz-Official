@@ -40,7 +40,16 @@ const OurBestWork = () => {
 
 
       <div className="py-10 w-full lg:max-w-xl mx-auto font-semibold space-y-4">
-        <p className="text-4xl text-center">Our Best Work </p>
+      <div className="flex flex-col justify-center items-center">
+            <h1 className = "text-center text-5xl font-semibold text-color1 mb-2 ">Our Best Work</h1>
+                <img
+                  className="w-fit object-cover md:block hidden mb-8"
+                  src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
+                  alt=""
+              
+                />
+            </div>
+        {/* <p className="text-4xl text-center">Our Best Work </p> */}
         <p className="text-center text-gray-500 text-xl">DocLabz, based in Noida — Experts in Website Development, SEO, and Social Media Services.</p>
       </div>
 

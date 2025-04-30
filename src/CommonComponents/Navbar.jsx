@@ -7,6 +7,7 @@ import { FaEnvelope } from "react-icons/fa";
 // import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { MdArrowDropDown } from "react-icons/md";
+import CalendlyButton from "../Components/CalendlyButton";
 
 const routes = [
   { name: "Home", href: "/", isActive: true },
@@ -60,7 +61,7 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
 
   return (
     <ul
-      className={`flex flex-col lg:flex-row lg:justify-center px-3 pt-10 lg:pt-0 lg:items-center text-3xl lg:text-base  lg:gap-3 text-[1rem] fixed z-[10000] top-20 right-0 w-[16rem] h-screen lg:static lg:h-auto  lg:w-fit lg:bg-transparent bg-white text-black transition-transform duration-300 ${
+      className={`flex flex-col lg:flex-row lg:justify-center px-3 pt-10 lg:pt-0 lg:items-center text-3xl lg:text-base  lg:gap-3 text-[1rem] fixed z-[10000] top-20 right-0 w-[18rem] h-screen lg:static lg:h-auto  lg:w-fit lg:bg-transparent bg-white text-black transition-transform duration-300 ${
         isOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0"
       }`}
       id="navbar"
@@ -235,6 +236,8 @@ const NavMenu = ({ routes, isOpen, setIsOpen }) => {
           </li> */}
         </ul>
       </li>
+
+      <Link to={'/contact-us'} className="px-2 md:hidden cursor-pointer hover:text-color1 lg:hover:text-color1">Contact Us</Link>
     </ul>
   );
 };
@@ -269,11 +272,11 @@ const Navbar = () => {
           <div className="flex justify-center items-center space-x-4 md:space-x-5">
             <p className="flex items-center space-x-2">
               <FaPhoneAlt />
-              <span> +912345678</span>
+              <span> +91 7838738916</span>
             </p>
             <p className="flex space-x-2 items-center ">
               <FaEnvelope />
-              <span> abc@gmail.com</span>
+              <span>tech@doclabz.com</span>
             </p>
           </div>
           <div className="space-x-4 flex md:mt-0 mt-4 justify-center items-center">
@@ -281,14 +284,13 @@ const Navbar = () => {
             <Link to={"/whom-we-serve"} className=" hover:underline">
               Whom We Serve
             </Link>
-            <a
-              href="https://calendly.com/zoya-rasonline/30min"
-              target="_blank"
+            <Link
+           to={'/book-meeting'}
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="hover:underline cursor-pointer"
             >
-              Book Meeting
-            </a>
+           Book Meeting
+            </Link>
           </div>
         </div>
       </nav>

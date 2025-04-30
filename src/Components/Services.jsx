@@ -85,7 +85,7 @@ const Services = () => {
                                             style={{ color: 'currentColor' }} />
                 
                                     </div> */}
-                                    <div tabIndex="0" className="text-[1.4rem] sora-600 leading-tight">
+                                    <div tabIndex="0" className="text-[1.2rem] sora-600 leading-tight">
                                         <h2 dangerouslySetInnerHTML={{ __html: data?.title }} />
                                     </div>
                                 </div>

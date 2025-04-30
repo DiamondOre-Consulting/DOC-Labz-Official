@@ -19,8 +19,8 @@ const ServicePage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 px-10 py-10 gap-x-8">
         <div className="py-4">
           <h1 className="text-3xl font-bold">{service.sec1.heading}</h1>
-          <p className="mt-4 text-gray-700 text-xl md:text-2xl mb-8">{service.sec1.content}</p>
-          <Link className="px-20 py-3 bg-color1 text-white rounded-md ">Book Meating</Link>
+          <p className="mt-4 text-gray-700 text-xl md:text-xl mb-8">{service.sec1.content}</p>
+          <Link to={'/book-meeting'} className="px-20 py-3 bg-color1 text-white rounded-md ">Book Meating</Link>
         </div>
         <img src={service?.sec1?.image} className="w-full h-96 object-contain" alt="" />
       </div>
@@ -36,7 +36,7 @@ const ServicePage = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
             {service?.keyfeature?.map((ele, index) => (
-              <div className="bg-[#040D43] h-[18rem]  hover:bg-gradient-to-b hover:from-transparent group hover:via-color1/50 hover:to-color1 shadow-lg rounded-lg p-6 max-w-xs mx-auto hover:shadow-xl transition-all duration-500 flex flex-col items-center justify-center">
+              <div className="bg-[#040D43] h-[18rem]  hover:bg-gradient-to-b hover:from-transparent group hover:via-color1/50 hover:to-color1 shadow-lg rounded-lg p-6 mx-auto hover:shadow-xl transition-all duration-500 flex flex-col items-center justify-center">
                 {/* Icon */}
                 <div className="flex justify-center mb-4 text-2xl bg-color1 w-10 h-10 flex items-center  mx-auto group-hover:bg-white group-hover:text-color1 text-white p-4 rounded-md transition-all duration-500">
                   {index + 1}
@@ -115,12 +115,12 @@ const ServicePage = () => {
 							<p className="text-sm leading-6 mb-12">
               Begin your journey with a trusted partner in web development and  Social Media Management.
 							</p>
-							<button
-								type="submit"
+							<Link
+							to={'/book-meeting'}
 								className="bg-white text-black py-3 px-7 rounded transition"
 							>
-								Subscribe
-							</button>
+								Book meeting
+							</Link>
 						</div>
 					</div>
 				</div>

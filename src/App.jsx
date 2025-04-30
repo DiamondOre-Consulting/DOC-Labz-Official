@@ -11,6 +11,7 @@ import Footer from "./CommonComponents/Footer";
 import AboutUs from "./Pages/AboutUs";
 import ContactusPage from "./Pages/ContactusPage";
 import ServicePage from "./Pages/ServicePage";
+import CalendlyButton from "./Components/CalendlyButton";
 
 function App() {
   const [language, setLanguage] = useState("en");
@@ -78,7 +79,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs/>}/>
             <Route path="/contact-us" element={<ContactusPage/>}/>
             <Route path="/services/:serviceId" element={<ServicePage/>}/>
-      
+      <Route path='/book-meeting' element={<CalendlyButton/>}/>
           </Route>
         </Routes>
         <Footer/>

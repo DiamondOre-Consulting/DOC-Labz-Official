@@ -52,10 +52,10 @@ const WhomWeServe = () => {
       name: "Automobile",
       logo: icon5
     },
-    {
-      name: "Cement",
-      logo: icon6
-    },
+    // {
+    //   name: "Cement",
+    //   logo: icon6
+    // },
     {
       name: "Education",
       logo: icon19
@@ -99,7 +99,7 @@ const WhomWeServe = () => {
       },
       {
         name: "NGO",
-        logo: icon17
+        logo: icon12
       },
       {
         name: "Interior",
@@ -109,10 +109,10 @@ const WhomWeServe = () => {
         name: "Energy",
         logo: icon10
       },
-      {
-        name: "Energy",
-        logo: icon10
-      },
+      // {
+      //   name: "Energy",
+      //   logo: icon10
+      // },
   ];
 
   return (
@@ -133,10 +133,10 @@ const WhomWeServe = () => {
         </div>
       </section>
 
-      <div className="grid grid-cols-2 gap-x-6 p-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 p-10">
         <div>
-          <h1 className="text-6xl font-bold  pb-4">Industries We Serve</h1>
-          <p className="text-gray-600 text-2xl">
+          <h1 className="text-3xl md:text-6xl font-semibold  pb-4">Industries We Serve</h1>
+          <p className="text-gray-600 text-xl md:text-2xl md:mb-0 mb-4">
             We serve businesses across various sectors such as Healthcare,
             Energy, E-commerce, Financial Services, Real Estate, Automobile, and
             more. Trust our skilled IT professionals to bring your vision to
@@ -149,9 +149,9 @@ const WhomWeServe = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-between gap-y-4 px-10">
+      <div className="grid md:grid-cols-5 justify-between md:gap-x-4 gap-y-4 px-10">
         {industry?.map((ele) => (
-          <div className="w-60 flex bg-white text-wrap items-center space-x-4 shadow-xl  px-4 py-6">
+          <div className="w-full w-auto flex bg-white text-wrap items-center space-x-4 shadow-xl  px-4 py-6">
             <img src={ele?.logo} alt="" className="max-w-10 " />
             <p className="text-xl text-wrap overflow-wrap">{ele?.name}</p>
           </div>
