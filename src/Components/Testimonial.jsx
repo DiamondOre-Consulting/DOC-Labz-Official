@@ -7,51 +7,52 @@ const Testimonial = () => {
   const testimonialList = [
     [
       {
-        img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
-        name: "Aksay Kumar",
-        position: "CEO & Founder at EasyFrontend",
+        img: "https://cdn.vectorstock.com/i/500p/95/56/user-profile-icon-avatar-or-person-vector-45089556.jpg",
+        name: "Ritika Sharma",
+        position: "Product Manager at NexaTech",
         content:
-          "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you. It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you.",
+          "Working with Doc-Labz was a game-changer. Their innovative mindset and technical expertise helped us streamline our development process and scale faster than ever. Truly exceptional service!",
       },
       {
-        img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg",
-        name: "Sara Tailor",
-        position: "CEO & Founder at EasyFrontend",
+        img: "https://cdn.vectorstock.com/i/500p/95/56/user-profile-icon-avatar-or-person-vector-45089556.jpg",
+        name: "Mohammed Rahman",
+        position: "CTO at CloudSphere Solutions",
         content:
-          "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you.",
+          "Doc-Labz impressed us with their problem-solving skills and deep technical knowledge. They’re not just consultants—they’re true partners in digital transformation.",
       },
       {
-        img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_3.jpeg",
-        name: "John Leo",
-        position: "CEO & Founder at EasyFrontend",
+        img: "https://cdn.vectorstock.com/i/500p/95/56/user-profile-icon-avatar-or-person-vector-45089556.jpg",
+        name: "Sneha Kapoor",
+        position: "Founder at EduBridge Innovations",
         content:
-          "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you. It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you.",
+          "The team at Doc-Labz went above and beyond to ensure our platform launch was a success. Their dedication and ability to adapt to challenges made all the difference.",
       },
     ],
     [
       {
-        img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_3.jpeg",
-        name: "Aksay Kumar",
-        position: "CEO & Founder at EasyFrontend",
+        img: "https://cdn.vectorstock.com/i/500p/95/56/user-profile-icon-avatar-or-person-vector-45089556.jpg",
+        name: "Karan Mehta",
+        position: "CEO at FinEdge Pvt. Ltd.",
         content:
-          "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you. It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you.",
+          "We chose Doc-Labz for their reputation in IT consulting, and they delivered far beyond expectations. Their agile approach and client-first mindset are rare to find.",
       },
       {
-        img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg",
-        name: "Sara Tailor",
-        position: "CEO & Founder at EasyFrontend",
+        img: "https://cdn.vectorstock.com/i/500p/95/56/user-profile-icon-avatar-or-person-vector-45089556.jpg",
+        name: "Anjali Rao",
+        position: "Director of Operations at HealthVerse",
         content:
-          "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you.",
+          "Doc-Labz played a vital role in optimizing our backend systems. The professionalism and creativity of their team were truly outstanding.",
       },
       {
-        img: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
-        name: "John Leo",
-        position: "CEO & Founder at EasyFrontend",
+        img: "https://cdn.vectorstock.com/i/500p/95/56/user-profile-icon-avatar-or-person-vector-45089556.jpg",
+        name: "David Fernandes",
+        position: "Tech Lead at AutoIntelli Systems",
         content:
-          "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you. It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you.",
+          "Our collaboration with Doc-Labz has been smooth and incredibly productive. Their team is full of brilliant minds who understand both technology and business needs.",
       },
     ],
   ];
+  
   
   function ShapeOne() {
     return (
@@ -136,7 +137,7 @@ const Testimonial = () => {
                     <h4 className="text-xl font-medium">
                       {testimonial.name}
                     </h4>
-                    <p className="text-sm mb-2">{testimonial.position}</p>
+                    {/* <p className="text-sm mb-2">{testimonial.position}</p> */}
                   </div>
                 </div>
                 <p className="opacity-75 mb-2">{testimonial.content}</p>
