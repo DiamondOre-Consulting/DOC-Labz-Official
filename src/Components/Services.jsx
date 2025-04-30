@@ -30,7 +30,7 @@ const Services = () => {
         link: "/services/11"
     },
     {
-        title: "Digital Marketing <br/> Services",
+        title: " Social Media Management <br/> Services",
         icon: icon4,
         image: service4,
         link: "/services/12"

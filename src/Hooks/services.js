@@ -853,8 +853,8 @@ export const services = [
 {
   id: "12",
   sec1: {
-    heading: "Digital Marketing Services",
-    content: "Boost your brand’s online presence with our result-driven digital marketing strategies. From improving visibility to driving targeted traffic, we help businesses grow through SEO, social media, paid ads, and content marketing. Whether you're starting fresh or scaling up, we build strategies tailored to your industry and goals.",
+    heading: " Social Media Management Services",
+    content: "Boost your brand’s online presence with our result-driven  Social Media Management strategies. From improving visibility to driving targeted traffic, we help businesses grow through SEO, social media, paid ads, and content marketing. Whether you're starting fresh or scaling up, we build strategies tailored to your industry and goals.",
     image: "https://img.freepik.com/free-vector/hand-drawn-illustration-people-with-smartphone-marketing_52683-66659.jpg?t=st=1745912712~exp=1745916312~hmac=9a98809c082853bd1a599ed435042cd298a8558fcead97bab34b86dd1ba95a2b&w=826"
   },
   keyfeature: [

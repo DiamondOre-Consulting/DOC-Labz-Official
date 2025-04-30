@@ -162,7 +162,7 @@ const Footer = () => {
                     title=""
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
-                    Digital Marketing
+                     Social Media Management
                   </a>
                 </li>
 

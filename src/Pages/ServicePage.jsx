@@ -113,7 +113,7 @@ const ServicePage = () => {
 							Choose DocLabz web solution today so you can scale your tomorrow
 							</h2>
 							<p className="text-sm leading-6 mb-12">
-              Begin your journey with a trusted partner in web development and digital marketing.
+              Begin your journey with a trusted partner in web development and  Social Media Management.
 							</p>
 							<button
 								type="submit"
