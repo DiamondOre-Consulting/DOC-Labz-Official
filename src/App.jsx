@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import MainPage from "./Pages/MainPage";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import StartProjects from "./Pages/StartProjects";
 import translate from 'translate';
 import { FaArrowDown } from "react-icons/fa";
@@ -17,6 +17,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 function App() {
   const [language, setLanguage] = useState("en");
+
 
   const translateAllText = async (newLang) => {
     const body = document.querySelector("body");
@@ -59,12 +60,17 @@ function App() {
     });
   };
 
+  const location = useLocation()
+    
 
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  
+  },[location.pathname])
 
   return (
     <>
-      <Router>
-        <Navbar/>
+        <Navbar setLanguage={setLanguage} language={language}/>
         <Routes>
           <Route setLanguage={setLanguage} language={language} path="/">
             <Route
@@ -87,7 +93,6 @@ function App() {
           </Route>
         </Routes>
         <Footer/>
-      </Router>
 
 
       <div  onClick={handleScrollDown} className=" cursor-pointer fixed bottom-10 right-10 bg-white rounded-full shadow-xl p-6 text-gray-700 animate-bounce">

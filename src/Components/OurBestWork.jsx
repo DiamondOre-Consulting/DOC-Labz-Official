@@ -39,7 +39,7 @@ const OurBestWork = () => {
     <div className="w-full flex flex-col items-center justify-center mx-auto bg-gray-100 my-10 pb-10">
 
 
-      <div className="py-10 w-full lg:max-w-xl mx-auto font-semibold space-y-4">
+      <div className="py-10 w-full  lg:max-w-xl mx-auto font-semibold space-y-4">
       <div className="flex flex-col justify-center items-center">
             <h1 className = "text-center text-5xl font-semibold text-color1 mb-2 ">Our Best Work</h1>
                 <img
@@ -53,7 +53,7 @@ const OurBestWork = () => {
         <p className="text-center text-gray-500 text-xl">DocLabz, based in Noida — Experts in Website Development, SEO, and Social Media Services.</p>
       </div>
 
-      <div className="max-w-5xl mx-auto">
+      <div className="  mx-auto w-full max-w-5xl ">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -72,12 +72,12 @@ const OurBestWork = () => {
         }}
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination, Autoplay]}
-        className="mySwiper"
+        className="mySwiper "
       >
         {projects.map((project, index) => (
           <SwiperSlide
             key={index}
-            className="w-[200px] md:w-[450px] h-[150px] md:h-[260px]  rounded-xl overflow-hidden relative"
+            className="w-[250px] md:w-[450px] h-[150px] md:h-[260px]  rounded-xl overflow-hidden relative"
           >
             <Link to={project.link} target="_blank">
             <img

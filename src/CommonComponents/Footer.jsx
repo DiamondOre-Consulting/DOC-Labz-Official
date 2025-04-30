@@ -53,7 +53,7 @@ const Footer = () => {
                   <a
                   
                     title=""
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Home
                   </a>
@@ -62,7 +62,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to={'/about-us'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     About
                   </Link>
@@ -71,7 +71,7 @@ const Footer = () => {
                 <li>
                   <Link
                    to={'/contact-us'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Contact Us
                   </Link>
@@ -81,7 +81,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title=""
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Privacy Policy
                   </a>
@@ -99,7 +99,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title=""
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Health Care
                   </a>
@@ -107,7 +107,7 @@ const Footer = () => {
 
                 <li>
                 <Link to={'/whom-we-serve'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Insurance
                   </Link>
@@ -115,7 +115,7 @@ const Footer = () => {
 
                 {/* <li>
                 <Link to={'/whom-we-serve'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     {" "}
                     Terms & Conditions{" "}
@@ -126,7 +126,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title=""
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     {" "}
                     Privacy Policy{" "}
@@ -141,7 +141,7 @@ const Footer = () => {
               <ul class="mt-6 space-y-5">
                 <li>
                 <Link to={'/services/2'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     WebSite Design
                   </Link>
@@ -149,7 +149,7 @@ const Footer = () => {
 
                 <li>
                 <Link to={'/services/12'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                      Social Media Management
                   </Link>
@@ -157,7 +157,7 @@ const Footer = () => {
 
                 <li>
                 <Link to={'/services/11'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     E-Commerce Solutions
                   </Link>
@@ -165,7 +165,7 @@ const Footer = () => {
               
                 <li>
                 <Link to={'/services/13'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     WordPress Development
                   </Link>
@@ -174,7 +174,7 @@ const Footer = () => {
 
                 <li>
                 <Link to={'/services/14'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Shopify Development
                   </Link>
@@ -182,7 +182,7 @@ const Footer = () => {
 
                 <li>
                 <Link to={'/services/3'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     SEO
                   </Link>
@@ -190,7 +190,7 @@ const Footer = () => {
 
                 <li>
                 <Link to={'/services/16'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Web/Vps Hosting
                   </Link>
@@ -206,7 +206,7 @@ const Footer = () => {
                 <li>
                   <a
                   href="tel:+917838738916"
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     <CiPhone className="text-xl mr-1"/>
                     
@@ -215,7 +215,7 @@ const Footer = () => {
 
                   <a
                   href="tel:+918449625310"
-                    class="flex text-sm ml-6 text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm ml-6 text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                   
                      +91 8449625310
@@ -230,7 +230,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title=""
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     <FaRegEnvelope  className="text-xl mr-2 text-gray-400" />
                     tech@doclabz.com
@@ -242,7 +242,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title=""
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                   
                     B-127, Second Floor, B Block, Sector 63, Noida, Uttar
