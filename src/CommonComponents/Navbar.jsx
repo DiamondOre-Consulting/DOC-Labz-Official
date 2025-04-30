@@ -372,15 +372,19 @@ const Navbar = () => {
           <div className="flex justify-center items-center space-x-4 md:space-x-5">
             <p className="flex items-center space-x-2">
               <FaPhoneAlt />
-              <span> +91 7838738916</span>
+              <a href="tel:+917838738916" className="hover:underline">
+                +91 7838738916
+              </a>
             </p>
             <p className="flex space-x-2 items-center ">
               <FaEnvelope />
-              <span>tech@doclabz.com</span>
+              <a href="mailto:tech@doclabz.com" className="hover:underline">
+                tech@doclabz.com
+              </a>
             </p>
           </div>
           <div className="space-x-4 flex md:mt-0 mt-4 justify-center items-center">
-            <Link className=" hover:underline">Privacy Policy</Link>
+            <Link to={'/privacy-policy'} className=" hover:underline">Privacy Policy</Link>
             <Link to={"/whom-we-serve"} className=" hover:underline">
               Whom We Serve
             </Link>

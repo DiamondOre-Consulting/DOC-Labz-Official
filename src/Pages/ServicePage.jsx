@@ -5,14 +5,15 @@ import { FaCheckDouble } from "react-icons/fa6";
 import ContactUs from '../Components/ContactUs.jsx'
 
 const ServicePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { serviceId } = useParams();
   const service = services.find((s) => s?.id === serviceId);
 
   if (!service) return <div>Service not found!</div>;
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+ 
 
   return (
     <div>

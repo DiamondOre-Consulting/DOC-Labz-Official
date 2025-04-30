@@ -205,13 +205,25 @@ const Footer = () => {
               <ul class="mt-6 space-y-5">
                 <li>
                   <a
-                    href="#"
-                    title=""
+                  href="tel:+917838738916"
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
                   >
                     <CiPhone className="text-xl mr-1"/>
+                    
                     +91 7838738916
                   </a>
+
+                  <a
+                  href="tel:+918449625310"
+                    class="flex text-sm ml-6 text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600"
+                  >
+                  
+                     +91 8449625310
+                  </a>
+
+                  
+                  
+
                 </li>
 
                 <li>

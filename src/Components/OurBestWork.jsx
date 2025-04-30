@@ -95,7 +95,7 @@ const OurBestWork = () => {
 
     
       </div> 
-      <Link className="px-20 py-4 mx-auto mt-10 text-center rounded-md text-white  bg-color1/80">Explore More</Link>
+      <Link to={'/our-portfolio'} target="_blank" className="px-20 py-4 mx-auto mt-10 text-center rounded-md text-white  bg-color1/80">Explore More</Link>
     </div>
   );
 };

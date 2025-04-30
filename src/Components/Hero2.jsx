@@ -70,7 +70,7 @@ const Hero2 = ({ language }) => {
             Satisfaction.
           </p>
           <div data-aos="fade-up" data-aos-duration="1500" className="flex flex-col  space-y-4 md:space-y-0 md:flex-row justify-center mt-5 md:mt-10 items-center md:space-x-10  w-full">
-            <Link to={'/about-us'} class="group relative font-semibold text-sm md:text-xl inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-color1 border-b-color1 bg-transparent px-4 text-color1">
+            <Link to={'/our-portfolio'} target="_blank" class="group relative font-semibold text-sm md:text-xl inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-color1 border-b-color1 bg-transparent px-4 text-color1">
               <span class="relative inline-flex overflow-hidden">
                 <div class="absolute origin-bottom transition duration-500 [transform:translateX(-150%)_skewX(33deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
                  Explore More

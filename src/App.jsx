@@ -12,6 +12,8 @@ import AboutUs from "./Pages/AboutUs";
 import ContactusPage from "./Pages/ContactusPage";
 import ServicePage from "./Pages/ServicePage";
 import CalendlyButton from "./Components/CalendlyButton";
+import OurPortfolio from "./Pages/OurPortfolio";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 function App() {
   const [language, setLanguage] = useState("en");
@@ -80,6 +82,8 @@ function App() {
             <Route path="/contact-us" element={<ContactusPage/>}/>
             <Route path="/services/:serviceId" element={<ServicePage/>}/>
       <Route path='/book-meeting' element={<CalendlyButton/>}/>
+      <Route path="/our-portfolio"element={<OurPortfolio/>}/>
+      <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
           </Route>
         </Routes>
         <Footer/>
