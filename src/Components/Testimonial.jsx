@@ -56,7 +56,7 @@ const Testimonial = () => {
   function ShapeOne() {
     return (
       <svg
-        className="absolute bottom-0 left-0 -z-[1]"
+        className="md:block hidden absolute bottom-0 left-0 -z-[1]"
         width="404"
         height="572"
         viewBox="0 0 404 572"
@@ -78,7 +78,7 @@ const Testimonial = () => {
   function ShapeTwo() {
     return (
       <svg
-        className="absolute top-0 right-0 -z-[1]"
+        className="hidden md:block absolute top-0 right-0 -z-[1]"
         width="269"
         height="479"
         viewBox="0 0 269 479"
