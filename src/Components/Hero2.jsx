@@ -46,8 +46,8 @@ const Hero2 = ({ language }) => {
             # Bit By Bit, Building Tomorrow
           </div>
           <div className="text-3xl md:text-6xl w-full overflow-hidden flex flex-col  font-semibold  items-center text-warp justify-center space-y-2 md:space-y-6 ">
-            <p className="text-center">Dive Your Business</p>
-            <p  className="text-center">Forword With Our Expert</p>
+            <p className="text-center">Drive Your Business</p>
+            <p  className="text-center">Forward With Our Expert</p>
             <div className="flex flex-wrap justify-center">
               <img
                 src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-pera1.png"
