@@ -26,7 +26,7 @@ const CalendlyButton = () => {
                         primaryColor: '2A4CFF',
                         textColor: '040D43'
                     }}
-                    url="https://calendly.com/zoya-rasonline/30min" />
+                    url="https://calendly.com/tech-diamondore/30min" />
             </div>
         </>
     );

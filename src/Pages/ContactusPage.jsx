@@ -38,10 +38,10 @@ const ContactusPage = () => {
     // Send email using EmailJS
     emailjs
       .send(
-        "service_uqw137a",
-        "template_blasfys",
+        "service_gsvaq5j",
+        "template_2crg6s8",
         templateParams,
-        "4MtjCiOtYFQUWMHMt"
+         "NSAHsHhsyTgBAaYKj"
       )
       .then(
         (result) => {

@@ -40,10 +40,10 @@ const ContactForm = () => {
     // Send email using EmailJS
     emailjs
       .send(
-        "service_uqw137a",
-        "template_blasfys",
+        "service_gsvaq5j",
+        "template_2crg6s8",
         templateParams,
-        "4MtjCiOtYFQUWMHMt"
+        "NSAHsHhsyTgBAaYKj"
       )
       .then(
         (result) => {
@@ -84,7 +84,7 @@ const ContactForm = () => {
           <input
             type="text"
             value={formData.name} onChange={handleChange}
-            className=" bg-[#F2F6FD]  border  border-gray-500 rounded-md focus:outline-none py-1 w-full px-5"
+            className=" bg-[#F2F6FD]  border  border-gray-500 rounded-md focus:outline-none py-1 w-full px-2"
             placeholder="Your Enter Name"
             id="name" 
           />
@@ -95,7 +95,7 @@ const ContactForm = () => {
           <input
             type="text"
             value={formData.phone} onChange={handleChange}
-            className=" bg-[#F2F6FD]  border  border-gray-500 rounded-md focus:outline-none py-1 w-full px-5"
+            className=" bg-[#F2F6FD]  border  border-gray-500 rounded-md focus:outline-none py-1 w-full px-2"
             placeholder="Your Contact Number"
             id="phone" 
           />
@@ -108,7 +108,7 @@ const ContactForm = () => {
           <input
             type="text"
             value={formData.email} onChange={handleChange}
-            className=" bg-[#F2F6FD]  border  border-gray-500 rounded-md focus:outline-none py-1 w-full px-5"
+            className=" bg-[#F2F6FD]  border  border-gray-500 rounded-md focus:outline-none py-1 w-full px-2"
             placeholder="Enter Your Email"
             id="email"
           />
@@ -119,7 +119,7 @@ const ContactForm = () => {
           <input
             type="text"
             value={formData.nature} onChange={handleChange}
-            className=" bg-[#F2F6FD]  border  border-gray-500 rounded-md focus:outline-none py-1 w-full px-5"
+            className=" bg-[#F2F6FD]  border  border-gray-500 rounded-md focus:outline-none py-1 w-full px-2"
             placeholder="Enter Your Nature Of Business"
             id="nature" 
           />
@@ -130,7 +130,7 @@ const ContactForm = () => {
         <textarea
           name="message"
           value={formData.message} onChange={handleChange}
-          className=" bg-[#F2F6FD] dark:bg-[#2A384C] border border-gray-500 py-2 rounded-md focus:border focus:border-[#86b7fe] w-full px-5"
+          className=" bg-[#F2F6FD] dark:bg-[#2A384C] border border-gray-500 py-2 rounded-md focus:border focus:border-[#86b7fe] w-full px-2"
           placeholder="Briefly Describe your project needs"
           rows="4"
           id="message"
@@ -173,7 +173,7 @@ const ContactForm = () => {
                 <h2 className="text-xl font-bold text-teal-green-900 mb-4">Thank you!!</h2>
                 <p className="text-sm text-gray-600 mb-6">We will connect with you soon.</p>
                 <button
-                    className="block w-full px-4 py-2 bg-green-400 text-sm font-semibold text-white rounded-lg shadow-md  focus:outline-none "
+                    className="block w-full px-4 py-2 bg-color1 text-sm font-semibold text-white rounded-lg shadow-md  focus:outline-none "
                     onClick={handleClose}
                 >
                     Close
