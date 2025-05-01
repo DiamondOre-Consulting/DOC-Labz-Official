@@ -86,8 +86,8 @@ const Hero2 = ({ language }) => {
             </Link>
 
 
-            <a   href="https://calendly.com/zoya-rasonline/30min"
-              target="_blank" class="group relative font-semibold text-sm md:text-xl  inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-neutral-950 border-b-neutral-950 bg-transparent px-4 text-neutral-950">
+            <a   href="https://calendly.com/tech-diamondore/30min"
+             class="group relative font-semibold text-sm md:text-xl  inline-flex h-12 items-center justify-center overflow-hidden  border-l-0 border-r-0 border border-2 border-t-neutral-950 border-b-neutral-950 bg-transparent px-4 text-neutral-950">
               <span class="relative inline-flex overflow-hidden">
                 <div class="absolute origin-bottom transition duration-500 [transform:translateX(-150%)_skewX(33deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
                 Book Meeting

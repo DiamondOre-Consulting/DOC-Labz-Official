@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const WhoWeAre = () => {
+const WhoWeAre = ({language}) => {
  
 
   return (

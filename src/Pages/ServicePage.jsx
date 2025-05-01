@@ -21,7 +21,7 @@ const ServicePage = () => {
         <div className="py-4">
           <h1 className="text-3xl font-bold">{service.sec1.heading}</h1>
           <p className="mt-4 text-gray-700 text-base lg:text-base mb-8">{service.sec1.content}</p>
-          <Link to={'/book-meeting'} className="px-20 py-3 bg-color1 text-white rounded-md ">Book Meating</Link>
+          <Link to={'/book-meeting'} className="px-20 py-3 bg-color1 text-white rounded-md ">Book Meeting</Link>
         </div>
         <img src={service?.sec1?.image} className="w-full h-96 object-contain" alt="" />
       </div>
