@@ -261,7 +261,7 @@ const Footer = () => {
             </p>
 
             <ul class="flex items-center mt-5 space-x-3 md:order-3 sm:mt-0">
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   title=""
@@ -293,12 +293,12 @@ const Footer = () => {
                     <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
                   </svg>
                 </a>
-              </li>
+              </li> */}
 
               <li>
                 <a
-                  href="#"
-                  title=""
+                  href="https://www.instagram.com/doc_labz/?igsh=YzBsY25wZWM1aXNp#"
+                  target="_blank"
                   class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600"
                 >
                   <svg
@@ -314,7 +314,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   title=""
@@ -333,7 +333,7 @@ const Footer = () => {
                     ></path>
                   </svg>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

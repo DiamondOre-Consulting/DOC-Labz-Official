@@ -20,7 +20,7 @@ const ServicePage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 px-4 md:px-10 py-10 md:gap-x-8">
         <div className="py-4">
           <h1 className="text-3xl font-bold">{service.sec1.heading}</h1>
-          <p className="mt-4 text-gray-700 text-base lg:text-lg mb-8">{service.sec1.content}</p>
+          <p className="mt-4 text-gray-700 text-base lg:text-base mb-8">{service.sec1.content}</p>
           <Link to={'/book-meeting'} className="px-20 py-3 bg-color1 text-white rounded-md ">Book Meating</Link>
         </div>
         <img src={service?.sec1?.image} className="w-full h-96 object-contain" alt="" />
@@ -89,7 +89,7 @@ const ServicePage = () => {
                   <span className="text-xl text-green-700">
                     <FaCheckDouble />
                   </span>
-                  <span className="text-base lg:text-lg">{points}</span>
+                  <span className="text-base lg:text-base">{points}</span>
                 </p>
               ))}
             </div>

@@ -6,6 +6,8 @@ import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collisi
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import { FlipWords } from "../Components/ui/flip-words";
+ 
 
 const Hero2 = ({ language }) => {
   const typeRef = useRef(null);
@@ -34,14 +36,16 @@ const Hero2 = ({ language }) => {
     });
   }, []);
 
+  const words = ["Web Development", "Custom Software", "Social Media Managment", "E-Commerce Website" , "Wordpress Development" , "Shopify Development" , "Search Engine Optimization" , "Social Media Optimization", "Web/Vps Hosting"];
+
   return (
     <>
-      <div className="bg-color2 flex flex-col justify-center items-center pt-10 md:pt-20">
+      <div className="bg-color2 relative flex flex-col justify-center items-center pt-10 md:pt-20 overflow-hidden">
         <div>
           <div className="bg-color1/10 w-fit mx-auto  font-semibold rounded-md text-[0.9rem] text-color1 p-2 px-4 mb-4">
             # Bit By Bit, Building Tomorrow
           </div>
-          <div className="text-3xl md:text-6xl flex flex-col  font-semibold  items-center text-warp justify-center space-y-2 md:space-y-6 ">
+          <div className="text-3xl md:text-6xl w-full overflow-hidden flex flex-col  font-semibold  items-center text-warp justify-center space-y-2 md:space-y-6 ">
             <p className="text-center">Dive Your Business</p>
             <p  className="text-center">Forword With Our Expert</p>
             <div className="flex flex-wrap justify-center">
@@ -50,8 +54,8 @@ const Hero2 = ({ language }) => {
                 alt=""
                 className="h-10 md:h-20 md:block hidden"
               />
-              <div className="flex flex-col">
-                <p className="text-color1">Web Development</p>
+              <div className="flex flex-col justify-center items-center ">
+                <p className="text-color1 text-center">   <FlipWords words={words} /> </p>
                 <img
                   className="w-full object-cover md:block hidden"
                   src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
@@ -106,7 +110,7 @@ const Hero2 = ({ language }) => {
         <img src="https://seoc-html-v2.vercel.app/assets/img/elements/elements9.png" className="absolute top-20 left-0 md:block hidden" alt="" />
         <img src="https://seoc-html-v2.vercel.app/assets/img/elements/elements10.png" className="absolute top-48 left-0 md:block hidden" alt="" />
         <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img4.png" className="absolute -top-28 animate-bounce -left-20 md:block hidden" alt="" />
-            <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img6.png" className="absolute -bottom-20  duration-0.5 -left-20 md:block hidden" alt="" />
+            <img src="https://img.freepik.com/free-vector/webpage-template-with-code_24908-82158.jpg?uid=R177576380&ga=GA1.1.119561090.1726138664&semt=ais_hybrid&w=140" className="absolute bottom-10  duration-0.5 -left-20 md:block hidden" alt="" />
             {/* <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img5.png" className="absolute top-20  duration-0.5 -right-20 md:block hidden" alt="" /> */}
 
       </div>

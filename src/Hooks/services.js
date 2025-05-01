@@ -6,7 +6,7 @@ export const services = [
     id: "1",
     sec1: {
       heading: "Web Development",
-      content: "We specialize in building high-performance, scalable, and responsive web applications using modern technologies like Node.js, Express.js, React.js, HTML5, CSS3, Tailwind CSS, and Bootstrap. Our development ensures seamless functionality, robust performance, and excellent user experience.",
+      content: "We specialize in building high-performance, scalable, and responsive web applications using cutting-edge technologies such as Node.js, Express.js, React.js, HTML5, CSS3, Tailwind CSS, and Bootstrap. Our expert developers focus on clean, maintainable code and follow industry best practices to ensure robust backends and sleek frontends. From dynamic user interfaces to powerful server logic, we deliver solutions tailored to your business needs, ensuring seamless performance across all platforms.",
       image: web
     },
     keyfeature: [
@@ -95,7 +95,7 @@ export const services = [
     id: "2",
     sec1: {
       heading: "Web Design",
-      content: "We create visually stunning and intuitive website designs that deliver exceptional user experiences. Our focus is on blending creativity with functionality to ensure your brand leaves a lasting impression online.",
+      content: "We create visually stunning, intuitive, and user-focused website designs that deliver seamless experiences across all devices. Our process combines creativity with strategic thinking to ensure every design reflects your brand identity while optimizing usability and conversion. By leveraging the latest design tools like Figma and Adobe XD, we develop mockups and prototypes that bring your vision to life and ensure customer satisfaction through attractive and functional layouts.",
       image: "https://img.freepik.com/free-photo/web-design-technology-browsing-programming-concept_53876-163260.jpg?uid=R177576380&ga=GA1.1.119561090.1726138664&semt=ais_hybrid&w=740"
     },
     keyfeature: [
@@ -153,7 +153,7 @@ export const services = [
     id: "3",
     sec1: {
       heading: "Search Engine Optimization",
-      content: "Boost your online visibility with our expert SEO services. We specialize in optimizing websites to achieve higher search engine rankings, attract organic traffic, and drive conversions. Our data-driven approach ensures that your website is search-engine-friendly, user-friendly, and geared for long-term success.",
+      content: "Boost your website’s visibility and organic traffic with our comprehensive SEO services tailored to modern search engine algorithms. We implement a full-spectrum approach, including on-page optimization, keyword targeting, technical SEO, and content strategies to enhance your online presence. Our team focuses on sustainable growth by continuously monitoring analytics, refining techniques, and aligning SEO efforts with your business goals, ensuring lasting success in search engine rankings.",
       image: "https://img.freepik.com/free-vector/seo-analytics-team-concept-illustration_114360-9205.jpg?t=st=1745904433~exp=1745908033~hmac=4bdb227f7702652a97463432a0fd2d0668b4ba710b1e4c2e9d619a4c763f09bd&w=826"
     },
     keyfeature: [
@@ -256,7 +256,7 @@ export const services = [
     id: "4",
     sec1: {
       heading: "Social Media & Content Management",
-      content: "Maximize your brand’s presence on social media platforms with our Social Media Optimization (SMO) services. We craft strategies tailored to your business goals, helping you engage with your target audience, boost brand awareness, and increase customer loyalty. Our team optimizes your social media channels to create engaging, shareable content that resonates with your audience and drives meaningful results.",
+      content: "Maximize your brand’s presence on social media platforms with our comprehensive Social Media Optimization (SMO) services. We create tailored strategies aligned with your business objectives, helping you connect with your audience on a deeper level. Through engaging and shareable content, we boost your brand visibility, customer engagement, and loyalty. Our experts ensure consistent growth by optimizing your platforms and delivering content that resonates and performs.",
       image: "https://img.freepik.com/free-vector/gen-z-concept-illustration_114360-7628.jpg?t=st=1745905270~exp=1745908870~hmac=63fc63a476a56036b4a5fff6553f394ad2235090ebc4885207596bd130a18667&w=826"
     },
     keyfeature: [
@@ -335,7 +335,8 @@ export const services = [
     id: "5",
     sec1: {
       heading: "Product Design & Management",
-      content: "From ideation to execution, we provide comprehensive product design, redesign, and management services.",
+      content: "From ideation to execution, we offer end-to-end product design, redesign, and management services that focus on usability, innovation, and market needs. Our team ensures your product stands out with intuitive design, enhanced user experience, and performance. Whether building a new product or revamping an existing one, we work closely with you to create valuable, user-driven solutions that meet business objectives and delight customers."
+,
       image: "https://img.freepik.com/free-vector/product-presentation-concept-illustration_114360-8416.jpg?t=st=1745905334~exp=1745908934~hmac=f2d30c575e50fb5677d6b09f47b875a145a38fa48f72951bfd8537833438b5ed&w=740"
     },
     keyfeature: [
@@ -393,7 +394,8 @@ export const services = [
     id: "6",
     sec1: {
       heading: "ERP & CRM Solutions",
-      content: "Streamline your business operations and customer management with customized ERP and CRM solutions tailored to your needs.",
+      content: "Streamline your operations and customer management through custom ERP and CRM systems designed to fit your business. Our solutions enhance productivity, automate processes, and centralize data access. Whether it’s managing your workforce, inventory, finances, or customer relationships, our ERP and CRM tools provide real-time insights, improve decision-making, and support your growth with scalable, integrated, and intuitive technology solutions tailored to your goals."
+,
       image: "https://img.freepik.com/free-vector/hand-drawn-flat-design-crm-illustration_23-2149379498.jpg?t=st=1745903748~exp=1745907348~hmac=7b5687ecc393c179f886e17b7b6273eb09455ff5ab60a81dda8d26257ec79680&w=826"
     },
     keyfeature: [
@@ -451,7 +453,8 @@ export const services = [
     id: "7",
     sec1: {
       heading: "Web Maintenance",
-      content: "Keep your website secure, up-to-date, and performing at its best with our comprehensive web maintenance services. We ensure that your site stays error-free, secure, and aligned with the latest standards.",
+      content: "Keep your website secure, up-to-date, and performing optimally with our all-inclusive web maintenance services. We handle everything from regular content updates and plugin management to performance optimization and security monitoring. Our proactive approach ensures minimal downtime, data safety, and a seamless user experience. With our reliable support, your website remains fresh, functional, and aligned with evolving technologies and user expectations."
+,
       image: "https://img.freepik.com/free-vector/website-maintenance-abstract-concept-vector-illustration-website-service-webpage-seo-maintenance-web-design-corporate-site-professional-support-security-analysis-update-abstract-metaphor_335657-2295.jpg?t=st=1745903867~exp=1745907467~hmac=6b9556a9e02425fdbaf096bcc2fc8cf928b9e0b1ceb717a5d6037e6ba497bd16&w=740"
     },
     keyfeature: [
@@ -527,11 +530,14 @@ export const services = [
       }
     ]
   },
+
+
+
   {
     id: "8",
     sec1: {
       heading: "Web Redesign",
-      content: "Revitalize your website with a complete redesign focused on aesthetics, performance, and user experience. We turn outdated sites into modern, engaging platforms that better serve your audience and business goals.",
+      content: "Give your online presence a fresh start with our comprehensive web redesign services. We don’t just make your site look better—we transform it into a high-performing, visually compelling, and user-centric experience. Whether you're aiming for increased engagement, faster performance, or improved mobile responsiveness, our designs are tailored to reflect your brand's goals and connect better with your audience.",
       image: "https://img.freepik.com/free-vector/hand-drawn-flat-design-homepage-illustration_52683-81353.jpg?t=st=1745904031~exp=1745907631~hmac=cbedf512d2aabb0d78f3123a2e4bde31c5429fa747bce7be63bcc96ab3f1e6e8&w=826"
     },
     keyfeature: [
@@ -611,7 +617,7 @@ export const services = [
     id: "9",
     sec1: {
       heading: "Blogs",
-      content: "Boost your brand visibility and establish authority with well-crafted blog content. Our professional blogging services drive organic traffic, improve SEO rankings, and engage your target audience effectively.",
+      content: "Fuel your brand's growth with expertly written blogs that educate, inform, and engage. Our blogging service combines keyword-focused strategies with storytelling to boost SEO, enhance your authority, and increase site traffic. With a consistent publishing schedule and visually rich content, we ensure your blog becomes a powerful tool for connecting with your audience and improving your search engine presence.",
       image: "https://img.freepik.com/free-vector/publish-article-concept-illustration_114360-5012.jpg?t=st=1745904327~exp=1745907927~hmac=1efe0fa3e294512318bd53d90ff021553457f1fdee184f0dd4d1d264c83ca998&w=740"
     },
     keyfeature: [
@@ -692,7 +698,7 @@ export const services = [
   id: "10",
   sec1: {
     heading: "Ads Management",
-    content: "Maximize your ROI and grow your business with expertly managed advertising campaigns. From Google Ads to social media promotions, we create, optimize, and scale ad strategies that deliver real results.",
+    content: "Reach the right audience and drive more conversions with our expert ad management solutions. From Google Ads to Instagram promotions, we handle everything from strategic planning to ongoing optimization. Our data-driven approach ensures that your ads are continually refined for performance, helping you reduce costs, increase ROI, and scale your marketing impact across multiple platforms with complete transparency.",
     image: "https://img.freepik.com/free-vector/female-multitasking-work_23-2148390868.jpg?t=st=1745904141~exp=1745907741~hmac=6b6b7ee6ab5d01661bbdf92ccb539d7cb618b4987ec957c4dc5ac25c28f829b2&w=740"
   },
   keyfeature: [
@@ -770,11 +776,12 @@ export const services = [
 }
 ,
 
+
 {
   id: "11",
   sec1: {
     heading: "E-Commerce Website Development",
-    content: "We specialize in building robust, scalable, and user-friendly e-commerce websites tailored to your business needs. From seamless navigation to secure checkouts, our solutions ensure a smooth shopping experience across all devices. Designed with performance, security, and growth in mind, we help your online store attract more customers and increase conversions effectively.",
+    content: "We specialize in building robust, scalable, and user-friendly e-commerce websites tailored to your unique business needs. Whether you're a startup or an established brand, our e-commerce solutions are crafted to enhance user experience, boost conversions, and scale with your growth. With features like seamless navigation, secure checkouts, responsive design, and integrated analytics, we ensure a smooth and reliable online shopping experience that drives customer satisfaction and business success.",
     image: "https://img.freepik.com/free-vector/online-shopping-concept_52683-63898.jpg?t=st=1745911148~exp=1745914748~hmac=586ba86c1a703485eeebd1249d6c61298c48af39d8a522333404410972bfed69&w=826"
   },
   keyfeature: [
@@ -850,11 +857,12 @@ export const services = [
     }
   ]
 },
+
 {
   id: "12",
   sec1: {
     heading: " Social Media Management Services",
-    content: "Boost your brand’s online presence with our result-driven  Social Media Management strategies. From improving visibility to driving targeted traffic, we help businesses grow through SEO, social media, paid ads, and content marketing. Whether you're starting fresh or scaling up, we build strategies tailored to your industry and goals.",
+   content: "Boost your brand’s digital presence with our comprehensive Social Media Management services tailored for growth and engagement. From crafting visually appealing content to executing data-driven ad campaigns, we cover everything your brand needs to thrive on platforms like Facebook, Instagram, and LinkedIn. Whether your goal is to gain followers, drive sales, or improve interaction, our strategies are focused on achieving measurable results and long-term digital success.",
     image: "https://img.freepik.com/free-vector/hand-drawn-illustration-people-with-smartphone-marketing_52683-66659.jpg?t=st=1745912712~exp=1745916312~hmac=9a98809c082853bd1a599ed435042cd298a8558fcead97bab34b86dd1ba95a2b&w=826"
   },
   keyfeature: [
@@ -923,7 +931,7 @@ export const services = [
   id: "13",
   sec1: {
     heading: "WordPress Development Services",
-    content: "Build a powerful, scalable, and fully customized WordPress website with our expert development services. Whether you're launching a new site or redesigning an old one, we craft SEO-optimized, responsive websites that look stunning and perform seamlessly. Ideal for businesses, bloggers, and eCommerce stores alike.",
+    content: "Create a dynamic and professional web presence with our expert WordPress development services. We build high-performance, SEO-optimized, and fully responsive websites tailored to your specific goals. Whether you're a small business, blogger, or large eCommerce store, our team ensures your site is visually engaging, easy to manage, and capable of scaling. With clean code, fast load times, and plugin integration, we deliver a site that performs as beautifully as it looks.",
     image: "https://img.freepik.com/free-vector/hand-drawn-flat-design-homepage-illustration_52683-81353.jpg?t=st=1745904031~exp=1745907631~hmac=cbedf512d2aabb0d78f3123a2e4bde31c5429fa747bce7be63bcc96ab3f1e6e8&w=826"
   },
   keyfeature: [
