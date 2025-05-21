@@ -49,11 +49,11 @@ const Hero2 = ({ language }) => {
             <p className="text-center">Drive Your Business</p>
             <p  className="text-center">Forward With Our Expert</p>
             <div className="flex flex-wrap justify-center">
-              <img
+              {/* <img
                 src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-pera1.png"
                 alt=""
                 className="h-10 md:h-20 md:block hidden"
-              />
+              /> */}
               <div className="flex flex-col justify-center items-center ">
                 <p className="text-color1 text-center">   <FlipWords words={words} /> </p>
                 <img
@@ -109,7 +109,7 @@ const Hero2 = ({ language }) => {
         <img src="https://seoc-html-v2.vercel.app/assets/img/icons/sound-icons2.svg" className="absolute bottom-20 right-0 md:block hidden" alt="" />
         <img src="https://seoc-html-v2.vercel.app/assets/img/elements/elements9.png" className="absolute top-20 left-0 md:block hidden" alt="" />
         <img src="https://seoc-html-v2.vercel.app/assets/img/elements/elements10.png" className="absolute top-48 left-0 md:block hidden" alt="" />
-        <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img4.png" className="absolute -top-28 animate-bounce -left-20 md:block hidden" alt="" />
+        <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img4.png" className="absolute -top-28  -left-20 md:block hidden" alt="" />
             <img src="https://img.freepik.com/free-vector/webpage-template-with-code_24908-82158.jpg?uid=R177576380&ga=GA1.1.119561090.1726138664&semt=ais_hybrid&w=140" className="absolute bottom-10  duration-0.5 -left-20 md:block hidden" alt="" />
             {/* <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img5.png" className="absolute top-20  duration-0.5 -right-20 md:block hidden" alt="" /> */}
 
