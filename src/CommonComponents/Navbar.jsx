@@ -354,7 +354,7 @@ const NavMenu = ({ routes, isOpen, setIsOpen  , language, setLanguage }) => {
           >
             <option value="en">English</option>
             <option value="hi">Hindi</option>
-            <option value="mr">Marathi</option>
+            {/* <option value="mr">Marathi</option>
             <option value="ta">Tamil</option>
             <option value="te">Telugu</option>
             <option value="kn">Kannada</option>
@@ -370,7 +370,7 @@ const NavMenu = ({ routes, isOpen, setIsOpen  , language, setLanguage }) => {
             <option value="ja">Japanese</option>
             <option value="ko">Korean</option>
             <option value="ru">Russian</option>
-            <option value="it">Italian</option>
+            <option value="it">Italian</option> */}
 
             {/* Add more languages here */}
           </select>
@@ -476,7 +476,7 @@ const Navbar = ({ language, setLanguage }) => {
           >
             <option value="en">English</option>
             <option value="hi">Hindi</option>
-            <option value="mr">Marathi</option>
+            {/* <option value="mr">Marathi</option>
             <option value="ta">Tamil</option>
             <option value="te">Telugu</option>
             <option value="kn">Kannada</option>
@@ -492,7 +492,7 @@ const Navbar = ({ language, setLanguage }) => {
             <option value="ja">Japanese</option>
             <option value="ko">Korean</option>
             <option value="ru">Russian</option>
-            <option value="it">Italian</option>
+            <option value="it">Italian</option> */}
 
             {/* Add more languages here */}
           </select>
