@@ -14,6 +14,7 @@ import ServicePage from "./Pages/ServicePage";
 import CalendlyButton from "./Components/CalendlyButton";
 import OurPortfolio from "./Pages/OurPortfolio";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import HowWeCanHelp from "./Pages/HowWeCanHelp";
 
 function App() {
   const [language, setLanguage] = useState("en");
@@ -90,6 +91,8 @@ function App() {
       <Route path='/book-meeting' element={<CalendlyButton/>}/>
       <Route path="/our-portfolio"element={<OurPortfolio/>}/>
       <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+      <Route path="/How-We-Can-Help" element={<HowWeCanHelp/>}/>
+
           </Route>
         </Routes>
         <Footer/>

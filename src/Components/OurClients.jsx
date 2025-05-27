@@ -9,7 +9,7 @@ import c7 from "../assets/clients/c6.svg";
 import c8 from "../assets/clients/c8.webp";
 import c9 from "../assets/clients/c9.png";
 import c10 from "../assets/clients/c10.png";
-
+import c11 from '../assets/clients/greenlogo.png'
 const OurClients = () => {
   const clientLogos = [
     { logo: c1, url: "https://www.mentorlanguageinstitute.com/" },
@@ -18,7 +18,7 @@ const OurClients = () => {
     { logo: c4, url: "https://www.redefinegroup.com/" },
     { logo: c7, url: "https://virajkatyayan.in/" },
     { logo: c6, url: "https://neetusharma.in/" },
-    { logo: c8, url: "https://www.cvgenie.in/" },
+    { logo: c11, url: "https://www.cvgenie.in/" },
     { logo: c9, url: "https://raskhas.com/" },
     { logo: c10, url: "https://www.profilegenie.store/" },
   ];

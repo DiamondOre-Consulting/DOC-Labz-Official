@@ -16,6 +16,7 @@ import Faq from "../Components/Faq";
 import OurBestWork from "../Components/OurBestWork";
 import OurProducts from "../Components/OurProducts";
 import OurClients from "../Components/OurClients";
+import HowWeCanHelpYou from "../Components/HowWeCanHelpYou";
 
 const MainPage = ({ language, setLanguage }) => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const MainPage = ({ language, setLanguage }) => {
 <OurClients language={language} setLanguage={setLanguage}/>
       <WhoWeAre language={language} setLanguage={setLanguage}  />
       <Services language={language} setLanguage={setLanguage} />
+      <HowWeCanHelpYou/>
       <WhyChooseUs language={language} setLanguage={setLanguage}/>
       <Teachnologies language={language} setLanguage={setLanguage}/>
       {/* <OurWork/> */}
