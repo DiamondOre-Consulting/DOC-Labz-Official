@@ -8,46 +8,45 @@ import icon1 from "../assets/icon1.svg";
 import icon2 from "../assets/icon2.svg";
 import icon3 from "../assets/icon3.svg";
 import icon4 from "../assets/icon4.svg";
+import cs1 from "../assets/cs1.png";
+
 import { Link } from "react-router-dom";
 
 const Services = () => {
   const data = [
-
-
     {
-      title: "Website Development <br/> Services",
+      title: "Website Development <br/> ",
       icon: icon2,
       image: service2,
       link: "/services/1",
     },
     {
-      title: "Ecommerce Solution <br/> Services",
+      title: "Ecommerce Solution <br/> ",
       icon: icon1,
       image: service1,
       link: "/services/11",
     },
     {
-      title: "Social Media Management <br/> Services",
+      title: "Social Media Management <br/> ",
       icon: icon4,
       image: service4,
       link: "/services/12",
     },
     {
-      title: "Wordpress Development <br/> Services",
+      title: "Wordpress Development <br/> ",
       icon: icon4,
       image:
         "https://www.infigic.com/wp-content/uploads/2022/03/Wordpress-development-services-390x390.png",
       link: "/services/13",
     },
     {
-      title: "Shopify Development <br/> Services",
+      title: "Shopify Development <br/> ",
       icon: icon1,
       image:
         "https://dolphinwebsolution.com/wp-content/uploads/2023/08/shopify.jpg",
       link: "/services/14",
     },
-  
-  
+
     {
       title: "Web/Vps <br/> Hosting",
       icon: icon4,

@@ -11,8 +11,7 @@ import p5 from "../assets/portfolio/p5.png";
 import icon1 from "../assets/icon1.svg";
 import icon4 from "../assets/icon4.svg";
 import p4 from "../assets/portfolio/p4.png";
-
-
+import p11 from "../assets/portfolio/p11.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
@@ -44,14 +43,21 @@ const OurBestWork = () => {
       title: "Neetu Sharma Numerologist",
       icon: icon1,
       image: p5,
-      link: "/services/14",
+      link: "https://neetusharma.in/",
     },
 
     {
       title: "CV Genie",
       icon: icon4,
       image: p4,
-      link: "/services/13",
+      link: "https://www.cvgenie.in/",
+    },
+
+    {
+      title: "Profile Genie Landing Page",
+      icon: icon4,
+      image: p11,
+      link: "https://profilegenie.in/profile/1/UM99",
     },
   ];
 
