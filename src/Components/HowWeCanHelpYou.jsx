@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HowWeCanHelpYou = () => {
   return (
     <div>
-      <section className="ezy__cta2 light relative overflow-hidden py-14 md:py-24 bg-color1">
+      <section className="ezy__cta2 light relative overflow-hidden py-14 md:py-24 bg-color1/60">
         <div className="w-[400px] h-[400px] bg-white bg-opacity-5 rounded-full -m-[100px] absolute left-0 top-0"></div>
         <div className="w-[400px] h-[400px] bg-white bg-opacity-5 rounded-full -m-[100px] absolute right-0 bottom-0"></div>
 
@@ -21,7 +21,7 @@ const HowWeCanHelpYou = () => {
                   covered.
                 </p>
                 <Link
-                    to={"/How-We-Can-Help"}
+                  to={"/How-We-Can-Help"}
                   className="bg-white text-black py-3 px-7 rounded transition"
                 >
                   Know More

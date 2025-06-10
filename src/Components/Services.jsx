@@ -9,7 +9,14 @@ import icon2 from "../assets/icon2.svg";
 import icon3 from "../assets/icon3.svg";
 import icon4 from "../assets/icon4.svg";
 import cs1 from "../assets/cs1.png";
+import lineimage from "../assets/line.png";
 
+import img1 from "../assets/service11.jpg";
+import img2 from "../assets/service12.webp";
+import img3 from "../assets/service13.webp";
+import img4 from "../assets/service15.jpg";
+import img5 from "../assets/service16.webp";
+import img6 from "../assets/service14.jpg";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -17,40 +24,38 @@ const Services = () => {
     {
       title: "Website Development <br/> ",
       icon: icon2,
-      image: service2,
+      image: img5,
       link: "/services/1",
     },
     {
       title: "Ecommerce Solution <br/> ",
       icon: icon1,
-      image: service1,
+      image: img4,
       link: "/services/11",
     },
     {
       title: "Social Media Management <br/> ",
       icon: icon4,
-      image: service4,
+      image: img6,
       link: "/services/12",
     },
     {
       title: "Wordpress Development <br/> ",
       icon: icon4,
-      image:
-        "https://www.infigic.com/wp-content/uploads/2022/03/Wordpress-development-services-390x390.png",
+      image: img3,
       link: "/services/13",
     },
     {
       title: "Shopify Development <br/> ",
       icon: icon1,
-      image:
-        "https://dolphinwebsolution.com/wp-content/uploads/2023/08/shopify.jpg",
+      image: img2,
       link: "/services/14",
     },
 
     {
       title: "Web/Vps <br/> Hosting",
       icon: icon4,
-      image: "https://codecrafter.co.in/assets/Software-DtkqiIyY.jpg",
+      image: img1,
       link: "/services/16",
     },
   ];
@@ -62,7 +67,7 @@ const Services = () => {
       </h1>
       <img
         className="w-fit object-cover md:block hidden mb-8"
-        src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
+        src={lineimage}
         alt=""
       />
       <div className="grid gap-8 mt-4 grid-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -70,14 +75,14 @@ const Services = () => {
           return (
             <Link
               to={data?.link}
-              className="relative bg-white rounded-[1rem] shadow-lg overflow-hidden max-w-[24rem]  group  hover:shadow-xl"
+              className="relative bg-white rounded-[1rem] shadow-lg overflow-hidden max-w-[18rem]  group  hover:shadow-xl"
             >
               <img
                 src={data?.image}
                 alt="Service"
                 className="w-full translate-transform duration-700 group-hover:scale-[1.15] h-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-color1 via-transparent to-transparent flex items-end justify-center hover:from-[10%] hover:from-color1 hover:to-transparent transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-color1 via-transparent to-transparent flex items-end justify-center hover:from-[4%] hover:from-color1/80 hover:to-transparent transition-all duration-300">
                 <div className="relative z-10 text-center text-white mb-7">
                   {/* <div className="mb-10 bg-color1 p-4 mx-auto w-fit rounded-lg" >
                                         <img src={data?.icon} alt="Icon" className="w-8 h-auto mx-auto transition-colors duration-300 group-hover:text-[#2B4DFF]"
@@ -86,7 +91,7 @@ const Services = () => {
                                     </div> */}
                   <div
                     tabIndex="0"
-                    className="text-[1.2rem] sora-600 leading-tight"
+                    className="text-[1.2rem] font-semibold sora-600 leading-tight"
                   >
                     <h2 dangerouslySetInnerHTML={{ __html: data?.title }} />
                   </div>

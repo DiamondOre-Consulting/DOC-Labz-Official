@@ -6,23 +6,22 @@ import {
   ModalFooter,
   ModalTrigger,
 } from "../Components/ui/animated-modal";
-import img1 from '../assets/products/1.png'
-import img2 from '../assets/products/2.png'
-import img3 from '../assets/products/3.png'
-import img4 from '../assets/products/4.png'
-import img5 from '../assets/products/5.png'
-import img6 from '../assets/products/11.png'
-import img7 from '../assets/products/12.png'
-import img8 from '../assets/products/17.png'
-import img9 from '../assets/products/18.png'
-import img10 from '../assets/products/19.png'
+import img1 from "../assets/products/1.png";
+import img2 from "../assets/products/2.png";
+import img3 from "../assets/products/3.png";
+import img4 from "../assets/products/4.png";
+import img5 from "../assets/products/5.png";
+import img6 from "../assets/products/11.png";
+import img7 from "../assets/products/12.png";
+import img8 from "../assets/products/17.png";
+import img9 from "../assets/products/18.png";
+import img10 from "../assets/products/19.png";
+import lineimage from "../assets/line.png";
 
 import { motion } from "motion/react";
 
 const OurProducts = () => {
-  const images = [
-    img8,img7, img10,img1,img2 ,img6,
-  ];
+  const images = [img8, img7, img10, img1, img2, img6];
 
   return (
     <div className="py-20  flex items-center justify-center">
@@ -50,7 +49,7 @@ const OurProducts = () => {
               </h1>
               <img
                 className="w-fit object-cover md:block hidden mb-8"
-                src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
+                src={lineimage}
                 alt=""
               />
             </div>
@@ -77,7 +76,6 @@ const OurProducts = () => {
                   <img
                     src={image}
                     alt="bali images"
-                
                     className="rounded-lg h-20 w-20 md:h-52 md:w-52 object-cover shrink-0"
                   />
                 </motion.div>

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Marquee } from "./magicui/marquee";
 import { cn } from "../lib/utils";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Testimonial = () => {
-
   const testimonialList = [
     [
       {
@@ -52,8 +55,7 @@ const Testimonial = () => {
       },
     ],
   ];
-  
-  
+
   function ShapeOne() {
     return (
       <svg
@@ -75,7 +77,7 @@ const Testimonial = () => {
       </svg>
     );
   }
-  
+
   function ShapeTwo() {
     return (
       <svg
@@ -96,72 +98,74 @@ const Testimonial = () => {
       </svg>
     );
   }
-	const [index, setIndex] = useState(0);
-	const handleSelect = (selectedIndex) => setIndex(selectedIndex);
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex) => setIndex(selectedIndex);
   return (
     <section className="ezy__testimonial23 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative z-[1]">
-    <ShapeOne />
-    <ShapeTwo />
+      <ShapeOne />
+      <ShapeTwo />
 
-    <div className="container px-4 mx-auto">
-      <div className="grid grid-cols-12 gap-6 items-center justify-between mb-6 md:mb-12">
-        <div className="col-span-12 md:col-span-6 lg:col-span-4">
-          <h2 className="text-[32px] font-bold leading-normal">
-            Everyone should believe in What Our Client Say .
-          </h2>
+      <div className="container px-4 mx-auto">
+        <div className="grid grid-cols-12 gap-6 items-center justify-between mb-6 md:mb-12">
+          <div className="col-span-12 md:col-span-12 lg:col-span-12">
+            <h2 className="text-[40px] font-bold leading-normal text-color1 text-center mx-auto">
+              What Our Client Say's
+            </h2>
+          </div>
+          <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+            <p className="text-lg leading-[1.7] opacity-80"></p>
+          </div>
         </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
-          <p className="text-lg leading-[1.7] opacity-80">
-            Jobs can be categorized as paid or unpaid. Examples of unpaid jobs
-            include volunteer, homemaker, mentor, student, and sometimes
-            intern.
-          </p>
-        </div>
-      </div>
 
-      <div className="mt-12">
-        <div className="grid grid-cols-3 gap-6">
-          {testimonialList[index].map((testimonial, i) => (
-            <div className="col-span-3 lg:col-span-1" key={i}>
-              <div className="bg-white dark:bg-[#0b1727] shadow-2xl h-full p-6 xl:p-10">
-                <div className="flex items-center mb-6">
-                  <div className="mr-3">
-                    <img
-                      src={testimonial.img}
-                      alt={testimonial.name}
-                      className="max-w-full h-auto rounded-full border"
-                      width="65"
-                    />
-                  </div>
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          className="pb-12"
+        >
+          {testimonialList.flat().map((testimonial, i) => (
+            <SwiperSlide key={i}>
+              <div className="bg-white dark:bg-slate-800 shadow-xl hover:shadow-2xl rounded-2xl h-full p-6 xl:p-8 flex flex-col transition-transform transform hover:-translate-y-2">
+                <div className="flex items-center mb-4">
+                  <img
+                    src={testimonial.img}
+                    alt={testimonial.name}
+                    className="w-16 h-16 object-cover rounded-full border-2 border-color1 mr-4"
+                  />
                   <div>
-                    <h4 className="text-xl font-medium">
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
                       {testimonial.name}
                     </h4>
-                    {/* <p className="text-sm mb-2">{testimonial.position}</p> */}
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      {testimonial.position}
+                    </p>
                   </div>
                 </div>
-                <p className="opacity-75 mb-2">{testimonial.content}</p>
+                <p className="text-gray-700 dark:text-gray-300 opacity-80">
+                  "{testimonial.content}"
+                </p>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
-
-        <div className="flex justify-center gap-2 m-0 mt-12">
-          {testimonialList.map((item, i) => (
-            <button
-              className={`w-2 h-2 rounded-full ${
-                index === i
-                  ? "scale-125 bg-blue-600"
-                  : " bg-gray-400 dark:bg-slate-800"
-              } `}
-              key={i}
-              onClick={() => handleSelect(i)}
-            />
-          ))}
-        </div>
+        </Swiper>
       </div>
-    </div>
-  </section>
+    </section>
   );
 };
 

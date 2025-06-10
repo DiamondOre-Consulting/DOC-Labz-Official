@@ -1,18 +1,16 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
-
-import react from '../assets/react.png';
-import node from '../assets/node.png';
-import mongo from '../assets/mongo.png';
-import typescript from '../assets/typescript.png';
-import nextjs from '../assets/nextjs.jpg';
-import js from '../assets/js.png';
-import html from '../assets/html.png';
-import css from '../assets/css.png';
-import express from '../assets/express.png';
-import aws from '../assets/aws.png';
-
-
+import react from "../assets/react.png";
+import node from "../assets/node.png";
+import mongo from "../assets/mongo.png";
+import typescript from "../assets/typescript.png";
+import nextjs from "../assets/nextjs.jpg";
+import js from "../assets/js.png";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import express from "../assets/express.png";
+import aws from "../assets/aws.png";
+import lineimage from "../assets/line.png";
 
 const Teachnologies = () => {
   const itemsRef = useRef([]);
@@ -67,37 +65,42 @@ const Teachnologies = () => {
   return (
     <>
       <div>
-      <div className="flex py-4 flex-col justify-center items-center">
-            <h1 className = "text-center text-5xl font-semibold text-color1 mb-2 ">  Technologies We Use</h1>
-                <img
-                  className="w-fit object-cover md:block hidden mb-8"
-                  src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
-                  alt=""
-              
-                />
-            </div>
-       
+        <div className="flex py-8 flex-col justify-center items-center">
+          <h1 className="text-center text-5xl font-semibold text-color1 mb-2 ">
+            {" "}
+            Technologies We Use
+          </h1>
+          <img
+            className="w-fit object-cover md:block hidden mb-8"
+            src={lineimage}
+            alt=""
+          />
+        </div>
 
-        <div className='px-6 md:px-10 grid grid-cols-3 md:grid-cols-5 gap-x-2 gap-y-10'>
+        <div className="px-6 md:px-10 grid grid-cols-3 md:grid-cols-5 gap-x-2 gap-y-10">
           {[
-            { img: react, label: 'REACT' },
-            { img: node, label: 'NODE JS' },
-            { img: mongo, label: 'MONGO DB' },
-            { img: typescript, label: 'TYPE SCRIPT' },
-            { img: nextjs, label: 'NEXT JS' },
-            { img: js, label: 'JAVA SCRIPT' },
-            { img: html, label: 'HTML' },
-            { img: css, label: 'CSS' },
-            { img: express, label: 'EXPRESS JS' },
-            { img: aws, label: 'AWS' }
+            { img: react, label: "REACT" },
+            { img: node, label: "NODE JS" },
+            { img: mongo, label: "MONGO DB" },
+            { img: typescript, label: "TYPE SCRIPT" },
+            { img: nextjs, label: "NEXT JS" },
+            { img: js, label: "JAVA SCRIPT" },
+            { img: html, label: "HTML" },
+            { img: css, label: "CSS" },
+            { img: express, label: "EXPRESS JS" },
+            { img: aws, label: "AWS" },
           ].map((tech, index) => (
             <div
               key={index}
-              className='flex flex-col items-center'
-              ref={el => (itemsRef.current[index] = el)}
+              className="flex flex-col items-center"
+              ref={(el) => (itemsRef.current[index] = el)}
             >
-              <div className='relative w-20 h-20 flex items-center justify-center'>
-                <img src={tech.img} alt={tech.label} className='object-contain w-full h-full' />
+              <div className="relative w-20 h-20 flex items-center justify-center">
+                <img
+                  src={tech.img}
+                  alt={tech.label}
+                  className="object-contain w-full h-full"
+                />
               </div>
               <p>{tech.label}</p>
             </div>

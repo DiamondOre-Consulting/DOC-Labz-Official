@@ -15,6 +15,8 @@ import p11 from "../assets/portfolio/p11.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import lineimage from "../assets/line.png";
+
 import { Link } from "react-router-dom";
 
 const OurBestWork = () => {
@@ -62,7 +64,7 @@ const OurBestWork = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col items-center justify-center mx-auto bg-gray-100 my-10 pb-10">
+    <div className="w-full flex flex-col items-center justify-center mx-auto bg-gray-100  pb-10">
       <div className="py-10 w-full  lg:max-w-xl mx-auto font-semibold space-y-4">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-center text-5xl font-semibold text-color1 mb-2 ">
@@ -70,14 +72,14 @@ const OurBestWork = () => {
           </h1>
           <img
             className="w-fit object-cover md:block hidden mb-8"
-            src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
+            src={lineimage}
             alt=""
           />
         </div>
         {/* <p className="text-4xl text-center">Our Best Work </p> */}
         <p className="text-center text-gray-500 text-xl">
-          DocLabz, based in Noida — Experts in Website Development, SEO, and
-          Social Media Services.
+          DocLabz, based in Noida — Experts in Website Development and Social
+          Media Management.
         </p>
       </div>
 
@@ -103,21 +105,26 @@ const OurBestWork = () => {
           className="mySwiper "
         >
           {projects.map((project, index) => (
+            // <div className="bg-black p-10">
             <SwiperSlide
               key={index}
-              className="w-[250px] md:w-[450px] h-[150px] md:h-[260px]  rounded-xl overflow-hidden relative"
+              className="w-[250px] md:w-[450px] h-[150px] md:h-[260px] rounded-xl overflow-hidden relative"
             >
-              <Link to={project.link} target="_blank">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
+              <Link to={project.link} target="_blank" className="">
+                <div className="w-full h-full p-4 bg-white rounded-xl box-border">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
               </Link>
               <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
                 {project.title}
               </div>
             </SwiperSlide>
+
+            // </div>
           ))}
         </Swiper>
       </div>

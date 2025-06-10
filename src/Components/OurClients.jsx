@@ -9,7 +9,9 @@ import c7 from "../assets/clients/c6.svg";
 import c8 from "../assets/clients/c8.webp";
 import c9 from "../assets/clients/c9.png";
 import c10 from "../assets/clients/c10.png";
-import c11 from '../assets/clients/greenlogo.png'
+import c11 from "../assets/clients/greenlogo.png";
+import lineimage from "../assets/line.png";
+
 const OurClients = () => {
   const clientLogos = [
     { logo: c1, url: "https://www.mentorlanguageinstitute.com/" },
@@ -26,23 +28,25 @@ const OurClients = () => {
   return (
     <section className="py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
       <div className="container mx-auto px-4 text-start">
-      <div className="flex flex-col justify-center items-center">
-            <h1 className = "text-center text-5xl font-semibold text-color1 mb-2 ">   Our Trusted Clients</h1>
-                <img
-                  className="w-fit object-cover md:block hidden mb-8"
-                  src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
-                  alt=""
-              
-                />
-            </div>
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-center text-5xl font-semibold text-color1 mb-2 ">
+            {" "}
+            Our Trusted Clients
+          </h1>
+          <img
+            className="w-fit object-cover md:block hidden mb-8"
+            src={lineimage}
+            alt=""
+          />
+        </div>
         {/* <h2 className="font-bold text-center text-[25px] lg:text-[45px] leading-none mb-6">
           Our Trusted Clients
         </h2> */}
         <p className="text-lg max-w-xl mx-auto text-center leading-2 opacity-70 mb-10">
-          At Doc Labz, we proudly collaborate with industry leaders, medical
-          institutions, and technology innovators. Our clients trust us to
-          deliver reliable, data-driven solutions that power progress and
-          performance.
+          At Doc Labz, we proudly collaborate with industry leaders and
+          technology innovators. Our clients trust us to create cutting-edge
+          websites and digital solutions that elevate their online presence and
+          drive business growth.
         </p>
 
         <div className="overflow-hidden relative w-full">

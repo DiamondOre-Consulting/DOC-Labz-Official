@@ -15,14 +15,12 @@ import icon2 from "../assets/icon2.svg";
 import icon3 from "../assets/icon3.svg";
 import icon4 from "../assets/icon4.svg";
 import { Link } from "react-router-dom";
+import lineimage from "../assets/line.png";
 
 const OurPortfolio = () => {
-
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
 
   const data = [
     {
@@ -98,7 +96,7 @@ const OurPortfolio = () => {
         </h1>
         <img
           className="w-fit object-cover md:block hidden mb-8"
-          src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
+          src={lineimage}
           alt=""
         />
         <div className="grid gap-8 mt-4 grid-1 sm:grid-cols-2 lg:grid-cols-3 px-4">

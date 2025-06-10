@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import Typewriter from "typewriter-effect/dist/core";
-import hero2 from "..//assets/hero2.png";
+import hero2 from "..//assets/hero22.png";
 import PopUpForm from "./PopUpForm";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { FlipWords } from "../Components/ui/flip-words";
+import lineimage from "../assets/line.png";
 
 const Hero2 = ({ language }) => {
   const typeRef = useRef(null);
@@ -46,7 +47,7 @@ const Hero2 = ({ language }) => {
 
   return (
     <>
-      <div className="bg-color2 relative flex flex-col justify-center items-center pt-10 md:pt-20 overflow-hidden">
+      <div className="bg-color1/10 relative flex flex-col justify-center items-center pt-10 md:pt-20 overflow-hidden">
         <div>
           <div className="bg-color1/10 w-fit mx-auto  font-semibold rounded-md text-[0.9rem] text-color1 p-2 px-4 mb-4">
             # Bit By Bit, Building Tomorrow
@@ -67,7 +68,7 @@ const Hero2 = ({ language }) => {
                 </p>
                 <img
                   className="w-full object-cover md:block hidden"
-                  src="https://seoc-html-v2.vercel.app/assets/img/elements/line-img1.png"
+                  src={lineimage}
                   alt=""
                 />
               </div>
@@ -122,44 +123,44 @@ const Hero2 = ({ language }) => {
         </div>
 
         <div className="mt-20 relative">
-          <img
+          {/* <img
             className=""
             src="https://seoc-html-v2.vercel.app/assets/img/bg/header-bg4.png"
             alt=""
-          />
-          <div data-aos="zoom-in" data-aos-duration="1200">
+          /> */}
+          {/* <div data-aos="zoom-in" data-aos-duration="1200">
             {" "}
             <img
               className="absolute  bottom-0  w-[14rem] md:w-[27rem] left-1/2 -translate-x-1/2"
               src={hero2}
               alt=""
             />
-          </div>
-          <img
+          </div> */}
+          {/* <img
             src="https://seoc-html-v2.vercel.app/assets/img/icons/sound-icons2.svg"
             className="absolute bottom-20 right-0 md:block hidden"
             alt=""
-          />
-          <img
+          /> */}
+          {/* <img
             src="https://seoc-html-v2.vercel.app/assets/img/elements/elements9.png"
             className="absolute top-20 left-0 md:block hidden"
             alt=""
-          />
-          <img
+          /> */}
+          {/* <img
             src="https://seoc-html-v2.vercel.app/assets/img/elements/elements10.png"
             className="absolute top-48 left-0 md:block hidden"
             alt=""
-          />
-          <img
+          /> */}
+          {/* <img
             src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img4.png"
             className="absolute -top-28  -left-20 md:block hidden"
             alt=""
-          />
-          <img
+          /> */}
+          {/* <img
             src="https://img.freepik.com/free-vector/webpage-template-with-code_24908-82158.jpg?uid=R177576380&ga=GA1.1.119561090.1726138664&semt=ais_hybrid&w=140"
             className="absolute bottom-10  duration-0.5 -left-20 md:block hidden"
             alt=""
-          />
+          /> */}
           {/* <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-img5.png" className="absolute top-20  duration-0.5 -right-20 md:block hidden" alt="" /> */}
         </div>
       </div>

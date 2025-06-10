@@ -12,7 +12,7 @@ const Footer = () => {
     <>
       <section class="py-10 bg-white sm:pt-16 lg:pt-24">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-10 gap-y-12 gap-x-8 xl:gap-x-12">
             <div class="col-span-2 md:col-span-4 xl:pr-8">
               <img class="w-auto h-20" src={logo} alt="" />
 
@@ -23,8 +23,8 @@ const Footer = () => {
                 Satisfaction.
               </p>
 
-              <Link to={'/book-meeting'}
-               
+              <Link
+                to={"/book-meeting"}
                 class="inline-flex items-center  justify-center px-6 py-4 font-semibold text-white transition-all duration-200 bg-color1 rounded-md  mt-7"
               >
                 <svg
@@ -49,9 +49,8 @@ const Footer = () => {
               <p class="text-base font-semibold text-gray-900">Support</p>
 
               <ul class="mt-6 space-y-5">
-                <Link to={'/'}>
+                <Link to={"/"}>
                   <a
-                  
                     title=""
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
@@ -61,7 +60,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                    to={'/about-us'}
+                    to={"/about-us"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     About
@@ -70,7 +69,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                   to={'/contact-us'}
+                    to={"/contact-us"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Contact Us
@@ -90,57 +89,12 @@ const Footer = () => {
             </div>
 
             <div class="lg:col-span-2">
-              <p class="text-base font-semibold text-gray-900">
-                Whom We Serve
-              </p>
-
-              <ul class="mt-6 space-y-4">
-                <Link to={'/whom-we-serve'}>
-                  <a
-                    href="#"
-                    title=""
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
-                  >
-                    Health Care
-                  </a>
-                </Link>
-
-                <li>
-                <Link to={'/whom-we-serve'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
-                  >
-                    Insurance
-                  </Link>
-                </li>
-
-                {/* <li>
-                <Link to={'/whom-we-serve'}
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
-                  >
-                    {" "}
-                    Terms & Conditions{" "}
-                  </Link>
-                </li> */}
-
-                {/* <li>
-                  <a
-                    href="#"
-                    title=""
-                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
-                  >
-                    {" "}
-                    Privacy Policy{" "}
-                  </a>
-                </li> */}
-              </ul>
-            </div>
-
-            <div class="lg:col-span-2">
               <p class="text-base font-semibold text-gray-900">Services</p>
 
               <ul class="mt-6 space-y-5">
                 <li>
-                <Link to={'/services/2'}
+                  <Link
+                    to={"/services/2"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     WebSite Design
@@ -148,54 +102,58 @@ const Footer = () => {
                 </li>
 
                 <li>
-                <Link to={'/services/12'}
+                  <Link
+                    to={"/services/12"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
-                     Social Media Management
+                    Social Media Management
                   </Link>
                 </li>
 
                 <li>
-                <Link to={'/services/11'}
+                  <Link
+                    to={"/services/11"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     E-Commerce Solutions
                   </Link>
                 </li>
-              
+
                 <li>
-                <Link to={'/services/13'}
+                  <Link
+                    to={"/services/13"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     WordPress Development
                   </Link>
                 </li>
-               
 
                 <li>
-                <Link to={'/services/14'}
+                  <Link
+                    to={"/services/14"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Shopify Development
                   </Link>
                 </li>
 
-                <li>
-                <Link to={'/services/3'}
+                {/* <li>
+                  <Link
+                    to={"/services/3"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     SEO
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
-                <Link to={'/services/16'}
+                  <Link
+                    to={"/services/16"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Web/Vps Hosting
                   </Link>
                 </li>
-
               </ul>
             </div>
 
@@ -205,25 +163,19 @@ const Footer = () => {
               <ul class="mt-6 space-y-5">
                 <li>
                   <a
-                  href="tel:+917838738916"
+                    href="tel:+917838738916"
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
-                    <CiPhone className="text-xl mr-1"/>
-                    
+                    <CiPhone className="text-xl mr-1" />
                     +91 7838738916
                   </a>
 
                   <a
-                  href="tel:+918449625310"
+                    href="tel:+918449625310"
                     class="flex text-sm ml-6 text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
-                  
-                     +91 8449625310
+                    +91 8449625310
                   </a>
-
-                  
-                  
-
                 </li>
 
                 <li>
@@ -232,19 +184,18 @@ const Footer = () => {
                     title=""
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
-                    <FaRegEnvelope  className="text-xl mr-2 text-gray-400" />
+                    <FaRegEnvelope className="text-xl mr-2 text-gray-400" />
                     tech@doclabz.com
                   </a>
                 </li>
 
                 <li className="flex ">
-                <IoLocationOutline  className="text-5xl mr-2" />
+                  <IoLocationOutline className="text-5xl mr-2" />
                   <a
                     href="#"
                     title=""
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
-                  
                     B-127, Second Floor, B Block, Sector 63, Noida, Uttar
                     Pradesh 201301
                   </a>
