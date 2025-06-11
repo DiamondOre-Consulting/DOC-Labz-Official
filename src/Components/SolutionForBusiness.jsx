@@ -74,6 +74,8 @@ const SolutionForBusineess = () => {
               <p className="text-base text-gray-700 leading-relaxed">
                 {category.description}
               </p>
+
+              <p className="underline mt-1">Know More</p>
             </Link>
           ))}
         </div>

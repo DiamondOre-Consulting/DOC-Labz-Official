@@ -108,7 +108,7 @@ export const mainService = [
       {
         image: bw1,
         link: "https://conferences-coaindia.org/",
-        imageHeading: "Student Support Chatbott",
+        imageHeading: "Student Support Chatbot",
       },
     ],
   },
@@ -186,12 +186,12 @@ export const mainService = [
       {
         image: mentor,
         link: "https://www.mentorlanguageinstitute.com/",
-        imageHeading: "Mentor ",
+        imageHeading: "Mentor Student Management Software",
       },
       {
         image: dia,
         link: "https://www.diamondore.in/",
-        imageHeading: "Vocational Training Management",
+        imageHeading: "Diamondore Placement Consulting Company",
       },
     ],
   },

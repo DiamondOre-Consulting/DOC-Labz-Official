@@ -255,13 +255,6 @@ const ContactUs = () => {
                             >
                               tech@doclabz.com
                             </a>
-                            ,
-                            <a
-                              href="mailto:tech@doclabz.com"
-                              className="inline-block cursor-pointer  hover:underline"
-                            >
-                              tech@diamondore.in
-                            </a>
                           </p>
                         </div>
                       </div>
