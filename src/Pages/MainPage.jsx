@@ -31,11 +31,11 @@ const MainPage = ({ language, setLanguage }) => {
 
       <Hero2 language={language} setLanguage={setLanguage} />
       <OurBestWork language={language} setLanguage={setLanguage} />
-      <SolutionForBusineess />
+      <SolutionForBusineess language={language} setLanguage={setLanguage} />
       <OurClients language={language} setLanguage={setLanguage} />
       <WhoWeAre language={language} setLanguage={setLanguage} />
       <Services language={language} setLanguage={setLanguage} />
-      <HowWeCanHelpYou />
+      <HowWeCanHelpYou language={language} setLanguage={setLanguage} />
       <WhyChooseUs language={language} setLanguage={setLanguage} />
       <Teachnologies language={language} setLanguage={setLanguage} />
       {/* <OurWork/> */}

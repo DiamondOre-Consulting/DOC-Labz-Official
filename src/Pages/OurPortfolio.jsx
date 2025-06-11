@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import lineimage from "../assets/line.png";
 import profile from "../assets/profil2.png";
 import sof from "../assets/sofscroll.png";
+import plastic from "../assets/plastic.png";
 
 const OurPortfolio = () => {
   useEffect(() => {
@@ -94,6 +95,13 @@ const OurPortfolio = () => {
       icon: icon3,
       image: sof,
       link: "https://www.sofsscrrol.com/",
+    },
+
+    {
+      title: "Sof SScroll",
+      icon: icon3,
+      image: plastic,
+      link: "https://plastengnr.in/",
     },
   ];
 
