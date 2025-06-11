@@ -19,13 +19,19 @@ const WhoWeAre = ({ language }) => {
             empower businesses with scalable and innovative digital solutions.
           </p>
 
-          <div className="grid  grid-cols-2 gap-x-4 pt-4">
+          <div className="grid relative grid-cols-2 gap-x-4 pt-4">
             <div className="bg-color1/10 rounded-xl shadow-lg shadow-color1/20 p-4 border border-color1/20">
               <p className="font-bold text-xl  text-color1 mb-2">Our Mission</p>
               <p className="text-sm">
                 To empower businesses with smart, scalable tech solutions that
                 drive growth and efficiency in a digital-first world.
               </p>
+
+              <img
+                src="https://cdn-icons-png.freepik.com/512/566/566445.png?uid=R177576380&ga=GA1.1.1211642657.1747203574"
+                alt=""
+                className="w-10 absolute -bottom-10 -left-10 md:block hidden"
+              />
             </div>
 
             <div className="bg-color1/10 rounded-xl shadow-lg shadow-color1/20 p-4 border border-color1/20">

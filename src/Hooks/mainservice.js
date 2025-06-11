@@ -216,7 +216,7 @@ export const mainService = [
       {
         image: mentor,
         link: "https://www.mentorlanguageinstitute.com/",
-        imageHeading: "Mentor Student Management Software",
+        imageHeading: "Mentor Student & Teacher Management Software",
       },
       {
         image: dia,
