@@ -171,14 +171,14 @@ const NavMenu = ({ routes, isOpen, setIsOpen  , language, setLanguage }) => {
           onClick={() => setIsOpen(false)}
           onMouseLeave={() => handleDropdownToggle("")}
         >
-          <li role="menuitem">
+          {/* <li role="menuitem">
             <Link
               to="/services/3"
               className="block px-4 py-3 text-sm hover:bg-gray-200"
             >
               SEO
             </Link>
-          </li>
+          </li> */}
           <li role="menuitem">
             <Link
               to="/services/4"
