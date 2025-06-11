@@ -5,6 +5,8 @@ import bw1 from "../assets/w1.png";
 import profile from "../assets/profil2.png";
 import mentor from "../assets/mentor2.png";
 import dia from "../assets/portfolio/p9.png";
+import sof from "../assets/sofscroll.png";
+import plastic from "../assets/plastic.png";
 
 import bw2 from "../assets/bw2.png";
 import bw3 from "../assets/bw3.png";
@@ -130,13 +132,18 @@ export const mainService = [
     projects: [
       {
         image: bw1,
-        link: "https://www.exampledynamicweb1.com",
+        link: "https://conferences-coaindia.org/",
         imageHeading: "COA Transformation",
       },
       {
         image: profile,
         link: "https://profilegenie.in/",
         imageHeading: "Profile Genie",
+      },
+      {
+        image: dia,
+        link: "https://www.diamondore.in/",
+        imageHeading: "Diamondore Placement Consulting Company",
       },
     ],
   },
@@ -226,6 +233,18 @@ export const mainService = [
         image: p5,
         link: "https://neetusharma.in/",
         imageHeading: "NeetuSharma Portfolio  Website",
+      },
+
+      {
+        image: sof,
+        link: "https://neetusharma.in/",
+        imageHeading: "Sof SScrrol  Website",
+      },
+
+      {
+        image: plastic,
+        link: "https://plastengnr.in/",
+        imageHeading: "Plastic Engineers Fabricators Website",
       },
     ],
   },

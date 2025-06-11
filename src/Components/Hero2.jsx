@@ -40,7 +40,6 @@ const Hero2 = ({ language }) => {
     "E-Commerce Website",
     "Wordpress Development",
     "Shopify Development",
-    "Search Engine Optimization",
     "Social Media Optimization",
     "Web/Vps Hosting",
   ];

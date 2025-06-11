@@ -16,6 +16,8 @@ import icon3 from "../assets/icon3.svg";
 import icon4 from "../assets/icon4.svg";
 import { Link } from "react-router-dom";
 import lineimage from "../assets/line.png";
+import profile from "../assets/profil2.png";
+import sof from "../assets/sofscroll.png";
 
 const OurPortfolio = () => {
   useEffect(() => {
@@ -27,45 +29,45 @@ const OurPortfolio = () => {
       title: "Mentor Language Institute",
       icon: icon2,
       image: p1,
-      link: "/services/1",
+      link: "https://www.mentorlanguageinstitute.com/",
     },
 
     {
       title: "Redefine Group",
       icon: icon1,
       image: p2,
-      link: "/services/11",
+      link: "https://www.redefinegroup.com/",
     },
     {
       title: "Viraj Portfolio",
       icon: icon4,
       image: p3,
-      link: "/services/12",
+      link: "https://virajkatyayan.in/",
     },
     {
       title: "CV Genie",
       icon: icon4,
       image: p4,
-      link: "/services/13",
+      link: "https://www.cvgenie.in/",
     },
     {
       title: "Neetu Sharma Numerologist",
       icon: icon1,
       image: p5,
-      link: "/services/14",
+      link: "https://neetusharma.in/",
     },
     {
       title: "Profile Genie",
       icon: icon2,
-      image: p6,
-      link: "/services/3",
+      image: profile,
+      link: "https://profilegenie.in/",
     },
-    {
-      title: "RasKhas",
-      icon: icon3,
-      image: p7,
-      link: "/services/4",
-    },
+    // {
+    //   title: "RasKhas",
+    //   icon: icon3,
+    //   image: p7,
+    //   link: "/services/4",
+    // },
 
     {
       title: "Referbiz",
@@ -81,10 +83,17 @@ const OurPortfolio = () => {
       link: "/services/16",
     },
     {
-      title: "COA  Transformation",
+      title: "COA Transformation",
       icon: icon3,
       image: p10,
-      link: "/services/16",
+      link: "https://conferences-coaindia.org/",
+    },
+
+    {
+      title: "Sof SScroll",
+      icon: icon3,
+      image: sof,
+      link: "https://www.sofsscrrol.com/",
     },
   ];
 
@@ -111,7 +120,7 @@ const OurPortfolio = () => {
                   alt="Service"
                   className="w-full translate-transform duration-700 group-hover:scale-[1.15] h-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-color1 via-transparent to-transparent flex items-end justify-center hover:from-[10%] hover:from-color1 hover:to-transparent transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-color1/80 via-transparent to-transparent flex items-end justify-center hover:from-[0%] hover:from-color1/40 hover:to-transparent transition-all duration-300">
                   <div className="relative z-10 text-center text-white mb-7">
                     {/* <div className="mb-10 bg-color1 p-4 mx-auto w-fit rounded-lg" >
                                               <img src={data?.icon} alt="Icon" className="w-8 h-auto mx-auto transition-colors duration-300 group-hover:text-[#2B4DFF]"
