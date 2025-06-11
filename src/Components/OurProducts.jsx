@@ -16,7 +16,7 @@ import img7 from "../assets/products/12.png";
 import img8 from "../assets/products/17.png";
 import img9 from "../assets/products/18.png";
 import img10 from "../assets/products/19.png";
-import lineimage from "../assets/line.png";
+import lineimage from "../assets/line2.png";
 
 import { motion } from "motion/react";
 

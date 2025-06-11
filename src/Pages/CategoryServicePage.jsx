@@ -9,12 +9,12 @@ const CategoryServicePage = () => {
   }, []);
 
   const { serviceId } = useParams();
-
+  console.log("landing page", serviceId);
   // Find the service based on the serviceId from the URL
   // Assuming each service in mainService array has a unique 'heading' that can be used as an ID
-  const service = mainService.find(
-    (s) => s.heading.toLowerCase().replace(/\s/g, "-") === serviceId
-  );
+  const service = mainService.find((s) => s.id === serviceId);
+
+  console.log(service);
 
   if (!service) {
     return (
@@ -77,7 +77,7 @@ const CategoryServicePage = () => {
         <>
           <hr className="my-10 border-t-2 border-gray-200" />
           <h2 className="text-3xl font-bold text-center text-color1/80 my-10">
-            Projects We've Worked On
+            Some of the Projects We've Worked On
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-20">
             {service.projects.map((project, index) => (

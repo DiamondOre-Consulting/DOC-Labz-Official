@@ -15,10 +15,12 @@ import icon2 from "../assets/icon2.svg";
 import icon3 from "../assets/icon3.svg";
 import icon4 from "../assets/icon4.svg";
 import { Link } from "react-router-dom";
-import lineimage from "../assets/line.png";
+import lineimage from "../assets/line2.png";
 import profile from "../assets/profil2.png";
 import sof from "../assets/sofscroll.png";
 import plastic from "../assets/plastic.png";
+import simplygift from "../assets/simlygift.png";
+import zello from "../assets/zello.png";
 
 const OurPortfolio = () => {
   useEffect(() => {
@@ -29,6 +31,7 @@ const OurPortfolio = () => {
     {
       title: "Mentor Language Institute",
       icon: icon2,
+      category: "Dynamic Website",
       image: p1,
       link: "https://www.mentorlanguageinstitute.com/",
     },
@@ -37,30 +40,35 @@ const OurPortfolio = () => {
       title: "Redefine Group",
       icon: icon1,
       image: p2,
+      category: "Static Website",
       link: "https://www.redefinegroup.com/",
     },
     {
       title: "Viraj Portfolio",
       icon: icon4,
       image: p3,
+      category: "Static Portfolio Website",
       link: "https://virajkatyayan.in/",
     },
     {
       title: "CV Genie",
       icon: icon4,
       image: p4,
+      category: "Dynamic Website",
       link: "https://www.cvgenie.in/",
     },
     {
       title: "Neetu Sharma Numerologist",
       icon: icon1,
       image: p5,
+      category: "Static Portfolio Website",
       link: "https://neetusharma.in/",
     },
     {
       title: "Profile Genie",
       icon: icon2,
       image: profile,
+      category: "Dynamic Website",
       link: "https://profilegenie.in/",
     },
     // {
@@ -74,34 +82,55 @@ const OurPortfolio = () => {
       title: "Referbiz",
       icon: icon3,
       image: p8,
-      link: "/services/4",
+      category: "Dynamic Website",
+      link: "https://www.referbiz.in/",
     },
 
     {
-      title: "Diamondore ",
+      title: "Diamondore Placement Consulting Company",
       icon: icon3,
       image: p9,
-      link: "/services/16",
+      category: "Dynamic Website",
+      link: "https://www.diamondore.in/",
     },
     {
       title: "COA Transformation",
       icon: icon3,
       image: p10,
+      category: "Dynamic Website",
       link: "https://conferences-coaindia.org/",
     },
 
     {
       title: "Sof SScroll",
       icon: icon3,
+      category: "Static Website",
       image: sof,
       link: "https://www.sofsscrrol.com/",
     },
 
     {
-      title: "Sof SScroll",
+      title: "Plastic Engineers and Febricators",
       icon: icon3,
+      category: "Static Website",
       image: plastic,
       link: "https://plastengnr.in/",
+    },
+
+    {
+      title: "Simply Gift",
+      icon: icon3,
+      category: "WordPress Website",
+      image: simplygift,
+      link: "https://plastengnr.in/",
+    },
+
+    {
+      title: "Zelo India",
+      icon: icon3,
+      category: "Shopify Website",
+      image: zello,
+      link: "https://zeloindia.com/",
     },
   ];
 
@@ -121,6 +150,7 @@ const OurPortfolio = () => {
             return (
               <Link
                 to={data?.link}
+                target="_blank"
                 className="relative bg-white rounded-[1rem] shadow-lg overflow-hidden max-w-[26rem]  max-h-[20rem] group  hover:shadow-xl"
               >
                 <img
@@ -128,8 +158,8 @@ const OurPortfolio = () => {
                   alt="Service"
                   className="w-full translate-transform duration-700 group-hover:scale-[1.15] h-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-color1/80 via-transparent to-transparent flex items-end justify-center hover:from-[0%] hover:from-color1/40 hover:to-transparent transition-all duration-300">
-                  <div className="relative z-10 text-center text-white mb-7">
+                <div className="absolute inset-0 bg-gradient-to-t from-color1 via-transparent to-transparent flex items-end justify-center hover:from-[0%] hover:from-color1 hover:to-transparent transition-all duration-300">
+                  <div className="relative z-10 text-center text-white mb-2">
                     {/* <div className="mb-10 bg-color1 p-4 mx-auto w-fit rounded-lg" >
                                               <img src={data?.icon} alt="Icon" className="w-8 h-auto mx-auto transition-colors duration-300 group-hover:text-[#2B4DFF]"
                                                   style={{ color: 'currentColor' }} />
@@ -139,7 +169,11 @@ const OurPortfolio = () => {
                       tabIndex="0"
                       className="text-[1.2rem] uppercase  sora-600 leading-tight"
                     >
-                      <h2 dangerouslySetInnerHTML={{ __html: data?.title }} />
+                      <h2
+                        className="font-bold"
+                        dangerouslySetInnerHTML={{ __html: data?.title }}
+                      />
+                      <p className="text-sm">{data.category}</p>
                     </div>
                   </div>
                 </div>

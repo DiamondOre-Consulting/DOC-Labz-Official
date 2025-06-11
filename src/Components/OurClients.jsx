@@ -10,7 +10,7 @@ import c8 from "../assets/clients/c8.webp";
 import c9 from "../assets/clients/c9.png";
 import c10 from "../assets/clients/c10.png";
 import c11 from "../assets/clients/greenlogo.png";
-import lineimage from "../assets/line.png";
+import lineimage from "../assets/line2.png";
 
 const OurClients = () => {
   const clientLogos = [

@@ -11,7 +11,7 @@ const WhoWeAre = ({ language }) => {
         />
         <div className="flex flex-col max-w-[35rem] items-center space-y-3">
           <h2 className="text-3xl font-semibold text-center">
-            Your Trusted Website Development Company in Noida
+            The Trusted Website Development Company in Noida , India
           </h2>
           <p className="text-gray-800 text-md  text-center py-4">
             DocLabz is Noida’s trusted IT Solutions Provider, specializing in

@@ -10,7 +10,7 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import express from "../assets/express.png";
 import aws from "../assets/aws.png";
-import lineimage from "../assets/line.png";
+import lineimage from "../assets/line2.png";
 
 const Teachnologies = () => {
   const itemsRef = useRef([]);

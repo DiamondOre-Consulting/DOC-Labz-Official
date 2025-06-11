@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { FlipWords } from "../Components/ui/flip-words";
-import lineimage from "../assets/line.png";
+import lineimage from "../assets/line2.png";
 
 const Hero2 = ({ language }) => {
   const typeRef = useRef(null);
@@ -53,7 +53,7 @@ const Hero2 = ({ language }) => {
           </div>
           <div className="text-3xl md:text-6xl w-full overflow-hidden flex flex-col  font-semibold  items-center text-warp justify-center space-y-2 md:space-y-6 ">
             <p className="text-center">Drive Your Business</p>
-            <p className="text-center">Forward With Our Expert</p>
+            <p className="text-center">Forward With Our Customized</p>
             <div className="flex flex-wrap justify-center">
               {/* <img
                 src="https://seoc-html-v2.vercel.app/assets/img/all-images/header-pera1.png"

@@ -11,7 +11,7 @@ const SolutionForBusineess = () => {
     },
     {
       id: "cv-genie", // Added ID matching mainService
-      title: "CV Genie",
+      title: "AI Powered Writing Assistance",
       description:
         "Create a standout CV with our CV Genie tool designed to highlight your strengths and increase your chances of landing your dream job.",
     },
@@ -38,7 +38,7 @@ const SolutionForBusineess = () => {
       id: "erp", // Added ID matching mainService
       title: "ERP ",
       description:
-        "A comprehensive ERP system designed to manage operations efficiently and effectively for educational and training institutions.",
+        "A comprehensive ERP system designed to manage operations efficiently and effectively for your Company",
     },
     {
       id: "static-website", // Added ID matching mainService
@@ -48,16 +48,23 @@ const SolutionForBusineess = () => {
     },
     {
       id: "landing-page", // Added ID matching mainService
-      title: "Landing Page",
+      title: "Landing Page - Digital Profile",
       description:
         "A dedicated landing page to showcase your professional profile with embedded social links and a clean, modern design.",
     },
+
+    // {
+    //   id: "social-media-management",
+    //   title: "Social Media Management",
+    //   description:
+    //     "Manage and grow your brand’s presence on platforms like Instagram, Facebook, and LinkedIn with tailored content, scheduling, and analytics support.",
+    // },
   ];
 
   return (
     <section className="py-16 px-8 bg-white text-[#000080]">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold mb-12 text-center">
+        <h2 className="text-4xl font-extrabold mb-12  text-color1 text-center">
           Solutions For Various Business Needs
         </h2>
 
@@ -75,7 +82,10 @@ const SolutionForBusineess = () => {
                 {category.description}
               </p>
 
-              <p className="underline mt-1">Know More</p>
+              <p className="underline mt-1 text-color1">
+                {" "}
+                Click Here To Know More
+              </p>
             </Link>
           ))}
         </div>

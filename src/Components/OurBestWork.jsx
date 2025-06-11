@@ -15,19 +15,19 @@ import p11 from "../assets/portfolio/p11.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
-import lineimage from "../assets/line.png";
+import lineimage from "../assets/line2.png";
 
 import { Link } from "react-router-dom";
 
 const OurBestWork = () => {
   const projects = [
     {
-      title: "Transformation COA",
+      title: "Transformation COA Static Website",
       image: bw1,
       link: "https://conferences-coaindia.org/",
     },
     {
-      title: "Redefine Group",
+      title: "Redefine Group Static Website ",
       image: bw2,
       link: "https://www.redefinegroup.com/",
     },
@@ -37,19 +37,19 @@ const OurBestWork = () => {
       link: "https://virajkatyayan.in/",
     },
     {
-      title: "Niyor Catalogue",
+      title: "Niyor Dynamic Catalogue",
       image: bw4,
       link: "https://www.profilegenie.in/dynamic-catalogue/1/Ishan_Niyor_Perfumes",
     },
     {
-      title: "Neetu Sharma Numerologist",
+      title: "Neetu Sharma Numerologist Portfolio Website",
       icon: icon1,
       image: p5,
       link: "https://neetusharma.in/",
     },
 
     {
-      title: "CV Genie",
+      title: "CV Genie Static Website",
       icon: icon4,
       image: p4,
       link: "https://www.cvgenie.in/",
@@ -68,7 +68,7 @@ const OurBestWork = () => {
       <div className="py-10 w-full  lg:max-w-xl mx-auto font-semibold space-y-4">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-center text-5xl font-semibold text-color1 mb-2 ">
-            Our Best Work
+            Some of our projects
           </h1>
           <img
             className="w-fit object-cover md:block hidden mb-8"
@@ -78,8 +78,8 @@ const OurBestWork = () => {
         </div>
         {/* <p className="text-4xl text-center">Our Best Work </p> */}
         <p className="text-center text-gray-500 text-xl">
-          DocLabz, based in Noida — Experts in Website Development and Social
-          Media Management.
+          DocLabz, based in Noida — We have Expertise in Website Development and
+          Social Media Management.
         </p>
       </div>
 
@@ -101,7 +101,7 @@ const OurBestWork = () => {
             slideShadows: false,
           }}
           pagination={{ clickable: true }}
-          modules={[EffectCoverflow, Pagination, Autoplay]}
+          modules={[EffectCoverflow, Autoplay]}
           className="mySwiper "
         >
           {projects.map((project, index) => (

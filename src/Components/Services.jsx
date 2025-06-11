@@ -9,7 +9,7 @@ import icon2 from "../assets/icon2.svg";
 import icon3 from "../assets/icon3.svg";
 import icon4 from "../assets/icon4.svg";
 import cs1 from "../assets/cs1.png";
-import lineimage from "../assets/line.png";
+import lineimage from "../assets/line2.png";
 
 import img1 from "../assets/service11.jpg";
 import img2 from "../assets/service12.webp";
@@ -28,7 +28,7 @@ const Services = () => {
       link: "/services/1",
     },
     {
-      title: "Ecommerce Solution <br/> ",
+      title: "Ecommerce Solutions <br/> ",
       icon: icon1,
       image: img4,
       link: "/services/11",

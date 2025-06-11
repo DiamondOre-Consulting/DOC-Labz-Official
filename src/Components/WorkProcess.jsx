@@ -1,5 +1,5 @@
 import React from "react";
-import lineimage from "../assets/line.png";
+import lineimage from "../assets/line2.png";
 import icon1 from "../assets/icons/consultation.png";
 import icon2 from "../assets/icons/strategy.png";
 import icon3 from "../assets/icons/planning.png";

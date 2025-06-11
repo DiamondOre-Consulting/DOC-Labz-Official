@@ -12,6 +12,13 @@ import bw2 from "../assets/bw2.png";
 import bw3 from "../assets/bw3.png";
 import p5 from "../assets/portfolio/p5.png";
 import p11 from "../assets/portfolio/p11.png";
+import simplygift from "../assets/simlygift.png";
+import zello from "../assets/zello.png";
+import p8 from "../assets/portfolio/p8.png";
+import pg1 from "../assets/portfolio/pg1.png";
+import pg2 from "../assets/portfolio/pg2.png";
+import pg3 from "../assets/portfolio/pg3.png";
+import pg4 from "../assets/portfolio/pg4.png";
 
 export const mainService = [
   {
@@ -29,22 +36,22 @@ export const mainService = [
       "Scalable infrastructure to support business growth.",
       "Advanced analytics and reporting for performance tracking.",
     ],
-    // projects: [
-    //   {
-    //     image: "/images/ecommerce_project1.jpg",
-    //     link: "https://www.exampleecommerce1.com",
-    //     imageHeading: "Fashion Boutique Online",
-    //   },
-    //   {
-    //     image: "/images/ecommerce_project2.jpg",
-    //     link: "https://www.exampleecommerce2.com",
-    //     imageHeading: "Electronics Hub",
-    //   },
-    // ],
+    projects: [
+      {
+        image: simplygift,
+        link: "https://simplygift.in/",
+        imageHeading: "Simply Gift",
+      },
+      {
+        image: zello,
+        link: "https://zeloindia.com/",
+        imageHeading: "Zelo India",
+      },
+    ],
   },
   {
     id: "cv-genie",
-    heading: "CV Genie",
+    heading: "AI Powered Writing Assistance",
     description:
       "Say goodbye to generic CVs. Our CV Genie tool is an intelligent, user-friendly platform designed to help you create a standout resume that truly highlights your unique strengths and achievements. Leveraging advanced algorithms and professional templates, CV Genie guides you through the process of crafting a compelling narrative. It focuses on optimizing your CV for Applicant Tracking Systems (ATS), significantly increasing your chances of landing interviews for your dream job. Whether you're a fresh graduate or a seasoned professional, CV Genie empowers you to present your best self to potential employers.",
     image: "https://www.cvgenie.in/assets/Genie-D4MPzrWA.png", // Example main image for the service
@@ -142,8 +149,24 @@ export const mainService = [
       },
       {
         image: dia,
-        link: "https://www.diamondore.in/",
-        imageHeading: "Diamondore Placement Consulting Company",
+        link: "https://www.diamondore.in/all-jobs",
+        imageHeading: "Diamondore Dynamic Job Listing",
+      },
+      {
+        image: simplygift,
+        link: "https://simplygift.in/",
+        imageHeading: "Simply Gift",
+      },
+      {
+        image: zello,
+        link: "https://zeloindia.com/",
+        imageHeading: "Zelo India",
+      },
+
+      {
+        image: p8,
+        link: "https://www.referbiz.in/",
+        imageHeading: "Referbiz Website",
       },
     ],
   },
@@ -250,7 +273,7 @@ export const mainService = [
   },
   {
     id: "landing-page",
-    heading: "Landing Page",
+    heading: "Landing Page - Digital Profile",
     description:
       "Make a powerful first impression with a dedicated landing page designed for maximum impact. Whether you're launching a new product, promoting an event, or looking to capture leads, our landing pages are crafted to convert visitors into customers. Each page features a clean, modern design, compelling call-to-actions, and embedded social links to expand your reach. We focus on optimizing content and layout to showcase your professional profile or product effectively, driving specific user actions and measurable results.",
     image: p11, // Example main image for the service
@@ -266,6 +289,30 @@ export const mainService = [
       {
         image: p11,
         link: "https://profilegenie.in/profile/1/UM99",
+        imageHeading: "Landing Page",
+      },
+
+      {
+        image: pg1,
+        link: "https://profilegenie.in/profile/1/lp115",
+        imageHeading: "Landing Page",
+      },
+
+      {
+        image: pg2,
+        link: "https://profilegenie.in/profile/1/lp111",
+        imageHeading: "Landing Page",
+      },
+
+      {
+        image: pg3,
+        link: "https://profilegenie.in/profile/1/lp222",
+        imageHeading: "Landing Page",
+      },
+
+      {
+        image: pg4,
+        link: "https://profilegenie.in/profile/1/GR17",
         imageHeading: "Landing Page",
       },
     ],
@@ -294,6 +341,37 @@ export const mainService = [
         image: "/images/language_translator_project2.jpg",
         link: "https://www.exampletranslator2.com",
         imageHeading: "Website Localization Tool",
+      },
+    ],
+  },
+
+  //////////////////////////////////////
+
+  {
+    id: "social-media-management",
+    heading: "Social Media Management",
+    description:
+      "Amplify your brand's voice and connect with your target audience effectively across platforms like Instagram, Facebook, LinkedIn, and Twitter. Our social media management services include content creation, scheduling, performance analytics, and audience engagement to ensure your brand stays relevant, consistent, and impactful.",
+    image:
+      "https://img.freepik.com/free-vector/woman-chair-using-social-media-smartphone-concept-illustration_114360-31445.jpg?t=st=1749640154~exp=1749643754~hmac=3091d9ff322847a76f9910280321ed760da5911ac5b7eaaf535746b4b96e4539&w=1380", // Replace with your actual image path
+    points: [
+      "Strategic content planning and creation tailored to your brand.",
+      "Consistent posting and scheduling across multiple platforms.",
+      "Data-driven performance analysis and reporting.",
+      "Community engagement and response management.",
+      "Influencer collaborations and campaign execution.",
+      "Platform-specific optimization for maximum reach.",
+    ],
+    projects: [
+      {
+        image: "/images/social_project1.jpg", // Replace with actual image path
+        link: "https://www.examplebrand1.com",
+        imageHeading: "Instagram Growth Campaign",
+      },
+      {
+        image: "/images/social_project2.jpg", // Replace with actual image path
+        link: "https://www.examplebrand2.com",
+        imageHeading: "Facebook Brand Awareness Drive",
       },
     ],
   },
