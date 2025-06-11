@@ -17,7 +17,7 @@ const routes = [
   // { name: "Contact", href: "/contact", isActive: false },
 ];
 
-const NavMenu = ({ routes, isOpen, setIsOpen  , language, setLanguage }) => {
+const NavMenu = ({ routes, isOpen, setIsOpen, language, setLanguage }) => {
   const [dropdownOpen, setDropdownOpen] = useState({
     webServices: false,
     digitalMarketing: false,
@@ -65,12 +65,10 @@ const NavMenu = ({ routes, isOpen, setIsOpen  , language, setLanguage }) => {
     }));
   };
 
-
   const handleLanguageChange = (e) => {
     const newLang = e.target.value;
-    console.log(newLang)
+    console.log(newLang);
     setLanguage(newLang); // Update the language state
-  
   };
   return (
     <ul
@@ -345,7 +343,7 @@ const NavMenu = ({ routes, isOpen, setIsOpen  , language, setLanguage }) => {
       >
         Contact Us
       </Link>
-      <div className="flex items-center" data-no-translate>
+      {/* <div className="flex items-center" data-no-translate>
         <div className="relative">
         
           <select
@@ -354,30 +352,10 @@ const NavMenu = ({ routes, isOpen, setIsOpen  , language, setLanguage }) => {
           >
             <option value="en">English</option>
             <option value="hi">Hindi</option>
-            {/* <option value="mr">Marathi</option>
-            <option value="ta">Tamil</option>
-            <option value="te">Telugu</option>
-            <option value="kn">Kannada</option>
-            <option value="ml">Malayalam</option>
-            <option value="bn">Bengali</option>
-            <option value="gu">Gujarati</option>
-            <option value="pa">Punjabi</option>
-            <option value="ur">Urdu</option>
-            <option value="es">Español</option>
-            <option value="fr">Français</option>
-            <option value="de">Deutsch</option>
-            <option value="zh">Chinese</option>
-            <option value="ja">Japanese</option>
-            <option value="ko">Korean</option>
-            <option value="ru">Russian</option>
-            <option value="it">Italian</option> */}
-
-            {/* Add more languages here */}
+          
           </select>
         </div>
-      </div>
-      
-    
+      </div> */}
     </ul>
   );
 };
@@ -406,11 +384,9 @@ const Navbar = ({ language, setLanguage }) => {
   }, []);
   const handleLanguageChange = (e) => {
     const newLang = e.target.value;
-    console.log(newLang)
+    console.log(newLang);
     setLanguage(newLang); // Update the language state
-  
   };
-
 
   return (
     <>
@@ -467,37 +443,18 @@ const Navbar = ({ language, setLanguage }) => {
                 Contact Us
               </Link>
 
-              <div className="flex items-center" data-no-translate>
-        <div className="relative">
-        
-          <select
-               onChange={handleLanguageChange}
-            className="px-2 py-1  w-24 mr-4 text-gray-900 rounded-md lg:block hidden"
-          >
-            <option value="en">English</option>
-            <option value="hi">Hindi</option>
-            {/* <option value="mr">Marathi</option>
-            <option value="ta">Tamil</option>
-            <option value="te">Telugu</option>
-            <option value="kn">Kannada</option>
-            <option value="ml">Malayalam</option>
-            <option value="bn">Bengali</option>
-            <option value="gu">Gujarati</option>
-            <option value="pa">Punjabi</option>
-            <option value="ur">Urdu</option>
-            <option value="es">Español</option>
-            <option value="fr">Français</option>
-            <option value="de">Deutsch</option>
-            <option value="zh">Chinese</option>
-            <option value="ja">Japanese</option>
-            <option value="ko">Korean</option>
-            <option value="ru">Russian</option>
-            <option value="it">Italian</option> */}
-
-            {/* Add more languages here */}
-          </select>
-        </div>
-      </div>
+              {/* <div className="flex items-center" data-no-translate>
+                <div className="relative">
+                  <select
+                    onChange={handleLanguageChange}
+                    className="px-2 py-1  w-24 mr-4 text-gray-900 rounded-md lg:block hidden"
+                  >
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+          
+                  </select>
+                </div>
+              </div> */}
               <div onClick={() => setIsOpen(false)}></div>
               <button
                 className="z-20 block cursor-pointer size-10 lg:hidden"
@@ -528,9 +485,14 @@ const Navbar = ({ language, setLanguage }) => {
                   </>
                 )}
               </button>
-              <NavMenu routes={routes} isOpen={isOpen} setIsOpen={setIsOpen} language={language} setLanguage={setLanguage} />
+              <NavMenu
+                routes={routes}
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                language={language}
+                setLanguage={setLanguage}
+              />
             </div>
-            
           </div>
         </div>
       </nav>
