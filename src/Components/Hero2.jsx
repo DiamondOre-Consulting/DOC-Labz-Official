@@ -36,12 +36,12 @@ const Hero2 = ({ language }) => {
   const words = [
     "Web Development",
     "Custom Software",
-    "Social Media Managment",
+    "Social Media Management",
     "E-Commerce Website",
-    "Wordpress Development",
+    "WordPress Development",
     "Shopify Development",
     "Social Media Optimization",
-    "Web/Vps Hosting",
+    "Web/VPS Hosting",
   ];
 
   return (
