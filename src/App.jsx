@@ -21,6 +21,7 @@ import OurPortfolio from "./Pages/OurPortfolio";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import HowWeCanHelp from "./Pages/HowWeCanHelp";
 import CategoryServicePage from "./Pages/CategoryServicePage";
+import SocialMediaManagement from "./Pages/SocialMediaManagement";
 
 function App() {
   const [language, setLanguage] = useState("en");
@@ -90,6 +91,10 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactusPage />} />
           <Route path="/services/:serviceId" element={<ServicePage />} />
+          <Route
+            path="/category-service/social-media-management"
+            element={<SocialMediaManagement />}
+          />
           <Route
             path="/category-service/:serviceId"
             element={<CategoryServicePage />}

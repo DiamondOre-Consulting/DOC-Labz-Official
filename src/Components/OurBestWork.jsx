@@ -12,7 +12,6 @@ import icon1 from "../assets/icon1.svg";
 import icon4 from "../assets/icon4.svg";
 import p4 from "../assets/portfolio/p4.png";
 import p11 from "../assets/portfolio/p11.png";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import lineimage from "../assets/line2.png";

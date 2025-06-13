@@ -1000,18 +1000,18 @@ export const services = [
       },
     ],
     features: [
-      {
-        heading: "Search Engine Optimization (SEO)",
-        image:
-          "https://img.freepik.com/free-vector/seo-analytics-team-concept-illustration_114360-9205.jpg?t=st=1745904433~exp=1745908033~hmac=4bdb227f7702652a97463432a0fd2d0668b4ba710b1e4c2e9d619a4c763f09bd&w=826",
-        points: [
-          "On-page and off-page optimization for long-term growth.",
-          "Keyword strategy tailored to your audience.",
-          "Technical SEO for faster website performance.",
-          "Local SEO to capture nearby customers.",
-          "Regular audits to ensure top rankings.",
-        ],
-      },
+      // {
+      //   heading: "Search Engine Optimization (SEO)",
+      //   image:
+      //     "https://img.freepik.com/free-vector/seo-analytics-team-concept-illustration_114360-9205.jpg?t=st=1745904433~exp=1745908033~hmac=4bdb227f7702652a97463432a0fd2d0668b4ba710b1e4c2e9d619a4c763f09bd&w=826",
+      //   points: [
+      //     "On-page and off-page optimization for long-term growth.",
+      //     "Keyword strategy tailored to your audience.",
+      //     "Technical SEO for faster website performance.",
+      //     "Local SEO to capture nearby customers.",
+      //     "Regular audits to ensure top rankings.",
+      //   ],
+      // },
       {
         heading: "Social Media Marketing",
         image:

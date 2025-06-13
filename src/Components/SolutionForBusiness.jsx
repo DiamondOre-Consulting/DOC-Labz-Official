@@ -53,16 +53,16 @@ const SolutionForBusineess = () => {
         "A dedicated landing page to showcase your professional profile with embedded social links and a clean, modern design.",
     },
 
-    // {
-    //   id: "social-media-management",
-    //   title: "Social Media Management",
-    //   description:
-    //     "Manage and grow your brand’s presence on platforms like Instagram, Facebook, and LinkedIn with tailored content, scheduling, and analytics support.",
-    // },
+    {
+      id: "social-media-management",
+      title: "Social Media Management",
+      description:
+        "Manage and grow your brand’s presence on platforms like Instagram, Facebook, and LinkedIn with tailored content, scheduling, and analytics support.",
+    },
   ];
 
   return (
-    <section className="py-16 px-8 bg-white text-[#000080]">
+    <section id="my-section" className="py-16 px-8 bg-white text-[#000080]">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-extrabold mb-12  text-color1 text-center">
           Solutions For Various Business Needs

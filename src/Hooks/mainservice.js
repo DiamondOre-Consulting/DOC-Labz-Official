@@ -219,9 +219,11 @@ export const mainService = [
         imageHeading: "Mentor Student & Teacher Management Software",
       },
       {
-        image: dia,
+        // image: dia,
+        video:
+          "https://res.cloudinary.com/dmpkp9ux2/video/upload/v1749716886/Screen_Recording_2025-06-12_135125_online-video-cutter.com_zhhdae.mp4",
         link: "https://www.diamondore.in/",
-        imageHeading: "Diamondore Placement Consulting Company",
+        imageHeading: "Diamondore Employee Management System",
       },
     ],
   },
@@ -364,12 +366,27 @@ export const mainService = [
     ],
     projects: [
       {
-        image: "/images/social_project1.jpg", // Replace with actual image path
+        image:
+          "https://zeloindia.com/cdn/shop/files/No_bg_no_subhead_rectangle.png?v=1729064207&width=135", // Replace with actual image path
         link: "https://www.examplebrand1.com",
         imageHeading: "Instagram Growth Campaign",
       },
       {
-        image: "/images/social_project2.jpg", // Replace with actual image path
+        image:
+          "https://media.canva.com/v2/image-resize/format:PNG/height:85/quality:100/uri:ifs%3A%2F%2FM%2Fa937eacd-5a46-4cef-bdbc-eb4f3c567067/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAHVOQTY6eDvtmEILcmGdYuZGFBrykO433NMHzMrVceKZ&exp=1749740773&osig=AAAAAAAAAAAAAAAAAAAAAGkC1A44IQlvsQuuS8s_Eb9dRhra66jvk9GSXkX7wFUG&signer=media-rpc&x-canva-quality=thumbnail", // Replace with actual image path
+        link: "https://www.examplebrand2.com",
+        imageHeading: "Facebook Brand Awareness Drive",
+      },
+
+      {
+        image:
+          "https://media.canva.com/v2/image-resize/format:PNG/height:198/quality:100/uri:ifs%3A%2F%2FM%2F8a5ae8c9-3a0b-4b49-b6d2-5e9c5b478ed7/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAFj5HiN4wlrtRANqjzYPi7mxK3rVG1ePp_28bBv2jMtI&exp=1749804336&osig=AAAAAAAAAAAAAAAAAAAAAMuQ_3L10BUqYsnTiY84TYjnKkAenQ3P9nSX1jV_6DJ7&signer=media-rpc&x-canva-quality=thumbnail", // Replace with actual image path
+        link: "https://www.examplebrand1.com",
+        imageHeading: "Instagram Growth Campaign",
+      },
+      {
+        image:
+          "https://media.canva.com/v2/image-resize/format:PNG/height:85/quality:100/uri:ifs%3A%2F%2FM%2Fa937eacd-5a46-4cef-bdbc-eb4f3c567067/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAHVOQTY6eDvtmEILcmGdYuZGFBrykO433NMHzMrVceKZ&exp=1749740773&osig=AAAAAAAAAAAAAAAAAAAAAGkC1A44IQlvsQuuS8s_Eb9dRhra66jvk9GSXkX7wFUG&signer=media-rpc&x-canva-quality=thumbnail", // Replace with actual image path
         link: "https://www.examplebrand2.com",
         imageHeading: "Facebook Brand Awareness Drive",
       },

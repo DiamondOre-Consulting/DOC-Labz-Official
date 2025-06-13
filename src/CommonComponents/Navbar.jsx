@@ -152,13 +152,14 @@ const NavMenu = ({ routes, isOpen, setIsOpen, language, setLanguage }) => {
       </li>
 
       <li className="relative" ref={digitalRef}>
-        <button
+        <Link
+          to={"/category-service/social-media-management"}
           className="flex items-center gap-1 px-2 text-black hover:text-color1 lg:hover:text-color1"
           onMouseEnter={() => handleDropdownToggle("digitalMarketing")}
         >
           Social Media Management
           <MdArrowDropDown />
-        </button>
+        </Link>
         <ul
           className={`absolute z-20 lg:left-0 right-0 min-w-[10rem] lg:mt-[0.95rem] duration-500 lg:rounded-t-none lg:bg-mainRed bg-white text-black rounded-lg shadow-lg transition-transform ease-in-out ${
             dropdownOpen.digitalMarketing

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { mainService } from "../Hooks/mainservice";
 import ContactUs from "../Components/ContactUs";
 
@@ -24,11 +24,20 @@ const CategoryServicePage = () => {
     );
   }
 
+  const naviagate = useNavigate();
+
   return (
     <div className="container mx-auto py-8">
       <h1 className="text-4xl font-bold text-center text-color1/80 mb-6">
         {service.heading}
       </h1>
+
+      <button
+        onClick={() => naviagate(-1)}
+        className="bg-color1 text-white rounded-r-full shadow-md fixed z-40 bottom-10 py-1 px-2"
+      >
+        Back To Section
+      </button>
       <div className="flex flex-col md:flex-row items-center gap-x-4 px-4">
         <div className="w-full">
           <p className="text-lg text-gray-700 text-center mb-10 max-w-3xl mx-auto">
@@ -79,17 +88,28 @@ const CategoryServicePage = () => {
           <h2 className="text-3xl font-bold text-center text-color1/80 my-10">
             Some of the Projects We've Worked On
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-20">
             {service.projects.map((project, index) => (
               <div
                 key={index}
                 className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
               >
-                <img
-                  src={project.image}
-                  alt={project.imageHeading}
-                  className="w-full h-48 object-cover"
-                />
+                {project?.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.imageHeading}
+                    className="w-full h-48 object-cover"
+                  />
+                ) : (
+                  <video
+                    src={project.video}
+                    controls
+                    autoPlay
+                    loop
+                    className="w-full h-48 object-cover"
+                  />
+                )}
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {project.imageHeading}
