@@ -16,6 +16,8 @@ import nutz from "../assets/clients/nutz.png";
 import logo from "../assets/logo2.png";
 import simply from "../assets/clients/simply.jpeg";
 import dropmix from "../assets/clients/dropmix.png";
+import profilegenie from "../assets/profilegenie.png";
+import reallogo from "../assets/reallogo.png";
 
 const SocialMediaManagement = () => {
   const services = [
@@ -45,8 +47,8 @@ const SocialMediaManagement = () => {
       logo: c1,
     },
     {
-      name: "Nutzz Magic",
-      logo: c2,
+      name: "Diamondore",
+      logo: reallogo,
     },
     {
       name: "Diamond Ore",
@@ -56,10 +58,10 @@ const SocialMediaManagement = () => {
     //   name: "Sofsscroll",
     //   logo: c4,
     // },
-    {
-      name: "DOC-Labz",
-      logo: c11,
-    },
+    // {
+    //   name: "DOC-Labz",
+    //   logo: c11,
+    // },
     {
       name: "Profile Genie",
       logo: simply,
@@ -89,6 +91,11 @@ const SocialMediaManagement = () => {
       logo: dropmix,
       name: "Nutz Magic",
     },
+
+    {
+      logo: profilegenie,
+      name: "Profile Genie",
+    },
   ];
 
   return (
@@ -106,44 +113,154 @@ const SocialMediaManagement = () => {
         </div>
       </div>
 
-      <section className="py-16 px-6 md:px-40 bg-[#fdf8f3] text-[#333]">
-        <h2 className="text-4xl font-bold mb-4 text-color1">About Us</h2>
-        <h2 className="text-4xl font-bold mb-4 text-gray-400">
-          We are the Social Thali
-        </h2>
+      <section className="bg-[#fffaf7] py-20 px-4 md:px-20">
+        <div className=" mx-auto space-y-12">
+          {/* Header */}
+          <div className="text-center mb-10">
+            <h2 className="text-5xl font-extrabold text-color1">
+              Welcome to <span className="text-[#ff4d4f]">Social Thali</span>
+            </h2>
+            <p className="text-xl text-gray-600 mt-4">
+              Jahaan freelancer wali cost mein milti hai ek high-end creative
+              agency ki craftsmanship.
+            </p>
+          </div>
+          <div className="flex md:flex-row flex-col  w-full md:gap-y-0 gap-y-4  md:gap-x-4">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden border">
+              <div className="flex items-center px-5 py-4">
+                <img
+                  src={logo}
+                  alt="Social Thali"
+                  className="w-10 h-10 rounded-full mr-3"
+                />
+                <div>
+                  <p className="font-semibold text-[#000080]">social_thali</p>
+                  <p className="text-xs text-gray-500">Just now</p>
+                </div>
+              </div>
+              <div className="px-6 pb-4 space-y-4">
+                <p>
+                  Here, your brand doesn’t just get content — it gets a{" "}
+                  <strong>personality</strong>, a <strong>pulse</strong>, and a{" "}
+                  <strong>purpose</strong>.
+                </p>
+                <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-[#ff4d4f]">
+                  <p className="font-semibold text-[#000080] mb-1">
+                    We are a digital dastarkhwan of creativity —
+                  </p>
+                  <p>
+                    From sleek & subtle to loud & lajawab —{" "}
+                    <strong>
+                      you choose your flavour, your spice, your story
+                    </strong>
+                    .
+                  </p>
+                </div>
+                <div className="flex justify-between items-center text-gray-500 text-sm mt-2">
+                  <p>❤️ 1,204 Likes</p>
+                  <p>💬 View 48 Comments</p>
+                </div>
+              </div>
+            </div>
 
-        <div>
-          <p className="mb-6">
-            <strong>Doclabz</strong> is your calm in the content chaos — a
-            creative collective where strategy meets storytelling. We specialize
-            in crafting content that connects, communities that grow, and brands
-            that breathe personality.
-          </p>
-          <p className="mb-6">
-            From quirky plushies at <strong>Zelo India</strong> to the bold
-            crunch of <strong>Nutzz Magic</strong>, from{" "}
-            <strong>Diamond Ore’s</strong> mission to empower HR leaders to{" "}
-            <strong>Sofsscroll’s</strong> luxurious sustainability — we build
-            brands with a voice and vision.
-          </p>
-          <p className="mb-6">
-            Whether it’s revolutionizing resumes with <strong>CV Genie</strong>,
-            creating instant digital impressions with{" "}
-            <strong>Profile Genie</strong>, or redefining gifting and mocktails
-            with <strong>Dropmix</strong>, DOC doesn’t just manage social media
-            — we elevate it.
-          </p>
-          <p>
-            We’ve partnered with language institutes like{" "}
-            <strong>Mentor</strong>, supported rising stars like{" "}
-            <strong>Viraj Katyayan</strong>, and continue to work with
-            innovators and dreamers alike. At DOC, we don’t just deliver — we
-            design digital stories worth sharing.
-          </p>
+            {/* Post 2 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden border">
+              <div className="flex items-center px-5 py-4">
+                <img
+                  src={logo}
+                  alt="Social Thali"
+                  className="w-10 h-10 rounded-full mr-3"
+                />
+                <div>
+                  <p className="font-semibold text-[#000080]">social_thali</p>
+                  <p className="text-xs text-gray-500">5 mins ago</p>
+                </div>
+              </div>
+              <div className="px-6 pb-4 space-y-4">
+                <p className="italic text-lg text-gray-700">
+                  "Picture abhi baaki hai mere dost..."
+                </p>
+                <p>
+                  We <strong>learn daily</strong>, grow relentlessly, and chase
+                  campaigns like it’s our last.
+                </p>
+                <p>
+                  <span className="text-[#000080] font-medium">
+                    Unfiltered passion
+                  </span>{" "}
+                  &
+                  <span className="font-medium text-[#000080]">
+                    {" "}
+                    pixel-perfect execution
+                  </span>{" "}
+                  are our default.
+                </p>
+                <div className="flex justify-between items-center text-gray-500 text-sm mt-2">
+                  <p>❤️ 2,108 Likes</p>
+                  <p>💬 View 66 Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Post 3 */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden border">
+            <div className="flex items-center px-5 py-4">
+              <img
+                src={logo}
+                alt="Social Thali"
+                className="w-10 h-10 rounded-full mr-3"
+              />
+              <div>
+                <p className="font-semibold text-[#000080]">social_thali</p>
+                <p className="text-xs text-gray-500">10 mins ago</p>
+              </div>
+            </div>
+            <div className="px-6 pb-4 space-y-4">
+              <div className="bg-yellow-50 p-4 rounded-xl border-l-4 border-yellow-400">
+                <p className="font-medium">
+                  We're not just making posts —{" "}
+                  <span className="text-[#000080]">
+                    hum brand mein awaaz daalte hain
+                  </span>
+                  .
+                </p>
+                <p className="italic mt-2 text-gray-800">
+                  “Bade bade brands ki chhoti chhoti kahaniyaan hoti hain… aur
+                  hum unhe blockbuster banate hain.”
+                </p>
+              </div>
+              <div className="flex justify-between items-center text-gray-500 text-sm mt-2">
+                <p>❤️ 980 Likes</p>
+                <p>💬 View 22 Comments</p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Post */}
+          <div className="bg-[#ff4d4f] text-white rounded-xl shadow-lg px-8 py-10 text-center ">
+            <h3 className="text-3xl font-bold">
+              Kya aap tayyar hain apne brand ki asli kahaani likhne ke liye?
+            </h3>
+            <p className="text-lg my-6">
+              Toh aaiye… Zindagi ke is digital zayke mein, apni{" "}
+              <span className="font-semibold">Social Thali</span> serve karte
+              hain —
+              <span className="italic">
+                {" "}
+                with strategy, soul, and a whole lot of spice.
+              </span>
+            </p>
+            <Link
+              to={"/contact-us"}
+              className=" px-6 py-2 bg-white text-[#ff4d4f] rounded-full font-semibold hover:bg-gray-100 transition"
+            >
+              Let's Build Your Story 🔥
+            </Link>
+          </div>
         </div>
       </section>
 
-      <div className="flex px-4 lg:px-40 mt-10 bg-color1/40 py-10 items-center flex-col md:flex-row justify-between gap-x-6 md:gap-y-0 gap-y-4">
+      {/* <div className="flex px-4 lg:px-40 mt-10 bg-color1/40 py-10 items-center flex-col md:flex-row justify-between gap-x-6 md:gap-y-0 gap-y-4">
         <div className="md:max-w-2xl">
           <h1 className="text-2xl mb-10">
             We solve the most difficult puzzles and make things fall into place.
@@ -165,9 +282,9 @@ const SocialMediaManagement = () => {
             alt=""
           />
         </div>
-      </div>
+      </div> */}
 
-      <section className="bg-[#fdf8f3] py-16 px-6 md:px-40">
+      {/* <section className="bg-[#fdf8f3] py-16 px-6 md:px-40">
         <h2 className="text-4xl font-semibold text-gray-800 mb-10">Services</h2>
         <div className="grid gap-8 md:grid-cols-3">
           {services.map((service, index) => (
@@ -182,7 +299,7 @@ const SocialMediaManagement = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className="py-16 bg-white text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -237,6 +354,19 @@ const SocialMediaManagement = () => {
         </div>
       </section>
       <ContactUs />
+
+      <div className="fixed bottom-10 right-8 ">
+        <img
+          src="https://camilasocialmedia.com.br/_assets/video/93a7978b89f807738399f61955d9fa02.gif"
+          alt=""
+          className="w-[60%] absolute bottom-0 right-4"
+        />
+        <img
+          src="https://camilasocialmedia.com.br/_assets/video/b709c1ab41a2d553970313887ca3f7aa.gif"
+          alt=""
+          className=" z-10 w-[60%] "
+        />
+      </div>
     </div>
   );
 };
