@@ -19,6 +19,7 @@ import pg1 from "../assets/portfolio/pg1.png";
 import pg2 from "../assets/portfolio/pg2.png";
 import pg3 from "../assets/portfolio/pg3.png";
 import pg4 from "../assets/portfolio/pg4.png";
+import godrej from "../assets/godrej.png";
 
 export const mainService = [
   {
@@ -270,6 +271,12 @@ export const mainService = [
         image: plastic,
         link: "https://plastengnr.in/",
         imageHeading: "Plastic Engineers Fabricators Website",
+      },
+
+      {
+        image: godrej,
+        link: "https://godrejriverine44.co.in/",
+        imageHeading: "Godrej Riverine  Website",
       },
     ],
   },

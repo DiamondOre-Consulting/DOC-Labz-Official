@@ -21,6 +21,7 @@ import sof from "../assets/sofscroll.png";
 import plastic from "../assets/plastic.png";
 import simplygift from "../assets/simlygift.png";
 import zello from "../assets/zello.png";
+import godrej from "../assets/godrej.png";
 
 const OurPortfolio = () => {
   useEffect(() => {
@@ -131,6 +132,14 @@ const OurPortfolio = () => {
       category: "Shopify Website",
       image: zello,
       link: "https://zeloindia.com/",
+    },
+
+    {
+      title: "Godrej Riverine ",
+      icon: icon3,
+      category: "Static Website",
+      image: godrej,
+      link: "https://godrejriverine44.co.in/",
     },
   ];
 

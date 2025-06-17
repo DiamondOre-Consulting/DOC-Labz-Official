@@ -18,6 +18,7 @@ import lineimage from "../assets/line2.png";
 import simplygift from "../assets/simlygift.png";
 import zelo from "../assets/zello.png";
 import plastic from "../assets/plastic.png";
+import godrej from "../assets/godrej.png";
 
 import { Link } from "react-router-dom";
 
@@ -80,6 +81,13 @@ const OurBestWork = () => {
       icon: icon4,
       image: plastic,
       link: "https://plastengnr.in/",
+    },
+
+    {
+      title: "Godrej Riverine Static Website",
+      icon: icon4,
+      image: godrej,
+      link: "https://godrejriverine44.co.in/",
     },
   ];
 
