@@ -71,10 +71,10 @@ const WhomWeServe = () => {
       name: "Tourism",
       logo: icon16,
     },
-    {
-      name: "Infrastructure",
-      logo: icon18,
-    },
+    // {
+    //   name: "Infrastructure",
+    //   logo: icon18,
+    // },
     {
       name: "Agriculture",
       logo: icon15,
