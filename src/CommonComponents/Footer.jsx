@@ -103,7 +103,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                    to={"/services/12"}
+                    to={"/category-service/social-media-management"}
                     class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
                   >
                     Social Media Management

@@ -122,7 +122,7 @@ const OurPortfolio = () => {
       icon: icon3,
       category: "WordPress Website",
       image: simplygift,
-      link: "https://plastengnr.in/",
+      link: "https://simplygift.in/",
     },
 
     {

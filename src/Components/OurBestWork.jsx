@@ -15,6 +15,9 @@ import p11 from "../assets/portfolio/p11.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import lineimage from "../assets/line2.png";
+import simplygift from "../assets/simlygift.png";
+import zelo from "../assets/zello.png";
+import plastic from "../assets/plastic.png";
 
 import { Link } from "react-router-dom";
 
@@ -59,6 +62,24 @@ const OurBestWork = () => {
       icon: icon4,
       image: p11,
       link: "https://profilegenie.in/profile/1/UM99",
+    },
+    {
+      title: "Simply Gift WordPress Dynamic Website",
+      icon: icon4,
+      image: simplygift,
+      link: "https://simplygift.in/",
+    },
+    {
+      title: "Zelo India Shopify Dynamic Website",
+      icon: icon4,
+      image: zelo,
+      link: "https://zeloindia.com/",
+    },
+    {
+      title: "Plastic Engineers and Febricators Static Website",
+      icon: icon4,
+      image: plastic,
+      link: "https://plastengnr.in/",
     },
   ];
 
