@@ -53,7 +53,7 @@ const Services = () => {
     },
 
     {
-      title: "Web/Vps <br/> Hosting",
+      title: "Web/VPS <br/> Hosting",
       icon: icon4,
       image: img1,
       link: "/services/16",
