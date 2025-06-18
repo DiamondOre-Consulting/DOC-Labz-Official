@@ -102,6 +102,9 @@ const SocialMediaManagement = () => {
     <div className="">
       <div className="relative w-full h-[20vh] md:h-screen overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
+
+
+          
           <iframe
             src="https://www.youtube-nocookie.com/embed/MYCMys_BpBM?autoplay=1&mute=1&controls=0&playsinline=1&showinfo=0&rel=0&enablejsapi=1&loop=1&playlist=MYCMys_BpBM"
             title="Doclabz Video"
@@ -118,7 +121,7 @@ const SocialMediaManagement = () => {
           {/* Header */}
           <div className="text-center mb-10">
             <h2 className="text-5xl font-extrabold text-color1">
-              Welcome to <span className="text-[#ff4d4f]">Social Thali</span>
+              Welcome to <span className="text-[#ff4d4f]">Social Platter</span>
             </h2>
             <p className="text-xl text-gray-600 mt-4">
               Jahaan freelancer wali cost mein milti hai ek high-end creative
@@ -134,7 +137,7 @@ const SocialMediaManagement = () => {
                   className="w-10 h-10 rounded-full mr-3"
                 />
                 <div>
-                  <p className="font-semibold text-[#000080]">social_thali</p>
+                  <p className="font-semibold text-[#000080]">social_platter</p>
                   <p className="text-xs text-gray-500">Just now</p>
                 </div>
               </div>
@@ -172,13 +175,13 @@ const SocialMediaManagement = () => {
                   className="w-10 h-10 rounded-full mr-3"
                 />
                 <div>
-                  <p className="font-semibold text-[#000080]">social_thali</p>
+                  <p className="font-semibold text-[#000080]">social_platter</p>
                   <p className="text-xs text-gray-500">5 mins ago</p>
                 </div>
               </div>
               <div className="px-6 pb-4 space-y-4">
                 <p className="italic text-lg text-gray-700">
-                  "Picture abhi baaki hai mere dost..."
+              "Picture अभी बाकी है मेरे दोस्त"
                 </p>
                 <p>
                   We <strong>learn daily</strong>, grow relentlessly, and chase
@@ -211,7 +214,7 @@ const SocialMediaManagement = () => {
                 className="w-10 h-10 rounded-full mr-3"
               />
               <div>
-                <p className="font-semibold text-[#000080]">social_thali</p>
+                <p className="font-semibold text-[#000080]">social_platter</p>
                 <p className="text-xs text-gray-500">10 mins ago</p>
               </div>
             </div>
@@ -220,13 +223,13 @@ const SocialMediaManagement = () => {
                 <p className="font-medium">
                   We're not just making posts —{" "}
                   <span className="text-[#000080]">
-                    hum brand mein awaaz daalte hain
+                    hum brand mein आवाज़ डालते हैं।
                   </span>
                   .
                 </p>
                 <p className="italic mt-2 text-gray-800">
-                  “Bade bade brands ki chhoti chhoti kahaniyaan hoti hain… aur
-                  hum unhe blockbuster banate hain.”
+                  “Bade bade brands ki छोटी-छोटी कहानियाँ होती हैं… aur
+                  hum unhe blockbuster बनाते हैं।”
                 </p>
               </div>
               <div className="flex justify-between items-center text-gray-500 text-sm mt-2">
@@ -239,14 +242,13 @@ const SocialMediaManagement = () => {
           {/* CTA Post */}
           <div className="bg-[#ff4d4f] text-white rounded-xl shadow-lg px-8 py-10 text-center ">
             <h3 className="text-3xl font-bold">
-              Kya aap tayyar hain apne brand ki asli kahaani likhne ke liye?
+              Kya aap tayyar hain apne brand ki असली कहानी लिखने ✏️ के लिए?
             </h3>
             <p className="text-lg my-6">
               Toh aaiye… Zindagi ke is digital zayke mein, apni{" "}
-              <span className="font-semibold">Social Thali</span> serve karte
+              <span className="font-semibold">Social platter</span> serve karte
               hain —
               <span className="italic">
-                {" "}
                 with strategy, soul, and a whole lot of spice.
               </span>
             </p>
