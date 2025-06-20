@@ -263,7 +263,7 @@ export const mainService = [
 
       {
         image: sof,
-        link: "https://neetusharma.in/",
+        link: "https://www.sofsscrrol.com/",
         imageHeading: "Sof SScrrol  Website",
       },
 
