@@ -1,99 +1,110 @@
-import React from 'react';
+import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div>
-      <div className="max-w-4xl mx-auto px-4 py-12 font-sans text-gray-700">
-        <h1 className="text-3xl font-bold mb-8 text-center">Privacy Policy</h1>
+    <div className="max-w-4xl mx-auto px-6 py-10 text-gray-800">
+      <h1 className="text-3xl font-bold mb-6 text-color1">Privacy Policy</h1>
 
-        <div className="space-y-6">
-          <section>
-            <h2 className="text-xl font-semibold mb-3">Introduction</h2>
-            <p className="mb-4 leading-relaxed">
-              Doc Labz ("we", "our", or "us") is committed to safeguarding your privacy. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you use our website and services.
-            </p>
-          </section>
+      <p className="mb-6">
+        Your privacy is important to us. This Privacy Policy outlines how
+        DocLabz collects, uses, and protects your personal information.
+      </p>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-3">Information We Collect</h2>
-            <p className="mb-4 leading-relaxed">
-              We may collect personal and usage information, including:
-            </p>
-            <ul className="list-disc pl-6 mb-4 space-y-2">
-              <li>Name, email address, and phone number</li>
-              <li>Demographic and location data</li>
-              <li>Professional or institutional affiliation</li>
-              <li>Usage patterns and IP address</li>
-              <li>Technical information about your device and browser</li>
-            </ul>
-          </section>
+      <h2 className="text-xl font-semibold mb-2">1. Information We Collect</h2>
+      <p className="mb-2">We collect the following types of information:</p>
+      <ul className="list-disc list-inside mb-6 space-y-2">
+        <li>
+          <strong>Personal Information:</strong> Name, email, contact number,
+          organization details, etc.
+        </li>
+        <li>
+          <strong>Usage Data:</strong> IP address, browser type, device data,
+          interaction data.
+        </li>
+        <li>
+          <strong>Documents &amp; Files:</strong> Any files you upload for
+          processing or automation.
+        </li>
+      </ul>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-3">How We Use Your Information</h2>
-            <p className="mb-4 leading-relaxed">
-              The information we collect helps us to:
-            </p>
-            <ul className="list-disc pl-6 mb-4 space-y-2">
-              <li>Deliver and improve our services</li>
-              <li>Respond to inquiries and provide support</li>
-              <li>Communicate important updates and offers</li>
-              <li>Analyze user behavior for better experiences</li>
-              <li>Comply with regulatory requirements</li>
-            </ul>
-          </section>
+      <h2 className="text-xl font-semibold mb-2">
+        2. How We Use Your Information
+      </h2>
+      <p className="mb-2">Your data may be used to:</p>
+      <ul className="list-disc list-inside mb-6 space-y-2">
+        <li>Provide and improve our services.</li>
+        <li>Communicate with you regarding service updates or support.</li>
+        <li>Maintain the security and integrity of the platform.</li>
+        <li>Ensure legal compliance.</li>
+      </ul>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-3">Data Security</h2>
-            <p className="mb-4 leading-relaxed">
-              We implement strong security measures to protect your data from unauthorized access, alteration, or disclosure. However, no system can guarantee 100% security.
-            </p>
-          </section>
+      <h2 className="text-xl font-semibold mb-2">3. Data Sharing</h2>
+      <p className="mb-2">
+        We do not sell, rent, or trade your personal data. We may share data
+        with:
+      </p>
+      <ul className="list-disc list-inside mb-6 space-y-2">
+        <li>
+          Service providers assisting with platform operations (e.g., hosting,
+          analytics).
+        </li>
+        <li>Government agencies if required by law or regulation.</li>
+      </ul>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-3">Cookies</h2>
-            <p className="mb-4 leading-relaxed">
-              We use cookies and similar tracking technologies to enhance your browsing experience and collect analytics data. You may disable cookies in your browser settings, though some features may not function correctly.
-            </p>
-          </section>
+      <h2 className="text-xl font-semibold mb-2">4. Cookies &amp; Tracking</h2>
+      <p className="mb-6">
+        We use cookies to enhance user experience, analyze usage patterns, and
+        customize content. You can modify cookie settings in your browser.
+      </p>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-3">Third-Party Disclosure</h2>
-            <p className="mb-4 leading-relaxed">
-              We do not sell or trade your personal data. We may share limited data with trusted partners and service providers who assist us in operating our website and services, under strict confidentiality agreements.
-            </p>
-          </section>
+      <h2 className="text-xl font-semibold mb-2">5. Data Security</h2>
+      <p className="mb-6">
+        We follow best practices to protect your data using encryption, secure
+        servers, and limited access protocols. However, no method is 100%
+        secure, and we cannot guarantee absolute security.
+      </p>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-3">Your Rights</h2>
-            <p className="mb-4 leading-relaxed">
-              You may exercise the following rights regarding your personal information:
-            </p>
-            <ul className="list-disc pl-6 mb-4 space-y-2">
-              <li>Request access to your data</li>
-              <li>Ask for corrections or deletion</li>
-              <li>Restrict or object to data processing</li>
-              <li>Withdraw your consent at any time</li>
-            </ul>
-          </section>
+      <h2 className="text-xl font-semibold mb-2">6. Your Rights</h2>
+      <p className="mb-2">You have the right to:</p>
+      <ul className="list-disc list-inside mb-6 space-y-2">
+        <li>Access your data.</li>
+        <li>Request corrections.</li>
+        <li>
+          Withdraw consent or request deletion (subject to legal requirements).
+        </li>
+      </ul>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-3">Changes to This Policy</h2>
-            <p className="mb-4 leading-relaxed">
-              We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised date.
-            </p>
-          </section>
+      <h2 className="text-xl font-semibold mb-2">7. Data Retention</h2>
+      <p className="mb-6">
+        We retain your data only as long as necessary for service delivery,
+        legal compliance, or dispute resolution.
+      </p>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
-            <p className="leading-relaxed">
-              If you have any questions or concerns about this Privacy Policy, please contact us at{' '}
-              <a href="mailto:tech@doclabz.com" className="text-blue-600 hover:underline">
-              tech@doclabz.com
-              </a>.
-            </p>
-          </section>
-        </div>
-      </div>
+      <h2 className="text-xl font-semibold mb-2">8. Children&#39;s Privacy</h2>
+      <p className="mb-6">
+        Our platform is not intended for children under the age of 18. We do not
+        knowingly collect data from minors.
+      </p>
+
+      <h2 className="text-xl font-semibold mb-2">9. Changes to Policy</h2>
+      <p className="mb-6">
+        This Privacy Policy may be updated periodically. We recommend reviewing
+        it regularly. Continued use of our services after changes implies
+        consent.
+      </p>
+
+      <h2 className="text-xl font-semibold mb-2">10. Contact Us</h2>
+      <p className="mb-2">
+        If you have questions or concerns about your privacy, please contact us
+        at:
+      </p>
+      <p className="mb-1">
+        <strong>Email:</strong> tech@doclabz.com
+      </p>
+      <p className="mb-6">
+        <strong>Address:</strong> B-127, Second Floor, B Block, Sector 63,
+        Noida, Uttar Pradesh 201301
+      </p>
     </div>
   );
 };

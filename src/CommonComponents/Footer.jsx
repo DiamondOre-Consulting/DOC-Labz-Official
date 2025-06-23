@@ -76,6 +76,28 @@ const Footer = () => {
                   </Link>
                 </li>
 
+                <li>
+                  <Link to={"/privacy-policy"}>
+                    <a
+                      title=""
+                      class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
+                    >
+                      Privacy Policy
+                    </a>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to={"/terms-and-conditions"}>
+                    <a
+                      title=""
+                      class="flex text-sm text-gray-800 transition-all duration-200 hover:text-color1 focus:text-orange-600"
+                    >
+                      Terms & Condition
+                    </a>
+                  </Link>
+                </li>
+
                 {/* <li>
                   <a
                     href="#"
