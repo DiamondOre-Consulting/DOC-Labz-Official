@@ -13,6 +13,7 @@ import bw3 from "../assets/bw3.png";
 import p5 from "../assets/portfolio/p5.png";
 import p11 from "../assets/portfolio/p11.png";
 import simplygift from "../assets/simlygift.png";
+import chaapp from '../assets/portfolio/chhaapp.png'
 import zello from "../assets/zello.png";
 import p8 from "../assets/portfolio/p8.png";
 import pg1 from "../assets/portfolio/pg1.png";
@@ -20,6 +21,9 @@ import pg2 from "../assets/portfolio/pg2.png";
 import pg3 from "../assets/portfolio/pg3.png";
 import pg4 from "../assets/portfolio/pg4.png";
 import godrej from "../assets/godrej.png";
+import honda from '../assets/portfolio/honda.png'
+import branboxx from '../assets/portfolio/branboxx.png'
+
 
 export const mainService = [
   {
@@ -47,6 +51,12 @@ export const mainService = [
         image: zello,
         link: "https://zeloindia.com/",
         imageHeading: "Zelo India",
+      },
+
+        {
+        image: chaapp,
+        link: "https://chhaapp.in/",
+        imageHeading: "Chhaapp",
       },
     ],
   },
@@ -169,6 +179,24 @@ export const mainService = [
         link: "https://www.referbiz.in/",
         imageHeading: "Referbiz Website",
       },
+         {
+        image: chaapp,
+        link: "https://chhaapp.in/",
+        imageHeading: "Chhaapp",
+      },
+
+         {
+        image: honda,
+        link: "https://bigwinghonda.in/",
+        imageHeading: "Honda",
+      },
+
+         {
+        image: branboxx,
+        link: "https://branboxx.com/",
+        imageHeading: "Branboxx",
+      },
+
     ],
   },
   {

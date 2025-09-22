@@ -22,6 +22,11 @@ import plastic from "../assets/plastic.png";
 import simplygift from "../assets/simlygift.png";
 import zello from "../assets/zello.png";
 import godrej from "../assets/godrej.png";
+import honda from '../assets/portfolio/honda.png'
+import chhaapp from '../assets/portfolio/chhaapp.png'
+import branboxx from '../assets/portfolio/branboxx.png'
+
+
 
 const OurPortfolio = () => {
   useEffect(() => {
@@ -140,6 +145,29 @@ const OurPortfolio = () => {
       category: "Static Website",
       image: godrej,
       link: "https://godrejriverine44.co.in/",
+    },
+
+     {
+      title: "Bigwing Honda ",
+      icon: icon3,
+      category: "Dynamic Website",
+      image: honda,
+      link: "https://bigwinghonda.in/",
+    },
+       {
+      title: "Chhaapp ",
+      icon: icon3,
+      category: "Dynamic Website",
+      image: chhaapp,
+      link: "https://chhaapp.in/",
+    },
+
+       {
+      title: "Branboxx ",
+      icon: icon3,
+      category: "Dynamic Website",
+      image: branboxx,
+      link: "https://branboxx.com/",
     },
   ];
 
