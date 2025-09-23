@@ -230,7 +230,7 @@ const Footer = () => {
 
           <div class="sm:flex sm:items-center sm:justify-between">
             <p class="text-sm text-gray-600">
-              © Copyright 2024, All Rights Reserved by DocLabz
+              © Copyright 2025, All Rights Reserved by DocLabz
             </p>
 
             <ul class="flex items-center mt-5 space-x-3 md:order-3 sm:mt-0">
@@ -403,3 +403,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
