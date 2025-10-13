@@ -17,7 +17,7 @@ import icon4 from "../assets/icon4.svg";
 import { Link } from "react-router-dom";
 import lineimage from "../assets/line2.png";
 import profile from "../assets/profil2.png";
-import sof from "../assets/sofscroll.png";
+// import sof from "../assets/sofscroll.png";
 import plastic from "../assets/plastic.png";
 import simplygift from "../assets/simlygift.png";
 import zello from "../assets/zello.png";
@@ -25,6 +25,19 @@ import godrej from "../assets/godrej.png";
 import honda from '../assets/portfolio/honda.png'
 import chhaapp from '../assets/portfolio/chhaapp.png'
 import branboxx from '../assets/portfolio/branboxx.png'
+import cv from '../assets/portfolio/cv.png'
+import sof from '../assets/portfolio/sof.png'
+import ak from '../assets/portfolio/ak.png'
+import event from '../assets/portfolio/event.png'
+import pilates from '../assets/portfolio/pilates.png'
+import aranyud from '../assets/portfolio/aranyud.png'
+
+
+
+
+
+
+
 
 
 
@@ -59,7 +72,7 @@ const OurPortfolio = () => {
     {
       title: "CV Genie",
       icon: icon4,
-      image: p4,
+      image: cv,
       category: "Dynamic Website",
       link: "https://www.cvgenie.in/",
     },
@@ -168,6 +181,41 @@ const OurPortfolio = () => {
       category: "Dynamic Website",
       image: branboxx,
       link: "https://branboxx.com/",
+    },
+
+        {
+      title: "AK CRM ",
+      icon: icon3,
+      category: "Static Website",
+      image: ak,
+      link: "https://akcrm.in/",
+    },
+
+    
+        {
+      title: "EVen Tours",
+      icon: icon3,
+      category: "Static Website",
+      image: event,
+      link: "https://eventoursindia.com/",
+    },
+
+
+           {
+      title: "The pilates room",
+      icon: icon3,
+      category: "Dynamic Website",
+      image: pilates,
+      link: "https://thepilatesroom.co.in/",
+    },
+
+
+          {
+      title: "Aranyud Architects",
+      icon: icon3,
+      category: "Static Website",
+      image: aranyud,
+      link: "https://aranyudarchitects.com/",
     },
   ];
 
