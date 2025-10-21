@@ -101,19 +101,28 @@ const SocialMediaManagement = () => {
   return (
     <div className="">
       <div className="relative w-full h-[20vh] md:h-screen overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full">
+        {/* <div className="absolute top-0 left-0 w-full h-full"> */}
 
+     <video
+  src="https://res.cloudinary.com/dyen48pxl/video/upload/v1760613477/eyhwjojqr8iehnnq6nib.mp4"
+  autoPlay
+  muted
+  loop
+  playsInline
+  style={{ width: "100%", height: "auto" }}
+  className="h-screen"
+/>
 
-          
           <iframe
-            src="https://www.youtube-nocookie.com/embed/MYCMys_BpBM?autoplay=1&mute=1&controls=0&playsinline=1&showinfo=0&rel=0&enablejsapi=1&loop=1&playlist=MYCMys_BpBM"
-            title="Doclabz Video"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            className="w-full h-full object-cover pointer-events-none"
+            // src="https://res.cloudinary.com/dyen48pxl/video/upload/v1760613477/eyhwjojqr8iehnnq6nib.mp4"
+            // title="Doclabz Video"
+            // allow="autoplay; encrypted-media"
+            // allowFullScreen
+            
+            // className="w-full h-full object-cover pointer-events-none"
           ></iframe>
-          <div className="absolute top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-10"></div>
-        </div>
+          {/* <div className="absolute top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-10"></div> */}
+        {/* </div> */}
       </div>
 
       <section className="bg-[#fffaf7] py-20 px-4 md:px-20">
