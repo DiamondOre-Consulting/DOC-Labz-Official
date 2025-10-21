@@ -28,6 +28,12 @@ import gulati from '../assets/clients/gulati.jpg'
 import pioneer from '../assets/clients/pioneer.jpg'
 import zen from '../assets/clients/zen.jpg'
 import pixie from '../assets/clients/pixie.jpg'
+import iriz from '../assets/clients/iryz.jpg'
+import oasis from '../assets/clients/oasis.jpg'
+import mind from '../assets/clients/mind.jpg'
+
+
+
 
 
 
@@ -157,12 +163,27 @@ const SocialMediaManagement = () => {
       logo: zen,
       name: "zen",
     },
+
+
+      {
+      logo: oasis,
+      name: "oasis",
+    },
+
+         {
+      logo: mind,
+      name: "mind",
+    },
+
+
+    
+
     
   ];
 
   return (
     <div className="">
-      <div className="relative w-full h-[20vh] md:h-screen overflow-hidden">
+      <div className="relative w-full overflow-hidden">
 
         <video
           src="https://res.cloudinary.com/dyen48pxl/video/upload/v1760613477/eyhwjojqr8iehnnq6nib.mp4"
@@ -171,7 +192,7 @@ const SocialMediaManagement = () => {
           loop
           playsInline
           style={{ width: "100%", height: "auto" }}
-          className="h-screen object-cover"
+          className=" object-cover"
         />
 
         
