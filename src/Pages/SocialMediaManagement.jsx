@@ -20,6 +20,10 @@ import profilegenie from "../assets/profilegenie.png";
 import reallogo from "../assets/reallogo.png";
 import artfarming from '../assets/clients/artfarming.jpg'
 import kehwa from '../assets/clients/kehwah.jpg'
+import mahabir from '../assets/clients/mahabir.jpg'
+import pilates from '../assets/clients/pilates.jpg'
+
+
 
 
 const SocialMediaManagement = () => {
@@ -106,7 +110,17 @@ const SocialMediaManagement = () => {
       logo: kehwa,
       name: "Kehwa",
     },
+
+     {
+      logo: mahabir,
+      name: "mahabir",
+    },
     
+
+     {
+      logo: pilates,
+      name: "the pilates room",
+    },
     
   ];
 
