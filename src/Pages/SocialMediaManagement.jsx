@@ -23,6 +23,18 @@ import kehwa from '../assets/clients/kehwah.jpg'
 import mahabir from '../assets/clients/mahabir.jpg'
 import pilates from '../assets/clients/pilates.jpg'
 
+import cargenix from '../assets/clients/cargenix.jpg'
+import gulati from '../assets/clients/gulati.jpg'
+import pioneer from '../assets/clients/pioneer.jpg'
+import zen from '../assets/clients/zen.jpg'
+import pixie from '../assets/clients/pixie.jpg'
+
+
+
+
+
+
+
 
 
 
@@ -120,6 +132,30 @@ const SocialMediaManagement = () => {
      {
       logo: pilates,
       name: "the pilates room",
+    },
+
+      {
+      logo: cargenix,
+      name: "cargenix",
+    },
+
+      {
+      logo: gulati,
+      name: "gulati",
+    },
+
+      {
+      logo: pioneer,
+      name: "Poineer",
+    },
+      {
+      logo: pixie,
+      name: "pixie",
+    },
+
+      {
+      logo: zen,
+      name: "zen",
     },
     
   ];
