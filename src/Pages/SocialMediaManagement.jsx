@@ -18,6 +18,9 @@ import simply from "../assets/clients/simply.jpeg";
 import dropmix from "../assets/clients/dropmix.png";
 import profilegenie from "../assets/profilegenie.png";
 import reallogo from "../assets/reallogo.png";
+import artfarming from '../assets/clients/artfarming.jpg'
+import kehwa from '../assets/clients/kehwah.jpg'
+
 
 const SocialMediaManagement = () => {
   const services = [
@@ -91,38 +94,37 @@ const SocialMediaManagement = () => {
       logo: dropmix,
       name: "Nutz Magic",
     },
-
     {
       logo: profilegenie,
       name: "Profile Genie",
+    },    
+    {
+      logo: artfarming,
+      name: "Art Of farming",
+    },    
+    {
+      logo: kehwa,
+      name: "Kehwa",
     },
+    
+    
   ];
 
   return (
     <div className="">
       <div className="relative w-full h-[20vh] md:h-screen overflow-hidden">
-        {/* <div className="absolute top-0 left-0 w-full h-full"> */}
 
-     <video
-  src="https://res.cloudinary.com/dyen48pxl/video/upload/v1760613477/eyhwjojqr8iehnnq6nib.mp4"
-  autoPlay
-  muted
-  loop
-  playsInline
-  style={{ width: "100%", height: "auto" }}
-  className="h-screen"
-/>
+        <video
+          src="https://res.cloudinary.com/dyen48pxl/video/upload/v1760613477/eyhwjojqr8iehnnq6nib.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{ width: "100%", height: "auto" }}
+          className="h-screen object-cover"
+        />
 
-          <iframe
-            // src="https://res.cloudinary.com/dyen48pxl/video/upload/v1760613477/eyhwjojqr8iehnnq6nib.mp4"
-            // title="Doclabz Video"
-            // allow="autoplay; encrypted-media"
-            // allowFullScreen
-            
-            // className="w-full h-full object-cover pointer-events-none"
-          ></iframe>
-          {/* <div className="absolute top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-10"></div> */}
-        {/* </div> */}
+        
       </div>
 
       <section className="bg-[#fffaf7] py-20 px-4 md:px-20">
@@ -130,7 +132,7 @@ const SocialMediaManagement = () => {
           {/* Header */}
           <div className="text-center mb-10">
             <h2 className="text-5xl font-extrabold text-color1">
-              Welcome to <span className="text-[#ff4d4f]">Social Platter</span>
+              Welcome to <span className="text-[#ff4d4f]">Doc Social</span>
             </h2>
             <p className="text-xl text-gray-600 mt-4">
               Jahaan freelancer wali cost mein milti hai ek high-end creative
@@ -146,7 +148,7 @@ const SocialMediaManagement = () => {
                   className="w-10 h-10 rounded-full mr-3"
                 />
                 <div>
-                  <p className="font-semibold text-[#000080]">social_platter</p>
+                  <p className="font-semibold text-[#000080]">doc_social</p>
                   <p className="text-xs text-gray-500">Just now</p>
                 </div>
               </div>
@@ -184,13 +186,13 @@ const SocialMediaManagement = () => {
                   className="w-10 h-10 rounded-full mr-3"
                 />
                 <div>
-                  <p className="font-semibold text-[#000080]">social_platter</p>
+                  <p className="font-semibold text-[#000080]">doc_social</p>
                   <p className="text-xs text-gray-500">5 mins ago</p>
                 </div>
               </div>
               <div className="px-6 pb-4 space-y-4">
                 <p className="italic text-lg text-gray-700">
-              "Picture अभी बाकी है मेरे दोस्त"
+                  "Picture अभी बाकी है मेरे दोस्त"
                 </p>
                 <p>
                   We <strong>learn daily</strong>, grow relentlessly, and chase
@@ -223,7 +225,8 @@ const SocialMediaManagement = () => {
                 className="w-10 h-10 rounded-full mr-3"
               />
               <div>
-                <p className="font-semibold text-[#000080]">social_platter</p>
+
+                <p className="font-semibold text-[#000080]">doc_social</p>
                 <p className="text-xs text-gray-500">10 mins ago</p>
               </div>
             </div>
@@ -237,8 +240,8 @@ const SocialMediaManagement = () => {
                   .
                 </p>
                 <p className="italic mt-2 text-gray-800">
-                  “Bade bade brands ki छोटी-छोटी कहानियाँ होती हैं… aur
-                  hum unhe blockbuster बनाते हैं।”
+                  “Bade bade brands ki छोटी-छोटी कहानियाँ होती हैं… aur hum unhe
+                  blockbuster बनाते हैं।”
                 </p>
               </div>
               <div className="flex justify-between items-center text-gray-500 text-sm mt-2">
@@ -255,7 +258,7 @@ const SocialMediaManagement = () => {
             </h3>
             <p className="text-lg my-6">
               Toh aaiye… Zindagi ke is digital zayke mein, apni{" "}
-              <span className="font-semibold">Social platter</span> serve karte
+              <span className="font-semibold">Doc Social</span> serve karte
               hain —
               <span className="italic">
                 with strategy, soul, and a whole lot of spice.
