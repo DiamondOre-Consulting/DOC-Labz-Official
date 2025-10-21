@@ -49,18 +49,18 @@ const SocialMediaManagement = () => {
   ];
 
   const clients = [
-    {
-      name: "Zelo India",
-      logo: c1,
-    },
+    // {
+    //   name: "Zelo India",
+    //   logo: c1,
+    // },
     {
       name: "Diamondore",
       logo: reallogo,
     },
-    {
-      name: "Diamond Ore",
-      logo: c3,
-    },
+    // {
+    //   name: "Diamond Ore",
+    //   logo: c3,
+    // },
     // {
     //   name: "Sofsscroll",
     //   logo: c4,
@@ -73,10 +73,10 @@ const SocialMediaManagement = () => {
       name: "Profile Genie",
       logo: simply,
     },
-    {
-      name: "CV Genie",
-      logo: c7,
-    },
+    // {
+    //   name: "CV Genie",
+    //   logo: c7,
+    // },
     {
       name: "Mentor Institute",
       logo: logo,
